@@ -1,0 +1,7 @@
+2024-03-02 20:38:10.250 [info] Initial editor state {"filesToOpenOrCreate":[{"fileUri":{"$mid":1,"path":"/home/ananas/.config/waybar/style.css","scheme":"file"},"type":1,"exists":true,"options":{}}],"filesToDiff":[],"filesToMerge":[]}
+2024-03-02 20:38:10.678 [info] Started local extension host with pid 45534.
+2024-03-02 20:38:14.048 [info] [perf] Render performance baseline is 38ms
+2024-03-02 20:38:36.683 [error] [text file model] handleSaveError(9) - exit - resulted in a save error: Error: Unable to write file '/home/ananas/.config/waybar/style.css' (Error: File Modified Since) file:///home/ananas/.config/waybar/style.css
+2024-03-02 20:38:45.826 [error] [text file model] handleSaveError(9) - exit - resulted in a save error: Error: Unable to write file '/home/ananas/.config/waybar/style.css' (Error: File Modified Since) file:///home/ananas/.config/waybar/style.css
+2024-03-02 20:39:03.132 [error] [text file model] handleSaveError(12) - exit - resulted in a save error: Error: Unable to write file '/home/ananas/.config/waybar/style.css' (Error: File Modified Since) file:///home/ananas/.config/waybar/style.css
+2024-03-02 20:39:03.894 [error] [text file model] handleSaveError(12) - exit - resulted in a save error: Error: Unable to write file '/home/ananas/.config/waybar/style.css' (Error: File Modified Since) file:///home/ananas/.config/waybar/style.css

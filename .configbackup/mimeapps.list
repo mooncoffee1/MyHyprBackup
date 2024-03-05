@@ -1,0 +1,8 @@
+[Added Associations]
+text/css=vscodium-wayland.desktop;
+audio/mpeg=cantata.desktop;
+text/plain=org.gnome.TextEditor.desktop;
+image/svg+xml=firefox.desktop;
+
+[Default Applications]
+audio/mpeg=cantata.desktop

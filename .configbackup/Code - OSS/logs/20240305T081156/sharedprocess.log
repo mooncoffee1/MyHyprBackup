@@ -1,0 +1,38 @@
+2024-03-05 08:15:59.475 [info] Getting Manifest... equinusocio.vsc-material-theme
+2024-03-05 08:15:59.658 [info] Installing extension: equinusocio.vsc-material-theme
+2024-03-05 08:15:59.867 [info] Getting Manifest... equinusocio.vsc-material-theme-icons
+2024-03-05 08:16:00.147 [info] Installing extension: equinusocio.vsc-material-theme-icons
+2024-03-05 08:16:01.402 [error] Could not load vsce-sign module Cannot find module '@vscode/vsce-sign'
+Require stack:
+- /usr/lib/code/out/bootstrap-amd.js
+- /usr/lib/code/out/bootstrap-fork.js
+- 
+2024-03-05 08:16:01.408 [info] Extension signature verification is not done: equinusocio.vsc-material-theme
+2024-03-05 08:16:01.458 [info] Extracted extension to file:///home/ananas/.vscode-oss/extensions/equinusocio.vsc-material-theme-34.3.1-universal: equinusocio.vsc-material-theme
+2024-03-05 08:16:01.461 [info] Renamed to /home/ananas/.vscode-oss/extensions/equinusocio.vsc-material-theme-34.3.1-universal
+2024-03-05 08:16:01.462 [info] Extracting extension completed. equinusocio.vsc-material-theme
+2024-03-05 08:16:01.545 [error] [uncaught exception in sharedProcess]: Error: ENOENT: no such file or directory, stat '/home/ananas/.vscode-oss/extensions/extensions.json.vsctmp': EntryNotFound (FileSystemError): Error: ENOENT: no such file or directory, stat '/home/ananas/.vscode-oss/extensions/extensions.json.vsctmp'
+    at r.create (/usr/lib/code/out/vs/code/node/sharedProcess/sharedProcessMain.js:51:30083)
+    at a (/usr/lib/code/out/vs/code/node/sharedProcess/sharedProcessMain.js:51:30198)
+    at i.fb (/usr/lib/code/out/vs/code/node/sharedProcess/sharedProcessMain.js:56:36634)
+    at i.stat (/usr/lib/code/out/vs/code/node/sharedProcess/sharedProcessMain.js:56:29080)
+    at async v.stat (/usr/lib/code/out/vs/code/node/sharedProcess/sharedProcessMain.js:56:16226)
+    at async X.sb (/usr/lib/code/out/vs/code/node/sharedProcess/sharedProcessMain.js:102:107729)
+2024-03-05 08:16:02.111 [error] Could not load vsce-sign module Cannot find module '@vscode/vsce-sign'
+Require stack:
+- /usr/lib/code/out/bootstrap-amd.js
+- /usr/lib/code/out/bootstrap-fork.js
+- 
+2024-03-05 08:16:02.112 [info] Extension signature verification is not done: equinusocio.vsc-material-theme-icons
+2024-03-05 08:16:03.246 [info] Extracted extension to file:///home/ananas/.vscode-oss/extensions/equinusocio.vsc-material-theme-icons-3.5.0-universal: equinusocio.vsc-material-theme-icons
+2024-03-05 08:16:03.254 [info] Renamed to /home/ananas/.vscode-oss/extensions/equinusocio.vsc-material-theme-icons-3.5.0-universal
+2024-03-05 08:16:03.255 [info] Extracting extension completed. equinusocio.vsc-material-theme-icons
+2024-03-05 08:16:03.262 [info] Extension installed successfully: equinusocio.vsc-material-theme
+2024-03-05 08:16:03.262 [info] Extension installed successfully: equinusocio.vsc-material-theme-icons
+2024-03-05 08:16:03.337 [error] [uncaught exception in sharedProcess]: Error: ENOENT: no such file or directory, stat '/home/ananas/.vscode-oss/extensions/extensions.json.vsctmp': EntryNotFound (FileSystemError): Error: ENOENT: no such file or directory, stat '/home/ananas/.vscode-oss/extensions/extensions.json.vsctmp'
+    at r.create (/usr/lib/code/out/vs/code/node/sharedProcess/sharedProcessMain.js:51:30083)
+    at a (/usr/lib/code/out/vs/code/node/sharedProcess/sharedProcessMain.js:51:30198)
+    at i.fb (/usr/lib/code/out/vs/code/node/sharedProcess/sharedProcessMain.js:56:36634)
+    at i.stat (/usr/lib/code/out/vs/code/node/sharedProcess/sharedProcessMain.js:56:29080)
+    at async v.stat (/usr/lib/code/out/vs/code/node/sharedProcess/sharedProcessMain.js:56:16226)
+    at async X.sb (/usr/lib/code/out/vs/code/node/sharedProcess/sharedProcessMain.js:102:107729)
