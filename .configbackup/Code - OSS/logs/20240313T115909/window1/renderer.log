@@ -1,0 +1,4 @@
+2024-03-13 11:59:25.643 [info] Started local extension host with pid 10957.
+2024-03-13 11:59:25.689 [info] Started initializing default profile extensions in extensions installation folder. file:///home/ananas/.vscode-oss/extensions
+2024-03-13 11:59:26.189 [info] Completed initializing default profile extensions in extensions installation folder. file:///home/ananas/.vscode-oss/extensions
+2024-03-13 11:59:29.402 [info] [perf] Render performance baseline is 71ms
