@@ -1,0 +1,3 @@
+2024-03-23 14:35:34.717 [info] Started initializing default profile extensions in extensions installation folder. file:///home/ananas/.vscode-oss/extensions
+2024-03-23 14:35:34.823 [warning] Failed to create default profile extensions manifest in extensions installation folder. file:///home/ananas/.vscode-oss/extensions Unable to create file 'vscode-userdata:/home/ananas/.vscode-oss/extensions/extensions.json' that already exists when overwrite flag is not set
+2024-03-23 14:35:34.823 [info] Completed initializing default profile extensions in extensions installation folder. file:///home/ananas/.vscode-oss/extensions

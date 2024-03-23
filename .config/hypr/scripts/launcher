@@ -1,0 +1,9 @@
+# Store the command in a variable
+command="wofi --show drun"
+
+# Check if the process is running
+if ! pidof "$(echo "$command" | cut -d' ' -f1)" >/dev/null; then
+    # If not running, execute the command
+    eval "$command"
+fi
+

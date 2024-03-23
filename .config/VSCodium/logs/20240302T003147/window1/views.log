@@ -1,0 +1,11 @@
+2024-03-02 00:32:03.104 [info] Added views:workbench.panel.markers.view in workbench.panel.markers
+2024-03-02 00:32:03.104 [info] Added views:workbench.panel.output in workbench.panel.output
+2024-03-02 00:32:03.104 [info] Added views:terminal in terminal
+2024-03-02 00:32:03.104 [info] Added views:outline in workbench.view.explorer
+2024-03-02 00:32:03.104 [info] Added views:workbench.scm in workbench.view.scm
+2024-03-02 00:32:03.104 [info] Added views:workbench.view.search in workbench.view.search
+2024-03-02 00:32:03.104 [info] Added views:timeline in workbench.view.explorer
+2024-03-02 00:32:03.104 [info] Added views:workbench.explorer.emptyView in workbench.view.explorer
+2024-03-02 00:32:03.704 [info] Added views:workbench.debug.welcome in workbench.view.debug
+2024-03-02 00:32:03.975 [info] Added views:workbench.panel.repl.view in workbench.panel.repl
+2024-03-02 00:32:04.722 [info] Added views:~remote.forwardedPorts in ~remote.forwardedPortsContainer

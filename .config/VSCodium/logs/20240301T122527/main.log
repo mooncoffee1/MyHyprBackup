@@ -1,0 +1,5 @@
+2024-03-01 12:25:28.067 [info] update#setState disabled
+2024-03-01 12:25:28.067 [info] update#ctor - updates are disabled as there is no update URL
+2024-03-01 12:25:43.124 [error] CodeWindow: detected unresponsive
+2024-03-01 12:27:37.500 [info] Extension host with pid 3624 exited with code: 0, signal: unknown.
+2024-03-01 12:27:50.318 [error] Extension host with pid 3624 still exists, forcefully killing it...

@@ -1,0 +1,3 @@
+2024-03-23 22:28:37.221 [info] Initial editor state {"filesToOpenOrCreate":[{"fileUri":{"$mid":1,"path":"/home/ananas/.config/waybar/config","scheme":"file"},"type":1,"exists":true,"options":{}}],"filesToDiff":[],"filesToMerge":[]}
+2024-03-23 22:28:37.533 [info] Started local extension host with pid 29835.
+2024-03-23 22:28:40.248 [info] [perf] Render performance baseline is 22ms

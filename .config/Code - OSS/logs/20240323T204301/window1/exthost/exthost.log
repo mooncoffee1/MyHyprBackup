@@ -1,0 +1,16 @@
+2024-03-23 20:43:02.991 [info] Extension host with pid 4902 started
+2024-03-23 20:43:02.991 [info] Skipping acquiring lock for /home/ananas/.config/Code - OSS/User/workspaceStorage/c8215c01e2b1b96d9bb026b2d1a154ce.
+2024-03-23 20:43:02.999 [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*', root cause: vscode.git
+2024-03-23 20:43:03.004 [info] ExtensionService#_doActivateExtension vscode.git, startup: true, activationEvent: '*'
+2024-03-23 20:43:03.027 [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+2024-03-23 20:43:03.097 [info] Eager extensions activated
+2024-03-23 20:43:03.116 [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: false, activationEvent: 'onStartupFinished'
+2024-03-23 20:43:03.118 [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+2024-03-23 20:43:03.124 [info] ExtensionService#_doActivateExtension PKief.material-icon-theme, startup: false, activationEvent: 'onStartupFinished'
+2024-03-23 20:43:04.150 [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onLanguage'
+2024-03-23 20:43:04.552 [info] ExtensionService#_doActivateExtension vscode.css-language-features, startup: false, activationEvent: 'onLanguage:css'
+2024-03-23 20:43:08.225 [info] ExtensionService#_doActivateExtension vscode.extension-editing, startup: false, activationEvent: 'onLanguage:json'
+2024-03-23 20:43:08.239 [info] ExtensionService#_doActivateExtension vscode.json-language-features, startup: false, activationEvent: 'onLanguage:json'
+2024-03-23 20:43:08.252 [info] ExtensionService#_doActivateExtension vscode.npm, startup: false, activationEvent: 'onLanguage:json'
+2024-03-23 20:46:21.765 [info] Extension host terminating: renderer closed the MessagePort
+2024-03-23 20:46:21.771 [info] Extension host with pid 4902 exiting with code 0

@@ -1,0 +1,57 @@
+2024-03-02 20:33:19.413 [info] Getting Manifest... metaphore.kanagawa-vscode-color-theme
+2024-03-02 20:33:19.653 [info] Installing extension: metaphore.kanagawa-vscode-color-theme
+2024-03-02 20:33:22.622 [error] Could not load vsce-sign module Cannot find module '@vscode/vsce-sign'
+Require stack:
+- /usr/lib/code/out/bootstrap-amd.js
+- /usr/lib/code/out/bootstrap-fork.js
+- 
+2024-03-02 20:33:22.635 [info] Extension signature verification is not done: metaphore.kanagawa-vscode-color-theme
+2024-03-02 20:33:22.722 [info] Extracted extension to file:///home/ananas/.vscode-oss/extensions/metaphore.kanagawa-vscode-color-theme-0.2.1-universal: metaphore.kanagawa-vscode-color-theme
+2024-03-02 20:33:22.726 [info] Renamed to /home/ananas/.vscode-oss/extensions/metaphore.kanagawa-vscode-color-theme-0.2.1-universal
+2024-03-02 20:33:22.729 [info] Extracting extension completed. metaphore.kanagawa-vscode-color-theme
+2024-03-02 20:33:22.742 [info] Extension installed successfully: metaphore.kanagawa-vscode-color-theme
+2024-03-02 20:33:22.823 [error] [uncaught exception in sharedProcess]: Error: ENOENT: no such file or directory, stat '/home/ananas/.vscode-oss/extensions/extensions.json.vsctmp': EntryNotFound (FileSystemError): Error: ENOENT: no such file or directory, stat '/home/ananas/.vscode-oss/extensions/extensions.json.vsctmp'
+    at r.create (/usr/lib/code/out/vs/code/node/sharedProcess/sharedProcessMain.js:51:30083)
+    at a (/usr/lib/code/out/vs/code/node/sharedProcess/sharedProcessMain.js:51:30198)
+    at i.fb (/usr/lib/code/out/vs/code/node/sharedProcess/sharedProcessMain.js:56:36634)
+    at i.stat (/usr/lib/code/out/vs/code/node/sharedProcess/sharedProcessMain.js:56:29080)
+    at async v.stat (/usr/lib/code/out/vs/code/node/sharedProcess/sharedProcessMain.js:56:16226)
+    at async X.sb (/usr/lib/code/out/vs/code/node/sharedProcess/sharedProcessMain.js:102:107729)
+2024-03-02 20:33:47.924 [info] Getting Manifest... lukas-tr.materialdesignicons-intellisense
+2024-03-02 20:33:48.326 [info] Installing extension: lukas-tr.materialdesignicons-intellisense
+2024-03-02 20:33:51.351 [error] Could not load vsce-sign module Cannot find module '@vscode/vsce-sign'
+Require stack:
+- /usr/lib/code/out/bootstrap-amd.js
+- /usr/lib/code/out/bootstrap-fork.js
+- 
+2024-03-02 20:33:51.353 [info] Extension signature verification is not done: lukas-tr.materialdesignicons-intellisense
+2024-03-02 20:33:51.716 [info] Extracted extension to file:///home/ananas/.vscode-oss/extensions/lukas-tr.materialdesignicons-intellisense-4.1.0-universal: lukas-tr.materialdesignicons-intellisense
+2024-03-02 20:33:51.721 [info] Renamed to /home/ananas/.vscode-oss/extensions/lukas-tr.materialdesignicons-intellisense-4.1.0-universal
+2024-03-02 20:33:51.724 [info] Extracting extension completed. lukas-tr.materialdesignicons-intellisense
+2024-03-02 20:33:51.736 [info] Extension installed successfully: lukas-tr.materialdesignicons-intellisense
+2024-03-02 20:33:51.809 [error] [uncaught exception in sharedProcess]: Error: ENOENT: no such file or directory, stat '/home/ananas/.vscode-oss/extensions/extensions.json.vsctmp': EntryNotFound (FileSystemError): Error: ENOENT: no such file or directory, stat '/home/ananas/.vscode-oss/extensions/extensions.json.vsctmp'
+    at r.create (/usr/lib/code/out/vs/code/node/sharedProcess/sharedProcessMain.js:51:30083)
+    at a (/usr/lib/code/out/vs/code/node/sharedProcess/sharedProcessMain.js:51:30198)
+    at i.fb (/usr/lib/code/out/vs/code/node/sharedProcess/sharedProcessMain.js:56:36634)
+    at i.stat (/usr/lib/code/out/vs/code/node/sharedProcess/sharedProcessMain.js:56:29080)
+    at async v.stat (/usr/lib/code/out/vs/code/node/sharedProcess/sharedProcessMain.js:56:16226)
+    at async X.sb (/usr/lib/code/out/vs/code/node/sharedProcess/sharedProcessMain.js:102:107729)
+2024-03-02 20:33:57.678 [info] Getting Manifest... pkief.material-product-icons
+2024-03-02 20:33:57.897 [info] Installing extension: pkief.material-product-icons
+2024-03-02 20:34:01.010 [error] Could not load vsce-sign module Cannot find module '@vscode/vsce-sign'
+Require stack:
+- /usr/lib/code/out/bootstrap-amd.js
+- /usr/lib/code/out/bootstrap-fork.js
+- 
+2024-03-02 20:34:01.011 [info] Extension signature verification is not done: pkief.material-product-icons
+2024-03-02 20:34:01.026 [info] Extracted extension to file:///home/ananas/.vscode-oss/extensions/pkief.material-product-icons-1.7.0-universal: pkief.material-product-icons
+2024-03-02 20:34:01.030 [info] Renamed to /home/ananas/.vscode-oss/extensions/pkief.material-product-icons-1.7.0-universal
+2024-03-02 20:34:01.031 [info] Extracting extension completed. pkief.material-product-icons
+2024-03-02 20:34:01.041 [info] Extension installed successfully: pkief.material-product-icons
+2024-03-02 20:34:01.114 [error] [uncaught exception in sharedProcess]: Error: ENOENT: no such file or directory, stat '/home/ananas/.vscode-oss/extensions/extensions.json.vsctmp': EntryNotFound (FileSystemError): Error: ENOENT: no such file or directory, stat '/home/ananas/.vscode-oss/extensions/extensions.json.vsctmp'
+    at r.create (/usr/lib/code/out/vs/code/node/sharedProcess/sharedProcessMain.js:51:30083)
+    at a (/usr/lib/code/out/vs/code/node/sharedProcess/sharedProcessMain.js:51:30198)
+    at i.fb (/usr/lib/code/out/vs/code/node/sharedProcess/sharedProcessMain.js:56:36634)
+    at i.stat (/usr/lib/code/out/vs/code/node/sharedProcess/sharedProcessMain.js:56:29080)
+    at async v.stat (/usr/lib/code/out/vs/code/node/sharedProcess/sharedProcessMain.js:56:16226)
+    at async X.sb (/usr/lib/code/out/vs/code/node/sharedProcess/sharedProcessMain.js:102:107729)
