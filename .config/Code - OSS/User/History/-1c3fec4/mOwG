@@ -1,0 +1,13 @@
+#!/bin/bash
+
+rpm=$(sensors | grep -E 'cpu_fan|gpu_fan' | awk '{print $(NF-1)}' | awk '{sum += $1; count++} END {if(count > 0) print sum/count; else print "N/A"}')
+
+if [ "$rpm" != "N/A" ]; then
+    icon="󰈐"  # You can replace this with your preferred fan icon (Font Awesome icon in this case)
+    result="$rpm $icon    "
+else
+    result="N/A"
+fi
+
+echo "{\"text\":\"$result\",\"class\":\"custom-fan-rpm\",\"tooltip\":\"Fan RPM\",\"alt\":\"Fan RPM\"}"
+

@@ -6,7 +6,7 @@
             "file:///home/ananas/.config/waybar": "__default__profile__"
         },
         "emptyWindows": {
-            "1711225716991": "__default__profile__"
+            "1711290838271": "__default__profile__"
         }
     },
     "profileAssociationsMigration": true,
@@ -17,19 +17,19 @@
         "folders": [],
         "emptyWindows": [
             {
-                "backupFolder": "1711225716991"
+                "backupFolder": "1711290838271"
             }
         ]
     },
     "windowsState": {
         "lastActiveWindow": {
-            "backupPath": "/home/ananas/.config/Code - OSS/Backups/1711225716991",
+            "backupPath": "/home/ananas/.config/Code - OSS/Backups/1711290838271",
             "uiState": {
                 "mode": 1,
-                "x": 12,
-                "y": 47,
+                "x": 967,
+                "y": 565,
                 "width": 941,
-                "height": 1021
+                "height": 503
             }
         },
         "openedWindows": []
@@ -97,8 +97,7 @@
                             "items": [
                                 {
                                     "id": "workbench.action.reopenClosedEditor",
-                                    "label": "&&Reopen Closed Editor",
-                                    "enabled": false
+                                    "label": "&&Reopen Closed Editor"
                                 },
                                 {
                                     "id": "vscode.menubar.separator"
@@ -132,23 +131,78 @@
                                     "id": "openRecentFile",
                                     "uri": {
                                         "$mid": 1,
-                                        "external": "file:///home/ananas/.config/waybar/config",
-                                        "path": "/home/ananas/.config/waybar/config",
+                                        "external": "file:///home/ananas/paru.sh",
+                                        "path": "/home/ananas/paru.sh",
                                         "scheme": "file"
                                     },
                                     "enabled": true,
-                                    "label": "~/.config/waybar/config"
+                                    "label": "~/paru.sh"
                                 },
                                 {
                                     "id": "openRecentFile",
                                     "uri": {
                                         "$mid": 1,
-                                        "external": "file:///home/ananas/.config/waybar/style.css",
-                                        "path": "/home/ananas/.config/waybar/style.css",
+                                        "external": "file:///home/ananas/.config/hypr/monitors.conf",
+                                        "path": "/home/ananas/.config/hypr/monitors.conf",
                                         "scheme": "file"
                                     },
                                     "enabled": true,
-                                    "label": "~/.config/waybar/style.css"
+                                    "label": "~/.config/hypr/monitors.conf"
+                                },
+                                {
+                                    "id": "openRecentFile",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///home/ananas/.config/hypr/hyprpaper.conf",
+                                        "path": "/home/ananas/.config/hypr/hyprpaper.conf",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/.config/hypr/hyprpaper.conf"
+                                },
+                                {
+                                    "id": "openRecentFile",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///home/ananas/.config/hypr/hyprlock.conf",
+                                        "path": "/home/ananas/.config/hypr/hyprlock.conf",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/.config/hypr/hyprlock.conf"
+                                },
+                                {
+                                    "id": "openRecentFile",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///home/ananas/Downloads/hyprlock%281%29.conf",
+                                        "path": "/home/ananas/Downloads/hyprlock(1).conf",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/Downloads/hyprlock(1).conf"
+                                },
+                                {
+                                    "id": "openRecentFile",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///home/ananas/Downloads/hyprlock.conf",
+                                        "path": "/home/ananas/Downloads/hyprlock.conf",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/Downloads/hyprlock.conf"
+                                },
+                                {
+                                    "id": "openRecentFile",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///home/ananas/Downloads/hypridle.conf",
+                                        "path": "/home/ananas/Downloads/hypridle.conf",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/Downloads/hypridle.conf"
                                 },
                                 {
                                     "id": "openRecentFile",
@@ -165,67 +219,23 @@
                                     "id": "openRecentFile",
                                     "uri": {
                                         "$mid": 1,
-                                        "external": "file:///home/ananas/.config/hypr/scripts/brightness",
-                                        "path": "/home/ananas/.config/hypr/scripts/brightness",
+                                        "external": "file:///home/ananas/.config/hypr/scripts/fan",
+                                        "path": "/home/ananas/.config/hypr/scripts/fan",
                                         "scheme": "file"
                                     },
                                     "enabled": true,
-                                    "label": "~/.config/hypr/scripts/brightness"
+                                    "label": "~/.config/hypr/scripts/fan"
                                 },
                                 {
                                     "id": "openRecentFile",
                                     "uri": {
                                         "$mid": 1,
-                                        "external": "file:///home/ananas/profile",
-                                        "path": "/home/ananas/profile",
+                                        "external": "file:///home/ananas/.config/waybar/config",
+                                        "path": "/home/ananas/.config/waybar/config",
                                         "scheme": "file"
                                     },
                                     "enabled": true,
-                                    "label": "~/profile"
-                                },
-                                {
-                                    "id": "openRecentFile",
-                                    "uri": {
-                                        "$mid": 1,
-                                        "external": "file:///home/ananas/.config/hypr/scripts/power_profile",
-                                        "path": "/home/ananas/.config/hypr/scripts/power_profile",
-                                        "scheme": "file"
-                                    },
-                                    "enabled": true,
-                                    "label": "~/.config/hypr/scripts/power_profile"
-                                },
-                                {
-                                    "id": "openRecentFile",
-                                    "uri": {
-                                        "$mid": 1,
-                                        "external": "file:///home/ananas/.ncmpcpp/bindings",
-                                        "path": "/home/ananas/.ncmpcpp/bindings",
-                                        "scheme": "file"
-                                    },
-                                    "enabled": true,
-                                    "label": "~/.ncmpcpp/bindings"
-                                },
-                                {
-                                    "id": "openRecentFile",
-                                    "uri": {
-                                        "$mid": 1,
-                                        "external": "file:///home/ananas/.ncmpcpp/config",
-                                        "path": "/home/ananas/.ncmpcpp/config",
-                                        "scheme": "file"
-                                    },
-                                    "enabled": true,
-                                    "label": "~/.ncmpcpp/config"
-                                },
-                                {
-                                    "id": "openRecentFile",
-                                    "uri": {
-                                        "$mid": 1,
-                                        "external": "file:///home/ananas/.config/hypr/hyprpaper.conf",
-                                        "path": "/home/ananas/.config/hypr/hyprpaper.conf",
-                                        "scheme": "file"
-                                    },
-                                    "enabled": true,
-                                    "label": "~/.config/hypr/hyprpaper.conf"
+                                    "label": "~/.config/waybar/config"
                                 },
                                 {
                                     "id": "vscode.menubar.separator"
@@ -272,8 +282,7 @@
                     },
                     {
                         "id": "saveAll",
-                        "label": "Save A&&ll",
-                        "enabled": false
+                        "label": "Save A&&ll"
                     },
                     {
                         "id": "vscode.menubar.separator"
@@ -916,7 +925,8 @@
                     },
                     {
                         "id": "editor.action.toggleWordWrap",
-                        "label": "&&Word Wrap"
+                        "label": "&&Word Wrap",
+                        "checked": true
                     }
                 ]
             },

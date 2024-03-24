@@ -1,0 +1,7 @@
+2024-03-24T15:00:00.023Z - info: [ui] [AppStore] loading 1 repositories from store
+2024-03-24T15:00:00.030Z - info: [ui] [AppStore] found account: mooncoffee1 (moonlightcoffee)
+2024-03-24T15:00:00.984Z - info: [ui] launching: 3.3.10-linux1 (Linux 6.8.1-arch1-1)
+2024-03-24T15:00:00.984Z - info: [ui] execPath: '/opt/github-desktop/github-desktop'
+2024-03-24T15:00:01.057Z - info: [ui] Subscribed 'mooncoffee1' to Alive channel
+2024-03-24T15:00:02.085Z - info: [ui] Stats reported.
+2024-03-24T15:00:02.260Z - info: [ui] Executing getChangesFiles: git log 641db687939373f3ef721ceddb61c2bf00266ed5 -C -M -m -1 --no-show-signature --first-parent --raw --format=format: --numstat -z -- (took 1.652s)

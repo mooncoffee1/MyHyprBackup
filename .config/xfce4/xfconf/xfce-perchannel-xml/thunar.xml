@@ -14,8 +14,9 @@
   <property name="last-toolbar-visible-buttons" type="string" value="0,1,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0"/>
   <property name="last-details-view-zoom-level" type="string" value="THUNAR_ZOOM_LEVEL_38_PERCENT"/>
   <property name="last-details-view-visible-columns" type="string" value="THUNAR_COLUMN_DATE_MODIFIED,THUNAR_COLUMN_NAME,THUNAR_COLUMN_SIZE,THUNAR_COLUMN_TYPE"/>
-  <property name="last-details-view-column-widths" type="string" value="50,50,121,50,50,86,50,50,88,50,50,62,50,139"/>
+  <property name="last-details-view-column-widths" type="string" value="50,50,121,50,50,86,50,50,95,50,50,58,50,58"/>
   <property name="hidden-bookmarks" type="array">
     <value type="string" value="network:///"/>
   </property>
+  <property name="misc-middle-click-in-tab" type="bool" value="true"/>
 </channel>

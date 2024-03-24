@@ -39,3 +39,28 @@ Error: Cannot update an account which doesn't have a token: mooncoffee1
 2024-03-23T20:29:35.465Z - info: [ui] launching: 3.3.10-linux1 (Linux 6.8.1-arch1-1)
 2024-03-23T20:29:35.465Z - info: [ui] execPath: '/opt/github-desktop/github-desktop'
 2024-03-23T20:29:38.085Z - info: [ui] Subscribed 'mooncoffee1' to Alive channel
+2024-03-23T20:30:02.017Z - info: [ui] Executing fetch: git -c credential.helper= fetch --progress --prune --recurse-submodules=on-demand origin (took 8.891s)
+2024-03-23T20:30:04.238Z - info: [ui] Executing updateRemoteHEAD: git -c credential.helper= remote set-head -a origin (took 2.220s)
+2024-03-23T20:30:21.976Z - info: [ui] Executing updateIndex: git update-index --add --remove --replace -z --stdin (took 1.956s)
+2024-03-23T20:30:22.005Z - error: [ui] `git commit -F -` exited with an unexpected code: 128.
+stderr:
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: empty ident name (for <ananas@ArchBox.localdomain>) not allowed
+
+2024-03-23T20:30:22.006Z - info: [ui] [Timing] Action 'create commit' for 'mooncoffee1/MyHyprBackup' took 2.286s
+2024-03-23T20:30:54.193Z - info: [ui] [Timing] Action 'create commit' for 'mooncoffee1/MyHyprBackup' took 1.596s
+2024-03-23T20:30:55.764Z - info: [ui] [AppStore.withAuthenticatingUser] account found for repository: MyHyprBackup - mooncoffee1 (has token)
+2024-03-23T20:32:09.269Z - info: [ui] Executing push: git -c credential.helper= push origin main:main --progress (took 73.503s)
+2024-03-23T20:32:12.659Z - info: [ui] Executing fetch: git -c credential.helper= fetch --progress --prune --recurse-submodules=on-demand origin (took 3.388s)
+2024-03-23T20:32:17.194Z - info: [ui] Executing updateRemoteHEAD: git -c credential.helper= remote set-head -a origin (took 4.534s)

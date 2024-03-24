@@ -1,7 +1,6 @@
-; thunar GtkAccelMap rc-file         -*- scheme -*-
+; Thunar GtkAccelMap rc-file         -*- scheme -*-
 ; this file is an automated accelerator map dump
 ;
-; (gtk_accel_path "<Actions>/ThunarStandardView/sort-by-mtime" "")
 ; (gtk_accel_path "<Actions>/ThunarActionManager/restore" "")
 ; (gtk_accel_path "<Actions>/ThunarActionManager/undo" "<Primary>z")
 ; (gtk_accel_path "<Actions>/ThunarBookmarks/709e423978b4920c2f9f59b4f0bb46f2" "")
@@ -39,7 +38,7 @@
 ; (gtk_accel_path "<Actions>/ThunarStandardView/properties" "<Alt>Return")
 ; (gtk_accel_path "<Actions>/ThunarStandardView/back" "<Alt>Left")
 ; (gtk_accel_path "<Actions>/ThunarWindow/sendto-menu" "")
-; (gtk_accel_path "<Actions>/ThunarBookmarks/5a681eb4527bba8b336453b7d0e0fb29" "")
+; (gtk_accel_path "<Actions>/ThunarStandardView/sort-by-mtime" "")
 ; (gtk_accel_path "<Actions>/ThunarActionManager/open-location" "")
 ; (gtk_accel_path "<Actions>/ThunarWindow/bookmarks-menu" "")
 ; (gtk_accel_path "<Actions>/ThunarWindow/reload-alt" "F5")
@@ -49,10 +48,11 @@
 ; (gtk_accel_path "<Actions>/ThunarActionManager/copy-2" "<Primary>Insert")
 ; (gtk_accel_path "<Actions>/ThunarStandardView/sort-by-type" "")
 ; (gtk_accel_path "<Actions>/ThunarWindow/zoom-out-alt" "<Primary>KP_Subtract")
-; (gtk_accel_path "<Actions>/ThunarWindow/cancel-search" "Escape")
 ; (gtk_accel_path "<Actions>/ThunarStandardView/select-by-pattern" "<Primary>s")
+; (gtk_accel_path "<Actions>/ThunarWindow/cancel-search" "Escape")
+; (gtk_accel_path "<Actions>/ThunarBookmarks/b2d4aad27d03aa272006b0b66f5e93bf" "")
 ; (gtk_accel_path "<Actions>/ThunarStandardView/rename" "F2")
-; (gtk_accel_path "<Actions>/ThunarBookmarks/170f730d5c00c6db81809842b6f7dacf" "")
+; (gtk_accel_path "<Actions>/ThunarStandardView/configure-columns" "")
 ; (gtk_accel_path "<Actions>/ThunarStandardView/create-document" "")
 ; (gtk_accel_path "<Actions>/ThunarShortcutsPane/sendto-shortcuts" "<Primary>d")
 ; (gtk_accel_path "<Actions>/ThunarActionManager/move-to-trash" "")
@@ -69,7 +69,7 @@
 ; (gtk_accel_path "<Actions>/ThunarWindow/open-location-alt" "<Alt>d")
 ; (gtk_accel_path "<Actions>/ThunarStandardView/create-folder" "<Primary><Shift>n")
 ; (gtk_accel_path "<Actions>/ThunarWindow/search" "<Primary>f")
-; (gtk_accel_path "<Actions>/ThunarBookmarks/b2d4aad27d03aa272006b0b66f5e93bf" "")
+; (gtk_accel_path "<Actions>/ThunarBookmarks/170f730d5c00c6db81809842b6f7dacf" "")
 ; (gtk_accel_path "<Actions>/ThunarActionManager/paste-2" "<Shift>Insert")
 ; (gtk_accel_path "<Actions>/ThunarWindow/zoom-in-alt2" "<Primary>equal")
 ; (gtk_accel_path "<Actions>/ThunarStandardView/duplicate" "")
