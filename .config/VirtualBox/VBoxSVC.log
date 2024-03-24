@@ -1,281 +1,47 @@
-00:00:00.000343 main     VirtualBox XPCOM Server 7.0.14 r161095 linux.amd64 (Jan 19 2024 13:54:29) release log
-00:00:00.000346 main     Log opened 2024-03-24T14:55:11.536707000Z
-00:00:00.000347 main     Build Type: release
-00:00:00.000349 main     OS Product: Linux
-00:00:00.000351 main     OS Release: 6.8.1-arch1-1
-00:00:00.000352 main     OS Version: #1 SMP PREEMPT_DYNAMIC Sat, 16 Mar 2024 17:15:35 +0000
-00:00:00.000387 main     DMI Product Name: ASUS TUF Gaming A15 FA507NV_FA507NV
-00:00:00.000406 main     DMI Product Version: 1.0
-00:00:00.000414 main     Firmware type: UEFI
-00:00:00.000709 main     Secure Boot: Disabled
-00:00:00.000779 main     Host RAM: 15231MB (14.8GB) total, 10435MB (10.1GB) available
-00:00:00.000783 main     Executable: /usr/lib/virtualbox/VBoxSVC
-00:00:00.000784 main     Process ID: 85741
-00:00:00.000784 main     Package type: LINUX_64BITS_GENERIC (OSE)
-00:00:00.003061 main     IPC socket path: /tmp/.vbox-ananas-ipc/ipcd
-00:00:00.113404 nspr-2   VirtualBox: object creation starts
-00:00:00.113635 nspr-2   Home directory: '/home/ananas/.config/VirtualBox'
-00:00:00.136626 nspr-2   NetIfAdpCtlOut: VBoxNetAdpCtl: Error while retrieving link speed for wlp3s0: VBoxNetAdpCtl: ioctl failed: Operation not supported
-00:00:00.138706 nspr-2   HostDnsMonitor: initializing
-00:00:00.139208 nspr-2   NAT: resolv.conf: nameserver 192.168.87.11
-00:00:00.139241 nspr-2   HostDnsMonitor: updating information
-00:00:00.139260 nspr-2   HostDnsMonitor: old information
-00:00:00.139263 nspr-2     no server entries
-00:00:00.139266 nspr-2     no domain set
-00:00:00.139269 nspr-2     no search string entries
-00:00:00.139272 nspr-2   HostDnsMonitor: new information
-00:00:00.139275 nspr-2     server 1: 192.168.87.11
-00:00:00.139279 nspr-2     no domain set
-00:00:00.139282 nspr-2     no search string entries
-00:00:00.143013 nspr-2   Failed to open "/dev/vboxdrvu", errno=2, rc=VERR_VM_DRIVER_NOT_INSTALLED
-00:00:00.143339 nspr-2   VD: VDInit finished with VINF_SUCCESS
-00:00:00.143496 nspr-2   ERROR [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={aac6c7cb-a371-4c58-ab51-0616896b2f2c} aComponent={SystemPropertiesWrap} aText={Cannot determine default Guest Additions ISO location. Most likely they are not available}, preserve=false aResultDetail=0
-00:00:00.144888 nspr-2   VirtualBox: object created
-00:00:01.190107 nspr-3   Saving settings file "/home/ananas/.config/VirtualBox/VirtualBox.xml" with version "1.12-linux"
-00:00:01.193476 nspr-3   Finished saving settings file "/home/ananas/.config/VirtualBox/VirtualBox.xml"
-00:00:01.274283 nspr-3   Saving settings file "/home/ananas/.config/VirtualBox/VirtualBox.xml" with version "1.12-linux"
-00:00:01.278004 nspr-3   Finished saving settings file "/home/ananas/.config/VirtualBox/VirtualBox.xml"
-00:00:01.340674 nspr-4   WARNING [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={e54f6256-97a7-4947-8a78-10c013ddf4b8} aComponent={HostWrap} aText={Could not load the Host USB Proxy service: VERR_NOT_FOUND}, preserve=false aResultDetail=0
-00:00:02.010586 nspr-2   Saving settings file "/home/ananas/.config/VirtualBox/VirtualBox.xml" with version "1.12-linux"
-00:00:02.017363 nspr-2   Finished saving settings file "/home/ananas/.config/VirtualBox/VirtualBox.xml"
-00:00:04.870102 nspr-3   ERROR [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={aac6c7cb-a371-4c58-ab51-0616896b2f2c} aComponent={SystemPropertiesWrap} aText={Cannot determine default Guest Additions ISO location. Most likely they are not available}, preserve=false aResultDetail=0
-00:00:18.707224 nspr-2   Saving settings file "/home/ananas/.config/VirtualBox/VirtualBox.xml" with version "1.12-linux"
-00:00:18.713212 nspr-2   Finished saving settings file "/home/ananas/.config/VirtualBox/VirtualBox.xml"
-00:00:24.286103 nspr-2   Unattended: RTVfsQueryPathInfo(, '\OS2IMAGE/DISK_0/OS2LDR' (from OS2SE20.SRC),) -> VERR_PATH_NOT_FOUND, fMode=0x0
-00:00:24.322395 nspr-2   Saving settings file "/home/ananas/.config/VirtualBox/VirtualBox.xml" with version "1.12-linux"
-00:00:24.325639 nspr-2   Finished saving settings file "/home/ananas/.config/VirtualBox/VirtualBox.xml"
-00:00:24.330481 nspr-3   Saving settings file "/home/ananas/.config/VirtualBox/VirtualBox.xml" with version "1.12-linux"
-00:00:24.332889 nspr-3   Finished saving settings file "/home/ananas/.config/VirtualBox/VirtualBox.xml"
-00:00:26.508825 nspr-4   Saving settings file "/home/ananas/.config/VirtualBox/VirtualBox.xml" with version "1.12-linux"
-00:00:26.512531 nspr-4   Finished saving settings file "/home/ananas/.config/VirtualBox/VirtualBox.xml"
-00:00:37.388259 createBase Saving settings file "/home/ananas/.config/VirtualBox/VirtualBox.xml" with version "1.12-linux"
-00:00:37.395018 createBase Finished saving settings file "/home/ananas/.config/VirtualBox/VirtualBox.xml"
-00:00:37.406439 nspr-4   WARNING [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={e54f6256-97a7-4947-8a78-10c013ddf4b8} aComponent={HostWrap} aText={Could not load the Host USB Proxy service: VERR_NOT_FOUND}, preserve=true aResultDetail=0
-00:00:37.407887 nspr-4   Saving settings file "/home/ananas/VirtualBox VMs/Arch Linux/Arch Linux.vbox" with version "1.19-linux"
-00:00:37.423473 nspr-4   Finished saving settings file "/home/ananas/VirtualBox VMs/Arch Linux/Arch Linux.vbox"
-00:00:37.423618 nspr-4   Saving settings file "/home/ananas/.config/VirtualBox/VirtualBox.xml" with version "1.12-linux"
-00:00:37.426966 nspr-4   Finished saving settings file "/home/ananas/.config/VirtualBox/VirtualBox.xml"
-00:00:37.431407 nspr-5   Saving settings file "/home/ananas/.config/VirtualBox/VirtualBox.xml" with version "1.12-linux"
-00:00:37.434408 nspr-5   Finished saving settings file "/home/ananas/.config/VirtualBox/VirtualBox.xml"
-00:00:37.437337 nspr-4   Saving settings file "/home/ananas/.config/VirtualBox/VirtualBox.xml" with version "1.12-linux"
-00:00:37.440297 nspr-4   Finished saving settings file "/home/ananas/.config/VirtualBox/VirtualBox.xml"
-00:00:37.441145 nspr-4   Saving settings file "/home/ananas/VirtualBox VMs/Arch Linux/Arch Linux.vbox" with version "1.19-linux"
-00:00:37.443998 nspr-4   Finished saving settings file "/home/ananas/VirtualBox VMs/Arch Linux/Arch Linux.vbox"
-00:00:37.472694 nspr-5   Saving settings file "/home/ananas/.config/VirtualBox/VirtualBox.xml" with version "1.12-linux"
-00:00:37.476216 nspr-5   Finished saving settings file "/home/ananas/.config/VirtualBox/VirtualBox.xml"
-00:00:37.828432 nspr-4   WARNING [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={e54f6256-97a7-4947-8a78-10c013ddf4b8} aComponent={HostWrap} aText={Could not load the Host USB Proxy service: VERR_NOT_FOUND}, preserve=true aResultDetail=0
-00:00:37.856458 nspr-4   ERROR [COM]: aRC=VBOX_E_INVALID_VM_STATE (0x80bb0002) aIID={300763af-5d6b-46e6-aa96-273eac15538a} aComponent={MachineWrap} aText={The machine is not mutable (state is PoweredOff)}, preserve=false aResultDetail=0
-00:00:37.857493 nspr-3   Failed to open "/dev/vboxdrvu", errno=2, rc=VERR_VM_DRIVER_NOT_INSTALLED
-00:00:38.122392 nspr-5   WARNING [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={e54f6256-97a7-4947-8a78-10c013ddf4b8} aComponent={HostWrap} aText={Could not load the Host USB Proxy service: VERR_NOT_FOUND}, preserve=true aResultDetail=0
-00:00:38.126666 nspr-5   WARNING [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={e54f6256-97a7-4947-8a78-10c013ddf4b8} aComponent={HostWrap} aText={Could not load the Host USB Proxy service: VERR_NOT_FOUND}, preserve=true aResultDetail=0
-00:00:39.116252 nspr-2   WARNING [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={e54f6256-97a7-4947-8a78-10c013ddf4b8} aComponent={HostWrap} aText={Could not load the Host USB Proxy service: VERR_NOT_FOUND}, preserve=true aResultDetail=0
-00:00:40.276796 nspr-5   Failed to open "/dev/vboxdrvu", errno=2, rc=VERR_VM_DRIVER_NOT_INSTALLED
-00:00:40.277034 nspr-2   Failed to open "/dev/vboxdrvu", errno=2, rc=VERR_VM_DRIVER_NOT_INSTALLED
-00:00:40.277227 nspr-5   Failed to open "/dev/vboxdrvu", errno=2, rc=VERR_VM_DRIVER_NOT_INSTALLED
-00:00:40.279148 nspr-5   ERROR [COM]: aRC=VBOX_E_OBJECT_NOT_FOUND (0x80bb0001) aIID={5bfd8965-b81b-469f-8649-f717ce97a5d5} aComponent={NvramStoreWrap} aText={The UEFI NVRAM file is not existing for this machine.}, preserve=false aResultDetail=0
-00:00:40.308532 nspr-2   NetIfAdpCtlOut: VBoxNetAdpCtl: Error while retrieving link speed for wlp3s0: VBoxNetAdpCtl: ioctl failed: Operation not supported
-00:00:40.333719 nspr-2   NetIfAdpCtlOut: VBoxNetAdpCtl: Error while retrieving link speed for wlp3s0: VBoxNetAdpCtl: ioctl failed: Operation not supported
-00:00:40.349842 nspr-5   WARNING [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={e54f6256-97a7-4947-8a78-10c013ddf4b8} aComponent={HostWrap} aText={Could not load the Host USB Proxy service: VERR_NOT_FOUND}, preserve=true aResultDetail=0
-00:00:40.350362 nspr-2   WARNING [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={e54f6256-97a7-4947-8a78-10c013ddf4b8} aComponent={HostWrap} aText={Could not load the Host USB Proxy service: VERR_NOT_FOUND}, preserve=true aResultDetail=0
-00:00:40.624698 nspr-2   ERROR [COM]: aRC=VBOX_E_INVALID_VM_STATE (0x80bb0002) aIID={300763af-5d6b-46e6-aa96-273eac15538a} aComponent={MachineWrap} aText={The machine is not mutable (state is PoweredOff)}, preserve=false aResultDetail=0
-00:00:40.625814 nspr-4   Failed to open "/dev/vboxdrvu", errno=2, rc=VERR_VM_DRIVER_NOT_INSTALLED
-00:00:40.638382 nspr-2   WARNING [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={e54f6256-97a7-4947-8a78-10c013ddf4b8} aComponent={HostWrap} aText={Could not load the Host USB Proxy service: VERR_NOT_FOUND}, preserve=true aResultDetail=0
-00:00:40.639494 nspr-2   WARNING [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={e54f6256-97a7-4947-8a78-10c013ddf4b8} aComponent={HostWrap} aText={Could not load the Host USB Proxy service: VERR_NOT_FOUND}, preserve=true aResultDetail=0
-00:00:41.143936 nspr-3   Saving settings file "/home/ananas/.config/VirtualBox/VirtualBox.xml" with version "1.12-linux"
-00:00:41.174283 nspr-3   Finished saving settings file "/home/ananas/.config/VirtualBox/VirtualBox.xml"
-00:01:16.525627 nspr-5   WARNING [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={e54f6256-97a7-4947-8a78-10c013ddf4b8} aComponent={HostWrap} aText={Could not load the Host USB Proxy service: VERR_NOT_FOUND}, preserve=true aResultDetail=0
-00:01:16.526834 nspr-2   Saving settings file "/home/ananas/VirtualBox VMs/Arch Linux/Arch Linux.vbox" with version "1.19-linux"
-00:01:16.557203 nspr-2   Finished saving settings file "/home/ananas/VirtualBox VMs/Arch Linux/Arch Linux.vbox"
-00:01:16.705067 nspr-4   ERROR [COM]: aRC=VBOX_E_INVALID_VM_STATE (0x80bb0002) aIID={300763af-5d6b-46e6-aa96-273eac15538a} aComponent={MachineWrap} aText={The machine is not mutable (state is PoweredOff)}, preserve=false aResultDetail=0
-00:01:16.706338 nspr-2   Failed to open "/dev/vboxdrvu", errno=2, rc=VERR_VM_DRIVER_NOT_INSTALLED
-00:01:16.730775 nspr-2   WARNING [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={e54f6256-97a7-4947-8a78-10c013ddf4b8} aComponent={HostWrap} aText={Could not load the Host USB Proxy service: VERR_NOT_FOUND}, preserve=true aResultDetail=0
-00:01:16.732009 nspr-2   WARNING [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={e54f6256-97a7-4947-8a78-10c013ddf4b8} aComponent={HostWrap} aText={Could not load the Host USB Proxy service: VERR_NOT_FOUND}, preserve=true aResultDetail=0
-00:01:17.291032 nspr-5   Saving settings file "/home/ananas/.config/VirtualBox/VirtualBox.xml" with version "1.12-linux"
-00:01:17.298589 nspr-5   Finished saving settings file "/home/ananas/.config/VirtualBox/VirtualBox.xml"
-00:01:17.895170 nspr-5   Launched VM: 1677771408 pid: 86050 (0x15022) frontend: GUI/Qt name: Arch Linux
-00:01:17.931780 nspr-5   ERROR [COM]: aRC=VBOX_E_INVALID_VM_STATE (0x80bb0002) aIID={300763af-5d6b-46e6-aa96-273eac15538a} aComponent={MachineWrap} aText={The machine is not mutable (state is PoweredOff)}, preserve=false aResultDetail=0
-00:01:17.932745 nspr-5   Failed to open "/dev/vboxdrvu", errno=2, rc=VERR_VM_DRIVER_NOT_INSTALLED
-00:01:17.965266 nspr-5   WARNING [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={e54f6256-97a7-4947-8a78-10c013ddf4b8} aComponent={HostWrap} aText={Could not load the Host USB Proxy service: VERR_NOT_FOUND}, preserve=true aResultDetail=0
-00:01:17.966720 nspr-5   WARNING [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={e54f6256-97a7-4947-8a78-10c013ddf4b8} aComponent={HostWrap} aText={Could not load the Host USB Proxy service: VERR_NOT_FOUND}, preserve=true aResultDetail=0
-00:01:18.396346 Watcher  ERROR [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={300763af-5d6b-46e6-aa96-273eac15538a} aComponent={MachineWrap} aText={The virtual machine 'Arch Linux' has terminated unexpectedly during startup with exit code 1 (0x1)}, preserve=false aResultDetail=0
-00:01:18.440424 nspr-2   ERROR [COM]: aRC=VBOX_E_INVALID_VM_STATE (0x80bb0002) aIID={300763af-5d6b-46e6-aa96-273eac15538a} aComponent={MachineWrap} aText={The machine is not mutable (state is PoweredOff)}, preserve=false aResultDetail=0
-00:01:18.441520 nspr-4   Failed to open "/dev/vboxdrvu", errno=2, rc=VERR_VM_DRIVER_NOT_INSTALLED
-00:01:18.477625 nspr-2   WARNING [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={e54f6256-97a7-4947-8a78-10c013ddf4b8} aComponent={HostWrap} aText={Could not load the Host USB Proxy service: VERR_NOT_FOUND}, preserve=true aResultDetail=0
-00:01:18.480176 nspr-4   WARNING [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={e54f6256-97a7-4947-8a78-10c013ddf4b8} aComponent={HostWrap} aText={Could not load the Host USB Proxy service: VERR_NOT_FOUND}, preserve=true aResultDetail=0
-00:02:06.945532 nspr-5   Launched VM: 1677796256 pid: 86408 (0x15188) frontend: GUI/Qt name: Arch Linux
-00:02:06.981358 nspr-3   ERROR [COM]: aRC=VBOX_E_INVALID_VM_STATE (0x80bb0002) aIID={300763af-5d6b-46e6-aa96-273eac15538a} aComponent={MachineWrap} aText={The machine is not mutable (state is PoweredOff)}, preserve=false aResultDetail=0
-00:02:07.016872 nspr-3   WARNING [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={e54f6256-97a7-4947-8a78-10c013ddf4b8} aComponent={HostWrap} aText={Could not load the Host USB Proxy service: VERR_NOT_FOUND}, preserve=true aResultDetail=0
-00:02:07.018202 nspr-3   WARNING [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={e54f6256-97a7-4947-8a78-10c013ddf4b8} aComponent={HostWrap} aText={Could not load the Host USB Proxy service: VERR_NOT_FOUND}, preserve=true aResultDetail=0
-00:02:07.364993 nspr-7   ERROR [COM]: aRC=VBOX_E_INVALID_VM_STATE (0x80bb0002) aIID={300763af-5d6b-46e6-aa96-273eac15538a} aComponent={MachineWrap} aText={The machine is not mutable (state is PoweredOff)}, preserve=false aResultDetail=0
-00:02:07.379748 nspr-8   WARNING [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={e54f6256-97a7-4947-8a78-10c013ddf4b8} aComponent={HostWrap} aText={Could not load the Host USB Proxy service: VERR_NOT_FOUND}, preserve=true aResultDetail=0
-00:02:07.380680 nspr-8   WARNING [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={e54f6256-97a7-4947-8a78-10c013ddf4b8} aComponent={HostWrap} aText={Could not load the Host USB Proxy service: VERR_NOT_FOUND}, preserve=true aResultDetail=0
-00:02:08.487447 nspr-8   WARNING [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={e54f6256-97a7-4947-8a78-10c013ddf4b8} aComponent={HostWrap} aText={Could not load the Host USB Proxy service: VERR_NOT_FOUND}, preserve=true aResultDetail=0
-00:02:08.488577 nspr-5   WARNING [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={e54f6256-97a7-4947-8a78-10c013ddf4b8} aComponent={HostWrap} aText={Could not load the Host USB Proxy service: VERR_NOT_FOUND}, preserve=true aResultDetail=0
-00:02:08.488994 nspr-8   ERROR [COM]: aRC=VBOX_E_OBJECT_NOT_FOUND (0x80bb0001) aIID={70401eef-c8e9-466b-9660-45cb3e9979e4} aComponent={ExtPackManagerWrap} aText={No extension pack by the name 'Oracle VM VirtualBox Extension Pack' was found}, preserve=false aResultDetail=0
-00:02:08.553789 nspr-5   WARNING [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={e54f6256-97a7-4947-8a78-10c013ddf4b8} aComponent={HostWrap} aText={Could not load the Host USB Proxy service: VERR_NOT_FOUND}, preserve=true aResultDetail=0
-00:02:08.555792 nspr-8   WARNING [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={e54f6256-97a7-4947-8a78-10c013ddf4b8} aComponent={HostWrap} aText={Could not load the Host USB Proxy service: VERR_NOT_FOUND}, preserve=true aResultDetail=0
-00:02:08.604499 nspr-5   ERROR [COM]: aRC=VBOX_E_IPRT_ERROR (0x80bb0005) aIID={300763af-5d6b-46e6-aa96-273eac15538a} aComponent={SessionMachine} aText={Saved screenshot data is not available (VERR_NOT_SUPPORTED)}, preserve=false aResultDetail=-37
-00:02:08.663484 nspr-8   NetIfAdpCtlOut: VBoxNetAdpCtl: Error while retrieving link speed for wlp3s0: VBoxNetAdpCtl: ioctl failed: Operation not supported
-00:02:08.677444 nspr-5   WARNING [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={e54f6256-97a7-4947-8a78-10c013ddf4b8} aComponent={HostWrap} aText={Could not load the Host USB Proxy service: VERR_NOT_FOUND}, preserve=false aResultDetail=0
-00:02:08.678393 nspr-5   WARNING [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={e54f6256-97a7-4947-8a78-10c013ddf4b8} aComponent={HostWrap} aText={Could not load the Host USB Proxy service: VERR_NOT_FOUND}, preserve=true aResultDetail=0
-00:02:08.678587 nspr-8   WARNING [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={e54f6256-97a7-4947-8a78-10c013ddf4b8} aComponent={HostWrap} aText={Could not load the Host USB Proxy service: VERR_NOT_FOUND}, preserve=true aResultDetail=0
-00:02:08.732825 nspr-6   WARNING [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={e54f6256-97a7-4947-8a78-10c013ddf4b8} aComponent={HostWrap} aText={Could not load the Host USB Proxy service: VERR_NOT_FOUND}, preserve=true aResultDetail=0
-00:02:08.749908 nspr-8   WARNING [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={e54f6256-97a7-4947-8a78-10c013ddf4b8} aComponent={HostWrap} aText={Could not load the Host USB Proxy service: VERR_NOT_FOUND}, preserve=true aResultDetail=0
-00:02:08.755684 nspr-8   ERROR [COM]: aRC=VBOX_E_INVALID_VM_STATE (0x80bb0002) aIID={300763af-5d6b-46e6-aa96-273eac15538a} aComponent={MachineWrap} aText={The machine is not mutable (state is Starting)}, preserve=false aResultDetail=0
-00:02:08.844856 nspr-8   WARNING [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={e54f6256-97a7-4947-8a78-10c013ddf4b8} aComponent={HostWrap} aText={Could not load the Host USB Proxy service: VERR_NOT_FOUND}, preserve=true aResultDetail=0
-00:02:08.845947 nspr-8   WARNING [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={e54f6256-97a7-4947-8a78-10c013ddf4b8} aComponent={HostWrap} aText={Could not load the Host USB Proxy service: VERR_NOT_FOUND}, preserve=true aResultDetail=0
-00:02:09.104774 nspr-8   ERROR [COM]: aRC=VBOX_E_OBJECT_NOT_FOUND (0x80bb0001) aIID={ad47ad09-787b-44ab-b343-a082a3f2dfb1} aComponent={MediumWrap} aText={Property 'CRYPT/KeyId' does not exist}, preserve=false aResultDetail=0
-00:02:09.106852 nspr-8   ERROR [COM]: aRC=VBOX_E_OBJECT_NOT_FOUND (0x80bb0001) aIID={ad47ad09-787b-44ab-b343-a082a3f2dfb1} aComponent={MediumWrap} aText={Property 'CRYPT/KeyId' does not exist}, preserve=false aResultDetail=0
-00:02:09.136774 nspr-3   WARNING [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={e54f6256-97a7-4947-8a78-10c013ddf4b8} aComponent={HostWrap} aText={Could not load the Host USB Proxy service: VERR_NOT_FOUND}, preserve=true aResultDetail=0
-00:02:09.149470 nspr-3   ERROR [COM]: aRC=VBOX_E_INVALID_VM_STATE (0x80bb0002) aIID={300763af-5d6b-46e6-aa96-273eac15538a} aComponent={MachineWrap} aText={The machine is not mutable (state is Running)}, preserve=false aResultDetail=0
-00:02:09.178303 nspr-6   WARNING [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={e54f6256-97a7-4947-8a78-10c013ddf4b8} aComponent={HostWrap} aText={Could not load the Host USB Proxy service: VERR_NOT_FOUND}, preserve=true aResultDetail=0
-00:02:09.179463 nspr-3   WARNING [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={e54f6256-97a7-4947-8a78-10c013ddf4b8} aComponent={HostWrap} aText={Could not load the Host USB Proxy service: VERR_NOT_FOUND}, preserve=true aResultDetail=0
-00:02:09.439996 nspr-8   Saving settings file "/home/ananas/.config/VirtualBox/VirtualBox.xml" with version "1.12-linux"
-00:02:09.442095 nspr-4   Saving settings file "/home/ananas/VirtualBox VMs/Arch Linux/Arch Linux.vbox" with version "1.19-linux"
-00:02:09.449320 nspr-8   Finished saving settings file "/home/ananas/.config/VirtualBox/VirtualBox.xml"
-00:02:09.449363 nspr-4   Finished saving settings file "/home/ananas/VirtualBox VMs/Arch Linux/Arch Linux.vbox"
-00:02:09.461593 nspr-4   ERROR [COM]: aRC=VBOX_E_INVALID_VM_STATE (0x80bb0002) aIID={300763af-5d6b-46e6-aa96-273eac15538a} aComponent={MachineWrap} aText={The machine is not mutable (state is Running)}, preserve=false aResultDetail=0
-00:02:09.501453 nspr-4   WARNING [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={e54f6256-97a7-4947-8a78-10c013ddf4b8} aComponent={HostWrap} aText={Could not load the Host USB Proxy service: VERR_NOT_FOUND}, preserve=true aResultDetail=0
-00:02:09.502294 nspr-8   WARNING [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={e54f6256-97a7-4947-8a78-10c013ddf4b8} aComponent={HostWrap} aText={Could not load the Host USB Proxy service: VERR_NOT_FOUND}, preserve=true aResultDetail=0
-00:02:17.635770 nspr-3   Saving settings file "/home/ananas/VirtualBox VMs/Arch Linux/Arch Linux.vbox" with version "1.19-linux"
-00:02:17.642734 nspr-3   Finished saving settings file "/home/ananas/VirtualBox VMs/Arch Linux/Arch Linux.vbox"
-00:02:17.653835 nspr-6   ERROR [COM]: aRC=VBOX_E_INVALID_VM_STATE (0x80bb0002) aIID={300763af-5d6b-46e6-aa96-273eac15538a} aComponent={MachineWrap} aText={The machine is not mutable (state is Running)}, preserve=false aResultDetail=0
-00:02:17.671714 nspr-6   WARNING [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={e54f6256-97a7-4947-8a78-10c013ddf4b8} aComponent={HostWrap} aText={Could not load the Host USB Proxy service: VERR_NOT_FOUND}, preserve=true aResultDetail=0
-00:02:17.672673 nspr-3   WARNING [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={e54f6256-97a7-4947-8a78-10c013ddf4b8} aComponent={HostWrap} aText={Could not load the Host USB Proxy service: VERR_NOT_FOUND}, preserve=true aResultDetail=0
-00:02:18.709156 nspr-3   Saving settings file "/home/ananas/VirtualBox VMs/Arch Linux/Arch Linux.vbox" with version "1.19-linux"
-00:02:18.715652 nspr-3   Finished saving settings file "/home/ananas/VirtualBox VMs/Arch Linux/Arch Linux.vbox"
-00:02:18.735148 nspr-6   ERROR [COM]: aRC=VBOX_E_INVALID_VM_STATE (0x80bb0002) aIID={300763af-5d6b-46e6-aa96-273eac15538a} aComponent={MachineWrap} aText={The machine is not mutable (state is Running)}, preserve=false aResultDetail=0
-00:02:18.756281 nspr-7   WARNING [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={e54f6256-97a7-4947-8a78-10c013ddf4b8} aComponent={HostWrap} aText={Could not load the Host USB Proxy service: VERR_NOT_FOUND}, preserve=true aResultDetail=0
-00:02:18.757428 nspr-4   WARNING [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={e54f6256-97a7-4947-8a78-10c013ddf4b8} aComponent={HostWrap} aText={Could not load the Host USB Proxy service: VERR_NOT_FOUND}, preserve=true aResultDetail=0
-00:02:19.606197 nspr-2   Saving settings file "/home/ananas/.config/VirtualBox/VirtualBox.xml" with version "1.12-linux"
-00:02:19.608325 nspr-5   Saving settings file "/home/ananas/VirtualBox VMs/Arch Linux/Arch Linux.vbox" with version "1.19-linux"
-00:02:19.612902 nspr-2   Finished saving settings file "/home/ananas/.config/VirtualBox/VirtualBox.xml"
-00:02:19.612949 nspr-5   Finished saving settings file "/home/ananas/VirtualBox VMs/Arch Linux/Arch Linux.vbox"
-00:02:19.625260 nspr-2   ERROR [COM]: aRC=VBOX_E_INVALID_VM_STATE (0x80bb0002) aIID={300763af-5d6b-46e6-aa96-273eac15538a} aComponent={MachineWrap} aText={The machine is not mutable (state is Running)}, preserve=false aResultDetail=0
-00:02:19.643008 nspr-8   WARNING [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={e54f6256-97a7-4947-8a78-10c013ddf4b8} aComponent={HostWrap} aText={Could not load the Host USB Proxy service: VERR_NOT_FOUND}, preserve=true aResultDetail=0
-00:02:19.643949 nspr-7   WARNING [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={e54f6256-97a7-4947-8a78-10c013ddf4b8} aComponent={HostWrap} aText={Could not load the Host USB Proxy service: VERR_NOT_FOUND}, preserve=true aResultDetail=0
-00:02:23.109001 nspr-8   Saving settings file "/home/ananas/VirtualBox VMs/Arch Linux/Arch Linux.vbox" with version "1.19-linux"
-00:02:23.112960 nspr-8   Finished saving settings file "/home/ananas/VirtualBox VMs/Arch Linux/Arch Linux.vbox"
-00:02:23.124484 nspr-2   ERROR [COM]: aRC=VBOX_E_INVALID_VM_STATE (0x80bb0002) aIID={300763af-5d6b-46e6-aa96-273eac15538a} aComponent={MachineWrap} aText={The machine is not mutable (state is Running)}, preserve=false aResultDetail=0
-00:02:23.144900 nspr-4   WARNING [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={e54f6256-97a7-4947-8a78-10c013ddf4b8} aComponent={HostWrap} aText={Could not load the Host USB Proxy service: VERR_NOT_FOUND}, preserve=true aResultDetail=0
-00:02:23.145907 nspr-7   WARNING [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={e54f6256-97a7-4947-8a78-10c013ddf4b8} aComponent={HostWrap} aText={Could not load the Host USB Proxy service: VERR_NOT_FOUND}, preserve=true aResultDetail=0
-00:02:26.606466 nspr-3   Saving settings file "/home/ananas/.config/VirtualBox/VirtualBox.xml" with version "1.12-linux"
-00:02:26.610304 nspr-3   Finished saving settings file "/home/ananas/.config/VirtualBox/VirtualBox.xml"
-00:02:28.507810 nspr-8   Saving settings file "/home/ananas/.config/VirtualBox/VirtualBox.xml" with version "1.12-linux"
-00:02:28.514594 nspr-8   Finished saving settings file "/home/ananas/.config/VirtualBox/VirtualBox.xml"
-00:02:29.739579 nspr-7   Saving settings file "/home/ananas/VirtualBox VMs/Arch Linux/Arch Linux.vbox" with version "1.19-linux"
-00:02:29.744143 nspr-7   Finished saving settings file "/home/ananas/VirtualBox VMs/Arch Linux/Arch Linux.vbox"
-00:02:29.755690 nspr-8   ERROR [COM]: aRC=VBOX_E_INVALID_VM_STATE (0x80bb0002) aIID={300763af-5d6b-46e6-aa96-273eac15538a} aComponent={MachineWrap} aText={The machine is not mutable (state is Running)}, preserve=false aResultDetail=0
-00:02:29.775770 nspr-8   WARNING [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={e54f6256-97a7-4947-8a78-10c013ddf4b8} aComponent={HostWrap} aText={Could not load the Host USB Proxy service: VERR_NOT_FOUND}, preserve=true aResultDetail=0
-00:02:29.776870 nspr-2   WARNING [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={e54f6256-97a7-4947-8a78-10c013ddf4b8} aComponent={HostWrap} aText={Could not load the Host USB Proxy service: VERR_NOT_FOUND}, preserve=true aResultDetail=0
-00:03:19.607006 nspr-2   Saving settings file "/home/ananas/.config/VirtualBox/VirtualBox.xml" with version "1.12-linux"
-00:03:19.613547 nspr-2   Finished saving settings file "/home/ananas/.config/VirtualBox/VirtualBox.xml"
-00:03:19.992808 nspr-4   Saving settings file "/home/ananas/VirtualBox VMs/Arch Linux/Arch Linux.vbox" with version "1.19-linux"
-00:03:19.999143 nspr-4   Finished saving settings file "/home/ananas/VirtualBox VMs/Arch Linux/Arch Linux.vbox"
-00:03:20.010825 nspr-4   ERROR [COM]: aRC=VBOX_E_INVALID_VM_STATE (0x80bb0002) aIID={300763af-5d6b-46e6-aa96-273eac15538a} aComponent={MachineWrap} aText={The machine is not mutable (state is Running)}, preserve=false aResultDetail=0
-00:03:20.028769 nspr-4   WARNING [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={e54f6256-97a7-4947-8a78-10c013ddf4b8} aComponent={HostWrap} aText={Could not load the Host USB Proxy service: VERR_NOT_FOUND}, preserve=true aResultDetail=0
-00:03:20.029730 nspr-2   WARNING [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={e54f6256-97a7-4947-8a78-10c013ddf4b8} aComponent={HostWrap} aText={Could not load the Host USB Proxy service: VERR_NOT_FOUND}, preserve=true aResultDetail=0
-00:03:29.129559 nspr-3   Saving settings file "/home/ananas/.config/VirtualBox/VirtualBox.xml" with version "1.12-linux"
-00:03:29.132600 nspr-3   Finished saving settings file "/home/ananas/.config/VirtualBox/VirtualBox.xml"
-00:03:29.516959 nspr-2   Saving settings file "/home/ananas/VirtualBox VMs/Arch Linux/Arch Linux.vbox" with version "1.19-linux"
-00:03:29.523267 nspr-2   Finished saving settings file "/home/ananas/VirtualBox VMs/Arch Linux/Arch Linux.vbox"
-00:03:29.533938 nspr-3   ERROR [COM]: aRC=VBOX_E_INVALID_VM_STATE (0x80bb0002) aIID={300763af-5d6b-46e6-aa96-273eac15538a} aComponent={MachineWrap} aText={The machine is not mutable (state is Running)}, preserve=false aResultDetail=0
-00:03:29.550551 nspr-3   WARNING [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={e54f6256-97a7-4947-8a78-10c013ddf4b8} aComponent={HostWrap} aText={Could not load the Host USB Proxy service: VERR_NOT_FOUND}, preserve=true aResultDetail=0
-00:03:29.551441 nspr-7   WARNING [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={e54f6256-97a7-4947-8a78-10c013ddf4b8} aComponent={HostWrap} aText={Could not load the Host USB Proxy service: VERR_NOT_FOUND}, preserve=true aResultDetail=0
-00:03:30.208599 nspr-8   Saving settings file "/home/ananas/VirtualBox VMs/Arch Linux/Arch Linux.vbox" with version "1.19-linux"
-00:03:30.215109 nspr-8   Finished saving settings file "/home/ananas/VirtualBox VMs/Arch Linux/Arch Linux.vbox"
-00:03:30.226670 nspr-7   ERROR [COM]: aRC=VBOX_E_INVALID_VM_STATE (0x80bb0002) aIID={300763af-5d6b-46e6-aa96-273eac15538a} aComponent={MachineWrap} aText={The machine is not mutable (state is Running)}, preserve=false aResultDetail=0
-00:03:30.244344 nspr-7   WARNING [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={e54f6256-97a7-4947-8a78-10c013ddf4b8} aComponent={HostWrap} aText={Could not load the Host USB Proxy service: VERR_NOT_FOUND}, preserve=true aResultDetail=0
-00:03:30.245159 nspr-5   WARNING [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={e54f6256-97a7-4947-8a78-10c013ddf4b8} aComponent={HostWrap} aText={Could not load the Host USB Proxy service: VERR_NOT_FOUND}, preserve=true aResultDetail=0
-00:03:38.812297 nspr-6   WARNING [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={e54f6256-97a7-4947-8a78-10c013ddf4b8} aComponent={HostWrap} aText={Could not load the Host USB Proxy service: VERR_NOT_FOUND}, preserve=true aResultDetail=0
-00:03:38.820277 nspr-7   ERROR [COM]: aRC=VBOX_E_INVALID_VM_STATE (0x80bb0002) aIID={300763af-5d6b-46e6-aa96-273eac15538a} aComponent={MachineWrap} aText={The machine is not mutable (state is Paused)}, preserve=false aResultDetail=0
-00:03:38.842162 nspr-7   WARNING [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={e54f6256-97a7-4947-8a78-10c013ddf4b8} aComponent={HostWrap} aText={Could not load the Host USB Proxy service: VERR_NOT_FOUND}, preserve=true aResultDetail=0
-00:03:38.843074 nspr-3   WARNING [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={e54f6256-97a7-4947-8a78-10c013ddf4b8} aComponent={HostWrap} aText={Could not load the Host USB Proxy service: VERR_NOT_FOUND}, preserve=true aResultDetail=0
-00:03:40.957822 nspr-3   Saving settings file "/home/ananas/VirtualBox VMs/Arch Linux/Arch Linux.vbox" with version "1.19-linux"
-00:03:40.987404 nspr-3   Finished saving settings file "/home/ananas/VirtualBox VMs/Arch Linux/Arch Linux.vbox"
-00:03:41.022524 nspr-6   WARNING [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={e54f6256-97a7-4947-8a78-10c013ddf4b8} aComponent={HostWrap} aText={Could not load the Host USB Proxy service: VERR_NOT_FOUND}, preserve=true aResultDetail=0
-00:03:41.037218 nspr-8   ERROR [COM]: aRC=VBOX_E_INVALID_VM_STATE (0x80bb0002) aIID={300763af-5d6b-46e6-aa96-273eac15538a} aComponent={MachineWrap} aText={The machine is not mutable (state is Stopping)}, preserve=false aResultDetail=0
-00:03:41.060079 nspr-8   WARNING [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={e54f6256-97a7-4947-8a78-10c013ddf4b8} aComponent={HostWrap} aText={Could not load the Host USB Proxy service: VERR_NOT_FOUND}, preserve=true aResultDetail=0
-00:03:41.061258 nspr-8   WARNING [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={e54f6256-97a7-4947-8a78-10c013ddf4b8} aComponent={HostWrap} aText={Could not load the Host USB Proxy service: VERR_NOT_FOUND}, preserve=true aResultDetail=0
-00:03:41.101507 nspr-8   Saving settings file "/home/ananas/VirtualBox VMs/Arch Linux/Arch Linux.vbox" with version "1.19-linux"
-00:03:41.105208 nspr-8   Finished saving settings file "/home/ananas/VirtualBox VMs/Arch Linux/Arch Linux.vbox"
-00:03:41.110563 nspr-5   WARNING [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={e54f6256-97a7-4947-8a78-10c013ddf4b8} aComponent={HostWrap} aText={Could not load the Host USB Proxy service: VERR_NOT_FOUND}, preserve=true aResultDetail=0
-00:03:41.124909 nspr-9   ERROR [COM]: aRC=VBOX_E_INVALID_VM_STATE (0x80bb0002) aIID={300763af-5d6b-46e6-aa96-273eac15538a} aComponent={MachineWrap} aText={The machine is not mutable (state is PoweredOff)}, preserve=false aResultDetail=0
-00:03:41.146573 nspr-5   WARNING [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={e54f6256-97a7-4947-8a78-10c013ddf4b8} aComponent={HostWrap} aText={Could not load the Host USB Proxy service: VERR_NOT_FOUND}, preserve=true aResultDetail=0
-00:03:41.147694 nspr-8   WARNING [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={e54f6256-97a7-4947-8a78-10c013ddf4b8} aComponent={HostWrap} aText={Could not load the Host USB Proxy service: VERR_NOT_FOUND}, preserve=true aResultDetail=0
-00:03:42.132844 nspr-9   ERROR [COM]: aRC=VBOX_E_INVALID_VM_STATE (0x80bb0002) aIID={300763af-5d6b-46e6-aa96-273eac15538a} aComponent={MachineWrap} aText={The machine is not mutable (state is PoweredOff)}, preserve=false aResultDetail=0
-00:03:42.183066 nspr-3   WARNING [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={e54f6256-97a7-4947-8a78-10c013ddf4b8} aComponent={HostWrap} aText={Could not load the Host USB Proxy service: VERR_NOT_FOUND}, preserve=true aResultDetail=0
-00:03:42.185100 nspr-2   WARNING [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={e54f6256-97a7-4947-8a78-10c013ddf4b8} aComponent={HostWrap} aText={Could not load the Host USB Proxy service: VERR_NOT_FOUND}, preserve=true aResultDetail=0
-00:03:42.747217 nspr-8   WARNING [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={e54f6256-97a7-4947-8a78-10c013ddf4b8} aComponent={HostWrap} aText={Could not load the Host USB Proxy service: VERR_NOT_FOUND}, preserve=true aResultDetail=0
-00:03:43.891332 nspr-9   ERROR [COM]: aRC=VBOX_E_OBJECT_NOT_FOUND (0x80bb0001) aIID={5bfd8965-b81b-469f-8649-f717ce97a5d5} aComponent={NvramStoreWrap} aText={The UEFI NVRAM file is not existing for this machine.}, preserve=false aResultDetail=0
-00:03:43.921704 nspr-8   NetIfAdpCtlOut: VBoxNetAdpCtl: Error while retrieving link speed for wlp3s0: VBoxNetAdpCtl: ioctl failed: Operation not supported
-00:03:43.946844 nspr-3   NetIfAdpCtlOut: VBoxNetAdpCtl: Error while retrieving link speed for wlp3s0: VBoxNetAdpCtl: ioctl failed: Operation not supported
-00:03:43.963377 nspr-9   WARNING [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={e54f6256-97a7-4947-8a78-10c013ddf4b8} aComponent={HostWrap} aText={Could not load the Host USB Proxy service: VERR_NOT_FOUND}, preserve=true aResultDetail=0
-00:03:43.963863 nspr-4   WARNING [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={e54f6256-97a7-4947-8a78-10c013ddf4b8} aComponent={HostWrap} aText={Could not load the Host USB Proxy service: VERR_NOT_FOUND}, preserve=true aResultDetail=0
-00:03:44.258072 nspr-7   ERROR [COM]: aRC=VBOX_E_INVALID_VM_STATE (0x80bb0002) aIID={300763af-5d6b-46e6-aa96-273eac15538a} aComponent={MachineWrap} aText={The machine is not mutable (state is PoweredOff)}, preserve=false aResultDetail=0
-00:03:44.271635 nspr-9   WARNING [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={e54f6256-97a7-4947-8a78-10c013ddf4b8} aComponent={HostWrap} aText={Could not load the Host USB Proxy service: VERR_NOT_FOUND}, preserve=true aResultDetail=0
-00:03:44.272894 nspr-4   WARNING [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={e54f6256-97a7-4947-8a78-10c013ddf4b8} aComponent={HostWrap} aText={Could not load the Host USB Proxy service: VERR_NOT_FOUND}, preserve=true aResultDetail=0
-00:03:44.799959 nspr-8   Saving settings file "/home/ananas/.config/VirtualBox/VirtualBox.xml" with version "1.12-linux"
-00:03:44.807019 nspr-8   Finished saving settings file "/home/ananas/.config/VirtualBox/VirtualBox.xml"
-00:03:54.420413 nspr-3   WARNING [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={e54f6256-97a7-4947-8a78-10c013ddf4b8} aComponent={HostWrap} aText={Could not load the Host USB Proxy service: VERR_NOT_FOUND}, preserve=true aResultDetail=0
-00:03:54.421649 nspr-7   Saving settings file "/home/ananas/VirtualBox VMs/Arch Linux/Arch Linux.vbox" with version "1.19-linux"
-00:03:54.451753 nspr-7   Finished saving settings file "/home/ananas/VirtualBox VMs/Arch Linux/Arch Linux.vbox"
-00:03:54.565835 nspr-6   ERROR [COM]: aRC=VBOX_E_INVALID_VM_STATE (0x80bb0002) aIID={300763af-5d6b-46e6-aa96-273eac15538a} aComponent={MachineWrap} aText={The machine is not mutable (state is PoweredOff)}, preserve=false aResultDetail=0
-00:03:54.579021 nspr-5   WARNING [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={e54f6256-97a7-4947-8a78-10c013ddf4b8} aComponent={HostWrap} aText={Could not load the Host USB Proxy service: VERR_NOT_FOUND}, preserve=true aResultDetail=0
-00:03:54.580105 nspr-8   WARNING [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={e54f6256-97a7-4947-8a78-10c013ddf4b8} aComponent={HostWrap} aText={Could not load the Host USB Proxy service: VERR_NOT_FOUND}, preserve=true aResultDetail=0
-00:03:55.177585 nspr-7   Saving settings file "/home/ananas/.config/VirtualBox/VirtualBox.xml" with version "1.12-linux"
-00:03:55.184779 nspr-7   Finished saving settings file "/home/ananas/.config/VirtualBox/VirtualBox.xml"
-00:03:55.710902 nspr-4   Launched VM: 1879143248 pid: 86931 (0x15393) frontend: GUI/Qt name: Arch Linux
-00:03:55.748628 nspr-2   ERROR [COM]: aRC=VBOX_E_INVALID_VM_STATE (0x80bb0002) aIID={300763af-5d6b-46e6-aa96-273eac15538a} aComponent={MachineWrap} aText={The machine is not mutable (state is PoweredOff)}, preserve=false aResultDetail=0
-00:03:55.785882 nspr-4   WARNING [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={e54f6256-97a7-4947-8a78-10c013ddf4b8} aComponent={HostWrap} aText={Could not load the Host USB Proxy service: VERR_NOT_FOUND}, preserve=true aResultDetail=0
-00:03:55.787646 nspr-4   WARNING [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={e54f6256-97a7-4947-8a78-10c013ddf4b8} aComponent={HostWrap} aText={Could not load the Host USB Proxy service: VERR_NOT_FOUND}, preserve=true aResultDetail=0
-00:03:56.115674 nspr-8   ERROR [COM]: aRC=VBOX_E_INVALID_VM_STATE (0x80bb0002) aIID={300763af-5d6b-46e6-aa96-273eac15538a} aComponent={MachineWrap} aText={The machine is not mutable (state is PoweredOff)}, preserve=false aResultDetail=0
-00:03:56.129344 nspr-6   WARNING [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={e54f6256-97a7-4947-8a78-10c013ddf4b8} aComponent={HostWrap} aText={Could not load the Host USB Proxy service: VERR_NOT_FOUND}, preserve=true aResultDetail=0
-00:03:56.130641 nspr-4   WARNING [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={e54f6256-97a7-4947-8a78-10c013ddf4b8} aComponent={HostWrap} aText={Could not load the Host USB Proxy service: VERR_NOT_FOUND}, preserve=true aResultDetail=0
-00:03:57.263221 nspr-7   WARNING [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={e54f6256-97a7-4947-8a78-10c013ddf4b8} aComponent={HostWrap} aText={Could not load the Host USB Proxy service: VERR_NOT_FOUND}, preserve=true aResultDetail=0
-00:03:57.264214 nspr-7   WARNING [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={e54f6256-97a7-4947-8a78-10c013ddf4b8} aComponent={HostWrap} aText={Could not load the Host USB Proxy service: VERR_NOT_FOUND}, preserve=true aResultDetail=0
-00:03:57.264538 nspr-9   ERROR [COM]: aRC=VBOX_E_OBJECT_NOT_FOUND (0x80bb0001) aIID={70401eef-c8e9-466b-9660-45cb3e9979e4} aComponent={ExtPackManagerWrap} aText={No extension pack by the name 'Oracle VM VirtualBox Extension Pack' was found}, preserve=false aResultDetail=0
-00:03:57.333074 nspr-9   WARNING [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={e54f6256-97a7-4947-8a78-10c013ddf4b8} aComponent={HostWrap} aText={Could not load the Host USB Proxy service: VERR_NOT_FOUND}, preserve=true aResultDetail=0
-00:03:57.335577 nspr-9   WARNING [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={e54f6256-97a7-4947-8a78-10c013ddf4b8} aComponent={HostWrap} aText={Could not load the Host USB Proxy service: VERR_NOT_FOUND}, preserve=true aResultDetail=0
-00:03:57.383299 nspr-9   ERROR [COM]: aRC=VBOX_E_IPRT_ERROR (0x80bb0005) aIID={300763af-5d6b-46e6-aa96-273eac15538a} aComponent={SessionMachine} aText={Saved screenshot data is not available (VERR_NOT_SUPPORTED)}, preserve=false aResultDetail=-37
-00:03:57.435635 nspr-7   NetIfAdpCtlOut: VBoxNetAdpCtl: Error while retrieving link speed for wlp3s0: VBoxNetAdpCtl: ioctl failed: Operation not supported
-00:03:57.443624 nspr-7   WARNING [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={e54f6256-97a7-4947-8a78-10c013ddf4b8} aComponent={HostWrap} aText={Could not load the Host USB Proxy service: VERR_NOT_FOUND}, preserve=false aResultDetail=0
-00:03:57.444706 nspr-9   WARNING [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={e54f6256-97a7-4947-8a78-10c013ddf4b8} aComponent={HostWrap} aText={Could not load the Host USB Proxy service: VERR_NOT_FOUND}, preserve=true aResultDetail=0
-00:03:57.445019 nspr-9   WARNING [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={e54f6256-97a7-4947-8a78-10c013ddf4b8} aComponent={HostWrap} aText={Could not load the Host USB Proxy service: VERR_NOT_FOUND}, preserve=true aResultDetail=0
-00:03:57.486903 nspr-3   WARNING [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={e54f6256-97a7-4947-8a78-10c013ddf4b8} aComponent={HostWrap} aText={Could not load the Host USB Proxy service: VERR_NOT_FOUND}, preserve=true aResultDetail=0
-00:03:57.505739 nspr-5   WARNING [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={e54f6256-97a7-4947-8a78-10c013ddf4b8} aComponent={HostWrap} aText={Could not load the Host USB Proxy service: VERR_NOT_FOUND}, preserve=true aResultDetail=0
-00:03:57.511056 nspr-5   ERROR [COM]: aRC=VBOX_E_INVALID_VM_STATE (0x80bb0002) aIID={300763af-5d6b-46e6-aa96-273eac15538a} aComponent={MachineWrap} aText={The machine is not mutable (state is Starting)}, preserve=false aResultDetail=0
-00:03:57.600105 nspr-3   WARNING [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={e54f6256-97a7-4947-8a78-10c013ddf4b8} aComponent={HostWrap} aText={Could not load the Host USB Proxy service: VERR_NOT_FOUND}, preserve=true aResultDetail=0
-00:03:57.601467 nspr-5   WARNING [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={e54f6256-97a7-4947-8a78-10c013ddf4b8} aComponent={HostWrap} aText={Could not load the Host USB Proxy service: VERR_NOT_FOUND}, preserve=true aResultDetail=0
-00:03:57.825640 nspr-8   ERROR [COM]: aRC=VBOX_E_OBJECT_NOT_FOUND (0x80bb0001) aIID={ad47ad09-787b-44ab-b343-a082a3f2dfb1} aComponent={MediumWrap} aText={Property 'CRYPT/KeyId' does not exist}, preserve=false aResultDetail=0
-00:03:57.827488 nspr-4   ERROR [COM]: aRC=VBOX_E_OBJECT_NOT_FOUND (0x80bb0001) aIID={ad47ad09-787b-44ab-b343-a082a3f2dfb1} aComponent={MediumWrap} aText={Property 'CRYPT/KeyId' does not exist}, preserve=false aResultDetail=0
-00:03:57.858940 nspr-3   WARNING [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={e54f6256-97a7-4947-8a78-10c013ddf4b8} aComponent={HostWrap} aText={Could not load the Host USB Proxy service: VERR_NOT_FOUND}, preserve=true aResultDetail=0
-00:03:57.872282 nspr-2   ERROR [COM]: aRC=VBOX_E_INVALID_VM_STATE (0x80bb0002) aIID={300763af-5d6b-46e6-aa96-273eac15538a} aComponent={MachineWrap} aText={The machine is not mutable (state is Running)}, preserve=false aResultDetail=0
-00:03:57.899094 nspr-7   WARNING [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={e54f6256-97a7-4947-8a78-10c013ddf4b8} aComponent={HostWrap} aText={Could not load the Host USB Proxy service: VERR_NOT_FOUND}, preserve=true aResultDetail=0
-00:03:57.900282 nspr-8   WARNING [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={e54f6256-97a7-4947-8a78-10c013ddf4b8} aComponent={HostWrap} aText={Could not load the Host USB Proxy service: VERR_NOT_FOUND}, preserve=true aResultDetail=0
-00:03:58.207204 nspr-7   Saving settings file "/home/ananas/.config/VirtualBox/VirtualBox.xml" with version "1.12-linux"
-00:03:58.209387 nspr-5   Saving settings file "/home/ananas/VirtualBox VMs/Arch Linux/Arch Linux.vbox" with version "1.19-linux"
-00:03:58.213935 nspr-5   Finished saving settings file "/home/ananas/VirtualBox VMs/Arch Linux/Arch Linux.vbox"
-00:03:58.215062 nspr-7   Finished saving settings file "/home/ananas/.config/VirtualBox/VirtualBox.xml"
-00:03:58.226216 nspr-5   ERROR [COM]: aRC=VBOX_E_INVALID_VM_STATE (0x80bb0002) aIID={300763af-5d6b-46e6-aa96-273eac15538a} aComponent={MachineWrap} aText={The machine is not mutable (state is Running)}, preserve=false aResultDetail=0
-00:03:58.264707 nspr-3   WARNING [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={e54f6256-97a7-4947-8a78-10c013ddf4b8} aComponent={HostWrap} aText={Could not load the Host USB Proxy service: VERR_NOT_FOUND}, preserve=true aResultDetail=0
-00:03:58.265800 nspr-2   WARNING [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={e54f6256-97a7-4947-8a78-10c013ddf4b8} aComponent={HostWrap} aText={Could not load the Host USB Proxy service: VERR_NOT_FOUND}, preserve=true aResultDetail=0
-00:05:18.581697 nspr-8   WARNING [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={e54f6256-97a7-4947-8a78-10c013ddf4b8} aComponent={HostWrap} aText={Could not load the Host USB Proxy service: VERR_NOT_FOUND}, preserve=true aResultDetail=0
-00:05:18.589724 nspr-7   ERROR [COM]: aRC=VBOX_E_INVALID_VM_STATE (0x80bb0002) aIID={300763af-5d6b-46e6-aa96-273eac15538a} aComponent={MachineWrap} aText={The machine is not mutable (state is Paused)}, preserve=false aResultDetail=0
-00:05:18.608643 nspr-8   WARNING [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={e54f6256-97a7-4947-8a78-10c013ddf4b8} aComponent={HostWrap} aText={Could not load the Host USB Proxy service: VERR_NOT_FOUND}, preserve=true aResultDetail=0
-00:05:18.609664 nspr-5   WARNING [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={e54f6256-97a7-4947-8a78-10c013ddf4b8} aComponent={HostWrap} aText={Could not load the Host USB Proxy service: VERR_NOT_FOUND}, preserve=true aResultDetail=0
-00:05:19.690310 nspr-9   WARNING [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={e54f6256-97a7-4947-8a78-10c013ddf4b8} aComponent={HostWrap} aText={Could not load the Host USB Proxy service: VERR_NOT_FOUND}, preserve=true aResultDetail=0
-00:05:19.705723 nspr-9   ERROR [COM]: aRC=VBOX_E_INVALID_VM_STATE (0x80bb0002) aIID={300763af-5d6b-46e6-aa96-273eac15538a} aComponent={MachineWrap} aText={The machine is not mutable (state is Stopping)}, preserve=false aResultDetail=0
-00:05:19.727511 nspr-8   WARNING [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={e54f6256-97a7-4947-8a78-10c013ddf4b8} aComponent={HostWrap} aText={Could not load the Host USB Proxy service: VERR_NOT_FOUND}, preserve=true aResultDetail=0
-00:05:19.728739 nspr-6   WARNING [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={e54f6256-97a7-4947-8a78-10c013ddf4b8} aComponent={HostWrap} aText={Could not load the Host USB Proxy service: VERR_NOT_FOUND}, preserve=true aResultDetail=0
-00:05:19.798051 nspr-3   Saving settings file "/home/ananas/VirtualBox VMs/Arch Linux/Arch Linux.vbox" with version "1.19-linux"
-00:05:19.801981 nspr-3   Finished saving settings file "/home/ananas/VirtualBox VMs/Arch Linux/Arch Linux.vbox"
-00:05:19.807012 nspr-2   WARNING [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={e54f6256-97a7-4947-8a78-10c013ddf4b8} aComponent={HostWrap} aText={Could not load the Host USB Proxy service: VERR_NOT_FOUND}, preserve=true aResultDetail=0
-00:05:19.818543 nspr-7   ERROR [COM]: aRC=VBOX_E_INVALID_VM_STATE (0x80bb0002) aIID={300763af-5d6b-46e6-aa96-273eac15538a} aComponent={MachineWrap} aText={The machine is not mutable (state is PoweredOff)}, preserve=false aResultDetail=0
-00:05:19.845683 nspr-7   WARNING [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={e54f6256-97a7-4947-8a78-10c013ddf4b8} aComponent={HostWrap} aText={Could not load the Host USB Proxy service: VERR_NOT_FOUND}, preserve=true aResultDetail=0
-00:05:19.846829 nspr-5   WARNING [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={e54f6256-97a7-4947-8a78-10c013ddf4b8} aComponent={HostWrap} aText={Could not load the Host USB Proxy service: VERR_NOT_FOUND}, preserve=true aResultDetail=0
-00:05:20.819826 nspr-6   ERROR [COM]: aRC=VBOX_E_INVALID_VM_STATE (0x80bb0002) aIID={300763af-5d6b-46e6-aa96-273eac15538a} aComponent={MachineWrap} aText={The machine is not mutable (state is PoweredOff)}, preserve=false aResultDetail=0
-00:05:20.891619 nspr-8   WARNING [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={e54f6256-97a7-4947-8a78-10c013ddf4b8} aComponent={HostWrap} aText={Could not load the Host USB Proxy service: VERR_NOT_FOUND}, preserve=true aResultDetail=0
-00:05:20.892788 nspr-2   WARNING [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={e54f6256-97a7-4947-8a78-10c013ddf4b8} aComponent={HostWrap} aText={Could not load the Host USB Proxy service: VERR_NOT_FOUND}, preserve=true aResultDetail=0
-00:05:21.509124 nspr-4   Saving settings file "/home/ananas/.config/VirtualBox/VirtualBox.xml" with version "1.12-linux"
-00:05:21.511921 nspr-4   Finished saving settings file "/home/ananas/.config/VirtualBox/VirtualBox.xml"
+00:00:00.003603 main     VirtualBox XPCOM Server 7.0.14 r161095 linux.amd64 (Jan 19 2024 13:54:29) release log
+00:00:00.003607 main     Log opened 2024-03-24T15:03:39.429089000Z
+00:00:00.003608 main     Build Type: release
+00:00:00.003610 main     OS Product: Linux
+00:00:00.003612 main     OS Release: 6.8.1-arch1-1
+00:00:00.003613 main     OS Version: #1 SMP PREEMPT_DYNAMIC Sat, 16 Mar 2024 17:15:35 +0000
+00:00:00.003656 main     DMI Product Name: ASUS TUF Gaming A15 FA507NV_FA507NV
+00:00:00.003677 main     DMI Product Version: 1.0
+00:00:00.003686 main     Firmware type: UEFI
+00:00:00.005008 main     Secure Boot: Disabled
+00:00:00.005079 main     Host RAM: 15231MB (14.8GB) total, 11355MB (11.0GB) available
+00:00:00.005084 main     Executable: /usr/lib/virtualbox/VBoxSVC
+00:00:00.005084 main     Process ID: 89223
+00:00:00.005085 main     Package type: LINUX_64BITS_GENERIC (OSE)
+00:00:00.007302 main     IPC socket path: /tmp/.vbox-ananas-ipc/ipcd
+00:00:00.118231 nspr-2   VirtualBox: object creation starts
+00:00:00.118406 nspr-2   Home directory: '/home/ananas/.config/VirtualBox'
+00:00:00.118622 nspr-2   Loading settings file "/home/ananas/.config/VirtualBox/VirtualBox.xml" with version "1.12-linux"
+00:00:00.141588 nspr-2   NetIfAdpCtlOut: VBoxNetAdpCtl: Error while retrieving link speed for wlp3s0: VBoxNetAdpCtl: ioctl failed: Operation not supported
+00:00:00.143602 nspr-2   HostDnsMonitor: initializing
+00:00:00.144110 nspr-2   NAT: resolv.conf: nameserver 192.168.87.11
+00:00:00.144164 nspr-2   HostDnsMonitor: updating information
+00:00:00.144183 nspr-2   HostDnsMonitor: old information
+00:00:00.144186 nspr-2     no server entries
+00:00:00.144190 nspr-2     no domain set
+00:00:00.144192 nspr-2     no search string entries
+00:00:00.144195 nspr-2   HostDnsMonitor: new information
+00:00:00.144198 nspr-2     server 1: 192.168.87.11
+00:00:00.144202 nspr-2     no domain set
+00:00:00.144205 nspr-2     no search string entries
+00:00:00.148143 nspr-2   VD: VDInit finished with VINF_SUCCESS
+00:00:00.148317 nspr-2   ERROR [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={aac6c7cb-a371-4c58-ab51-0616896b2f2c} aComponent={SystemPropertiesWrap} aText={Cannot determine default Guest Additions ISO location. Most likely they are not available}, preserve=false aResultDetail=0
+00:00:00.149670 nspr-2   Loading settings file "/home/ananas/VirtualBox VMs/Arch Linux/Arch Linux.vbox" with version "1.19-linux"
+00:00:00.151089 nspr-2   VirtualBox: object created
+00:00:01.386900 nspr-4   WARNING [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={e54f6256-97a7-4947-8a78-10c013ddf4b8} aComponent={HostWrap} aText={Could not load the Host USB Proxy service: VERR_NOT_FOUND}, preserve=true aResultDetail=0
+00:00:01.390699 nspr-4   WARNING [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={e54f6256-97a7-4947-8a78-10c013ddf4b8} aComponent={HostWrap} aText={Could not load the Host USB Proxy service: VERR_NOT_FOUND}, preserve=false aResultDetail=0
+00:00:01.496942 nspr-3   ERROR [COM]: aRC=VBOX_E_INVALID_VM_STATE (0x80bb0002) aIID={300763af-5d6b-46e6-aa96-273eac15538a} aComponent={MachineWrap} aText={The machine is not mutable (state is PoweredOff)}, preserve=false aResultDetail=0
+00:00:01.757897 nspr-4   WARNING [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={e54f6256-97a7-4947-8a78-10c013ddf4b8} aComponent={HostWrap} aText={Could not load the Host USB Proxy service: VERR_NOT_FOUND}, preserve=true aResultDetail=0
+00:00:01.762944 nspr-4   WARNING [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={e54f6256-97a7-4947-8a78-10c013ddf4b8} aComponent={HostWrap} aText={Could not load the Host USB Proxy service: VERR_NOT_FOUND}, preserve=true aResultDetail=0
+00:00:02.055660 nspr-5   Saving settings file "/home/ananas/.config/VirtualBox/VirtualBox.xml" with version "1.12-linux"
+00:00:02.062809 nspr-5   Finished saving settings file "/home/ananas/.config/VirtualBox/VirtualBox.xml"
+00:00:11.595958 main     VirtualBox: object deletion starts
+00:00:11.596018 main     ERROR [COM]: aRC=VBOX_E_OBJECT_IN_USE (0x80bb000c) aIID={ad47ad09-787b-44ab-b343-a082a3f2dfb1} aComponent={MediumWrap} aText={Medium '/home/ananas/VirtualBox VMs/Arch Linux/Arch Linux.vdi' cannot be closed because it is still attached to 1 virtual machines}, preserve=false aResultDetail=0
+00:00:11.596757 main     HostDnsMonitor: shutting down ...
+00:00:11.597069 main     HostDnsMonitor: shut down
+00:00:11.607985 Watcher  ERROR [COM]: aRC=E_ACCESSDENIED (0x80070005) aIID={7682d5eb-f00e-44f1-8ca2-99d08b1cd607} aComponent={VirtualBoxWrap} aText={The object is not ready}, preserve=false aResultDetail=0
+00:00:11.608085 main     VirtualBox: object deleted
