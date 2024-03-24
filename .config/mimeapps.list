@@ -4,6 +4,7 @@ audio/mpeg=cantata.desktop;
 text/plain=org.gnome.TextEditor.desktop;
 image/svg+xml=firefox.desktop;
 application/vnd.efi.iso=org.gnome.FileRoller.desktop;
+application/x-shellscript=code-oss.desktop;
 
 [Default Applications]
 audio/mpeg=cantata.desktop

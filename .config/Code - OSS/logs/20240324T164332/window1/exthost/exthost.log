@@ -9,3 +9,5 @@
 2024-03-24 16:43:35.044 [info] ExtensionService#_doActivateExtension PKief.material-icon-theme, startup: false, activationEvent: 'onStartupFinished'
 2024-03-24 16:44:04.364 [info] ExtensionService#_doActivateExtension vscode.json-language-features, startup: false, activationEvent: 'onLanguage:jsonc'
 2024-03-24 16:44:04.405 [info] ExtensionService#_doActivateExtension vscode.typescript-language-features, startup: false, activationEvent: 'onLanguage:jsonc'
+2024-03-24 17:01:53.643 [info] Extension host terminating: renderer closed the MessagePort
+2024-03-24 17:01:53.659 [info] Extension host with pid 58522 exiting with code 0

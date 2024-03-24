@@ -1,0 +1,13 @@
+2024-03-24 17:04:59.384 [info] Initial editor state {"filesToOpenOrCreate":[{"fileUri":{"$mid":1,"path":"/home/ananas/.config/hypr/hyprpaper.conf","scheme":"file"},"type":1,"exists":true,"options":{}}],"filesToDiff":[],"filesToMerge":[]}
+2024-03-24 17:04:59.920 [info] Started local extension host with pid 90332.
+2024-03-24 17:05:03.455 [info] [perf] Render performance baseline is 76ms
+2024-03-24 17:07:18.804 [error] Unable to read file '/home/ananas/paru.sh' (Error: Unable to resolve nonexistent file '/home/ananas/paru.sh'): Error: Unable to read file '/home/ananas/paru.sh' (Error: Unable to resolve nonexistent file '/home/ananas/paru.sh')
+    at n.F (vscode-file://vscode-app/usr/lib/code/out/vs/workbench/workbench.desktop.main.js:653:19968)
+    at n.D (vscode-file://vscode-app/usr/lib/code/out/vs/workbench/workbench.desktop.main.js:653:19763)
+    at async d.M (vscode-file://vscode-app/usr/lib/code/out/vs/workbench/workbench.desktop.main.js:2423:42865)
+    at async d.readStream (vscode-file://vscode-app/usr/lib/code/out/vs/workbench/workbench.desktop.main.js:2423:42622)
+    at async T.Cb (vscode-file://vscode-app/usr/lib/code/out/vs/workbench/workbench.desktop.main.js:2412:13526)
+    at async T.resolve (vscode-file://vscode-app/usr/lib/code/out/vs/workbench/workbench.desktop.main.js:2412:11973)
+    at async vscode-file://vscode-app/usr/lib/code/out/vs/workbench/workbench.desktop.main.js:2423:38734
+2024-03-24 17:07:58.399 [error] [text file model] handleSaveError(1) - exit - resulted in a save error: Error: Unable to write file '/etc/lightdm/elephant-greeter.conf' (NoPermissions (FileSystemError): Error: EACCES: permission denied, open '/etc/lightdm/elephant-greeter.conf') file:///etc/lightdm/elephant-greeter.conf
+2024-03-24 17:08:13.981 [error] [text file model] handleSaveError(2) - exit - resulted in a save error: Error: Unable to write file '/etc/lightdm/elephant-greeter.conf' (NoPermissions (FileSystemError): Error: EACCES: permission denied, open '/etc/lightdm/elephant-greeter.conf') file:///etc/lightdm/elephant-greeter.conf

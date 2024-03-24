@@ -5,3 +5,52 @@
 2024-03-24T15:00:01.057Z - info: [ui] Subscribed 'mooncoffee1' to Alive channel
 2024-03-24T15:00:02.085Z - info: [ui] Stats reported.
 2024-03-24T15:00:02.260Z - info: [ui] Executing getChangesFiles: git log 641db687939373f3ef721ceddb61c2bf00266ed5 -C -M -m -1 --no-show-signature --first-parent --raw --format=format: --numstat -z -- (took 1.652s)
+2024-03-24T15:01:16.850Z - info: [ui] Executing unstageAll: git reset -- . (took 3.014s)
+2024-03-24T15:01:17.385Z - info: [ui] [Timing] Action 'create commit' for 'mooncoffee1/MyHyprBackup' took 3.581s
+2024-03-24T15:01:17.828Z - error: [ui] Could not load new contents for syntax highlighting
+Error: EISDIR: illegal operation on a directory, read
+2024-03-24T15:01:46.734Z - info: [ui] [AppStore.withAuthenticatingUser] account found for repository: MyHyprBackup - mooncoffee1 (has token)
+2024-03-24T15:01:47.810Z - info: [ui] Executing pull: git -c credential.helper= -c rebase.backend=merge pull --ff --recurse-submodules --progress origin (took 1.016s)
+2024-03-24T15:02:03.508Z - info: [ui] [AppStore.withAuthenticatingUser] account found for repository: MyHyprBackup - mooncoffee1 (has token)
+2024-03-24T15:02:08.986Z - info: [ui] Executing push: git -c credential.helper= push origin main:main --progress (took 5.458s)
+2024-03-24T15:02:16.586Z - error: [ui] `git commit -F -` exited with an unexpected code: 1.
+stdout:
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	.config/nvim/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+2024-03-24T15:02:16.587Z - info: [ui] [Timing] Action 'create commit' for 'mooncoffee1/MyHyprBackup' took 0.108s
+2024-03-24T15:02:31.832Z - info: [ui] [Timing] Action 'create commit' for 'mooncoffee1/MyHyprBackup' took 0.249s
+2024-03-24T15:02:33.649Z - info: [ui] [AppStore.withAuthenticatingUser] account found for repository: MyHyprBackup - mooncoffee1 (has token)
+2024-03-24T15:02:35.692Z - info: [ui] Executing push: git -c credential.helper= push origin main:main --progress (took 2.039s)
+2024-03-24T15:02:36.715Z - info: [ui] Executing fetch: git -c credential.helper= fetch --progress --prune --recurse-submodules=on-demand origin (took 1.015s)
+2024-03-24T15:12:17.517Z - info: [ui] [AppStore] loading 1 repositories from store
+2024-03-24T15:12:17.522Z - info: [ui] [AppStore] found account: mooncoffee1 (moonlightcoffee)
+2024-03-24T15:12:17.586Z - info: [ui] [BranchPruner] Last prune took place 12 minutes ago - skipping
+2024-03-24T15:12:18.025Z - info: [ui] launching: 3.3.10-linux1 (Linux 6.8.1-arch1-1)
+2024-03-24T15:12:18.031Z - info: [ui] execPath: '/opt/github-desktop/github-desktop'
+2024-03-24T15:12:18.594Z - info: [ui] Subscribed 'mooncoffee1' to Alive channel
+2024-03-24T15:17:51.433Z - info: [ui] [AppStore] loading 1 repositories from store
+2024-03-24T15:17:51.440Z - info: [ui] [AppStore] found account: mooncoffee1 (moonlightcoffee)
+2024-03-24T15:17:51.505Z - info: [ui] [BranchPruner] Last prune took place 18 minutes ago - skipping
+2024-03-24T15:17:52.400Z - info: [ui] Subscribed 'mooncoffee1' to Alive channel
+2024-03-24T15:17:52.490Z - info: [ui] launching: 3.3.10-linux1 (Linux 6.8.1-arch1-1)
+2024-03-24T15:17:52.491Z - info: [ui] execPath: '/opt/github-desktop/github-desktop'
+2024-03-24T15:17:59.433Z - info: [ui] [Timing] Action 'create commit' for 'mooncoffee1/MyHyprBackup' took 0.247s
+2024-03-24T15:18:01.747Z - info: [ui] [AppStore.withAuthenticatingUser] account found for repository: MyHyprBackup - mooncoffee1 (has token)
+2024-03-24T15:18:03.537Z - info: [ui] Executing push: git -c credential.helper= push origin main:main --progress (took 1.768s)
+2024-03-24T15:18:04.563Z - info: [ui] Executing fetch: git -c credential.helper= fetch --progress --prune --recurse-submodules=on-demand origin (took 1.016s)
+2024-03-24T15:18:05.579Z - info: [ui] Executing updateRemoteHEAD: git -c credential.helper= remote set-head -a origin (took 1.014s)
+2024-03-24T18:26:46.858Z - info: [ui] [AppStore] loading 1 repositories from store
+2024-03-24T18:26:46.867Z - info: [ui] [AppStore] found account: mooncoffee1 (moonlightcoffee)
+2024-03-24T18:26:46.939Z - info: [ui] [BranchPruner] Last prune took place 3 hours ago - skipping
+2024-03-24T18:26:47.577Z - info: [ui] launching: 3.3.10-linux1 (Linux 6.8.1-arch1-1)
+2024-03-24T18:26:47.578Z - info: [ui] execPath: '/opt/github-desktop/github-desktop'
+2024-03-24T18:26:48.120Z - info: [ui] Subscribed 'mooncoffee1' to Alive channel
+2024-03-24T18:27:03.761Z - info: [ui] Executing fetch: git -c credential.helper= fetch --progress --prune --recurse-submodules=on-demand origin (took 1.110s)
+2024-03-24T18:27:04.980Z - info: [ui] Executing updateRemoteHEAD: git -c credential.helper= remote set-head -a origin (took 1.216s)

@@ -1,0 +1,11 @@
+2024-03-24 17:13:10.594 [info] Initial editor state {"filesToOpenOrCreate":[{"fileUri":{"$mid":1,"path":"/home/ananas/GitHub/MyHyprBackup/install.sh","scheme":"file"},"type":1,"exists":true,"options":{}}],"filesToDiff":[],"filesToMerge":[]}
+2024-03-24 17:13:11.068 [info] Started local extension host with pid 100068.
+2024-03-24 17:13:14.714 [info] [perf] Render performance baseline is 75ms
+2024-03-24 17:13:39.935 [error] Unable to read file '/etc/lightdm/elephant-greeter.conf' (Error: File not modified since): Error: Unable to read file '/etc/lightdm/elephant-greeter.conf' (Error: File not modified since)
+    at n.F (vscode-file://vscode-app/usr/lib/code/out/vs/workbench/workbench.desktop.main.js:653:19875)
+    at n.D (vscode-file://vscode-app/usr/lib/code/out/vs/workbench/workbench.desktop.main.js:653:19763)
+    at async d.M (vscode-file://vscode-app/usr/lib/code/out/vs/workbench/workbench.desktop.main.js:2423:42865)
+    at async d.readStream (vscode-file://vscode-app/usr/lib/code/out/vs/workbench/workbench.desktop.main.js:2423:42622)
+    at async T.Cb (vscode-file://vscode-app/usr/lib/code/out/vs/workbench/workbench.desktop.main.js:2412:13526)
+    at async T.resolve (vscode-file://vscode-app/usr/lib/code/out/vs/workbench/workbench.desktop.main.js:2412:11973)
+    at async vscode-file://vscode-app/usr/lib/code/out/vs/workbench/workbench.desktop.main.js:2423:38734

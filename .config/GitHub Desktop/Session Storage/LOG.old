@@ -1,2 +1,3 @@
-2024/03/23-14:57:54.980 8647 Creating DB /home/ananas/.config/GitHub Desktop/Session Storage since it was missing.
-2024/03/23-14:57:54.985 8647 Reusing MANIFEST /home/ananas/.config/GitHub Desktop/Session Storage/MANIFEST-000001
+2024/03/24-17:02:47.097 154d8 Reusing MANIFEST /home/ananas/.config/GitHub Desktop/Session Storage/MANIFEST-000001
+2024/03/24-17:02:47.098 154d8 Recovering log #3
+2024/03/24-17:02:47.098 154d8 Reusing old log /home/ananas/.config/GitHub Desktop/Session Storage/000003.log 
