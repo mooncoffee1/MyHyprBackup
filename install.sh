@@ -33,7 +33,7 @@ else
 fi
 
 # List of packages to install
-packages="hyprland-git waybar-git network-manager-applet blueman python rustup kitty zsh wofi xdg-desktop-portal-hyprland hyprlock-git grim slurp mako wl-clipboard cliphist nwg-look swappy wofi-calc wofi-emoji ttf-material-design-icons-extended ttf-iosevka xdg-user-dirs noto-fonts-emoji polkit-gnome imagemagick hyprpicker gpick acpi acpi_call qview qt5ct kvantum-qt5 colloid-cursors-git lightdm lightdm-elephant-greeter-git spotify waybar-mpris-git brightnessctl pamixer papirus-icon-theme ttf-jetbrains-mono-nerd pipewire pipewire-jack pipewire-alsa pipewire-pulse thunar cava-git spicetify-cli atuin"
+packages="hyprland-git waybar-git network-manager-applet blueman python rustup kitty zsh wofi xdg-desktop-portal-hyprland hyprlock-git grim slurp mako wl-clipboard cliphist nwg-look swappy wofi-calc wofi-emoji ttf-material-design-icons-extended ttf-iosevka xdg-user-dirs noto-fonts-emoji polkit-gnome imagemagick hyprpicker gpick acpi acpi_call qview qt5ct kvantum-qt5 colloid-cursors-git lightdm lightdm-elephant-greeter-git spotify waybar-mpris-git brightnessctl pamixer papirus-icon-theme ttf-jetbrains-mono-nerd pipewire pipewire-jack pipewire-alsa pipewire-pulse thunar cava-git spicetify-cli atuin pyprland-git"
 
 # Ask for confirmation before installing packages with paru
 if confirm $'\n'"Do you want to install the following packages with paru:"$'\n'"$packages"; then
