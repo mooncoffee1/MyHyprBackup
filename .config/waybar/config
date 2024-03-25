@@ -184,7 +184,7 @@
             "car": "",
             "default": ["󰕿", "󰖀", "󰕾"]
         },
-        "on-click": "pavucontrol"
+        "on-click": "pypr toggle volume"
     },
 "custom/fan-rpm": {
   "exec": "~/.config/hypr/scripts/fan",
