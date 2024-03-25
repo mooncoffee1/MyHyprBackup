@@ -1,3 +1,0 @@
-2024-03-25 08:19:39.781 [info] Initial editor state {"filesToOpenOrCreate":[{"fileUri":{"$mid":1,"path":"/home/ananas/.config/hypr/hyprpaper.conf","scheme":"file"},"type":1,"exists":true,"options":{}}],"filesToDiff":[],"filesToMerge":[]}
-2024-03-25 08:19:39.948 [info] Started local extension host with pid 21517.
-2024-03-25 08:19:42.748 [info] [perf] Render performance baseline is 25ms

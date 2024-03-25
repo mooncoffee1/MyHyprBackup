@@ -1,6 +1,0 @@
-2024-03-24 22:07:19.174 [info] Initial editor state {"filesToOpenOrCreate":[{"fileUri":{"$mid":1,"path":"/boot/loader/entries/arch.conf","scheme":"file"},"type":1,"exists":true,"options":{}}],"filesToDiff":[],"filesToMerge":[]}
-2024-03-24 22:07:19.653 [info] Started local extension host with pid 1661.
-2024-03-24 22:07:23.165 [info] [perf] Render performance baseline is 72ms
-2024-03-24 22:07:41.131 [error] [text file model] handleSaveError(6) - exit - resulted in a save error: Error: Unable to write file '/boot/loader/entries/arch.conf' (NoPermissions (FileSystemError): Error: EACCES: permission denied, open '/boot/loader/entries/arch.conf') file:///boot/loader/entries/arch.conf
-2024-03-24 22:07:47.257 [error] [text file model] handleSaveError(8) - exit - resulted in a save error: Error: Unable to write file '/boot/loader/entries/arch.conf' (NoPermissions (FileSystemError): Error: EACCES: permission denied, open '/boot/loader/entries/arch.conf') file:///boot/loader/entries/arch.conf
-2024-03-24 22:07:59.221 [error] [text file model] handleSaveError(11) - exit - resulted in a save error: Error: Unable to write file '/boot/loader/entries/arch.conf' (NoPermissions (FileSystemError): Error: EACCES: permission denied, open '/boot/loader/entries/arch.conf') file:///boot/loader/entries/arch.conf
