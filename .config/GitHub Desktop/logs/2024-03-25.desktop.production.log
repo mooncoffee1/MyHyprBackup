@@ -1,0 +1,8 @@
+2024-03-25T06:27:55.768Z - info: [ui] [AppStore] loading 1 repositories from store
+2024-03-25T06:27:55.772Z - info: [ui] [AppStore] found account: mooncoffee1 (moonlightcoffee)
+2024-03-25T06:27:55.795Z - info: [ui] [BranchPruner] Last prune took place 15 hours ago - skipping
+2024-03-25T06:27:56.177Z - info: [ui] launching: 3.3.10-linux1 (Linux 6.8.1-arch1-1)
+2024-03-25T06:27:56.178Z - info: [ui] execPath: '/opt/github-desktop/github-desktop'
+2024-03-25T06:28:01.297Z - info: [ui] Subscribed 'mooncoffee1' to Alive channel
+2024-03-25T06:28:16.744Z - info: [ui] Executing fetch: git -c credential.helper= fetch --progress --prune --recurse-submodules=on-demand origin (took 5.485s)
+2024-03-25T06:28:22.228Z - info: [ui] Executing updateRemoteHEAD: git -c credential.helper= remote set-head -a origin (took 5.482s)

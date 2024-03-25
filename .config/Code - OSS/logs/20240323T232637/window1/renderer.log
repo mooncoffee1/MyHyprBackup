@@ -1,3 +1,0 @@
-2024-03-23 23:26:38.400 [info] Initial editor state {"filesToOpenOrCreate":[{"fileUri":{"$mid":1,"path":"/home/ananas/.config/hypr/hyprland.conf","scheme":"file"},"type":1,"exists":true,"options":{}}],"filesToDiff":[],"filesToMerge":[]}
-2024-03-23 23:26:39.157 [info] Started local extension host with pid 43335.
-2024-03-23 23:26:42.118 [info] [perf] Render performance baseline is 73ms

@@ -1,5 +1,0 @@
-2024-03-23 14:35:34.158 [info] Initial editor state {"filesToOpenOrCreate":[{"fileUri":{"$mid":1,"path":"/home/ananas/.config/waybar/style.css","scheme":"file"},"type":1,"exists":true,"options":{}}],"filesToDiff":[],"filesToMerge":[]}
-2024-03-23 14:35:34.471 [info] Started local extension host with pid 22937.
-2024-03-23 14:35:34.518 [info] Started initializing default profile extensions in extensions installation folder. file:///home/ananas/.vscode-oss/extensions
-2024-03-23 14:35:34.720 [info] Completed initializing default profile extensions in extensions installation folder. file:///home/ananas/.vscode-oss/extensions
-2024-03-23 14:35:37.465 [info] [perf] Render performance baseline is 22ms

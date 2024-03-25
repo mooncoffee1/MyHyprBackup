@@ -1,3 +1,0 @@
-2024-03-24 13:55:32.751 [info] Initial editor state {"filesToOpenOrCreate":[{"fileUri":{"$mid":1,"path":"/home/ananas/.config/hypr/hyprlock.conf","scheme":"file"},"type":1,"exists":true,"options":{}}],"filesToDiff":[],"filesToMerge":[]}
-2024-03-24 13:55:33.079 [info] Started local extension host with pid 27375.
-2024-03-24 13:55:36.031 [info] [perf] Render performance baseline is 47ms
