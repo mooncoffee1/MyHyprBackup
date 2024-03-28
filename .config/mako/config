@@ -1,6 +1,6 @@
-max-visible=1
+max-visible=3
 anchor=top-right
-font=Iosevka 11
+font=Iosevka 10
 layer=overlay
 default-timeout=5000
 text-alignment=left
@@ -10,7 +10,7 @@ format=<b>%s</b>\n%b
 
 width=380
 height=80
-margin=8,8,4
+margin=9,4,4
 
 icons=1
 markup=1
@@ -21,11 +21,11 @@ padding=16
 
 background-color=#1F1F28E6
 text-color=#DCD7BA
-border-color=#C8C093
+border-color=#727169
 border-size=2
 border-radius=7
 progress-color= source #33333C
-max-icon-size=46
+max-icon-size=32
 
 
 [urgency=high]

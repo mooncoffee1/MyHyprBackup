@@ -6,8 +6,8 @@ window {
 }
 button {
   color: #ffffff;
-  background-color: #1F1F28;
-  border-radius: 35px;
+  background-color: rgba(9,6,24, 0.9);
+  border-radius:  55px 20px 55px 20px;
   margin: 20px;
   background-repeat: no-repeat;
   background-position: center;
@@ -16,13 +16,16 @@ button {
 
 button:focus,
 button:active {
-  border-radius: 35px;
-  background-color: #76946A;
+  border-radius:   20px 55px 20px 55px;
+  background-color: #E6C384;
+  color: #090618;
   outline-style: none;
 }
 
 button:hover {
   background-color: #090618;
+  border-radius:  55px 20px 55px 20px;
+
 }
 
 #lock {
