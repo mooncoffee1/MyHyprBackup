@@ -1,12 +1,11 @@
 {
      "layer": "top", // Waybar at top layer
-    // "position": "bottom", // Waybar position (top|bottom|left|right)
+  //  "position": "bottom", // Waybar position (top|bottom|left|right)
     "height": 35, // Waybar height (to be removed for auto height)
     "width": 1920, // Waybar width
     "spacing": 0, // Gaps between modules (4px)
     // Choose the order of the modules
     "modules-left": [
-    	"custom/logo",
         "temperature",
         "clock",
         "custom/waybar-mpris",
@@ -16,7 +15,6 @@
         "hyprland/workspaces"
     ],
     "modules-right": [
-        "custom/audio_idle_inhibitor",
         "tray",
         "network",
         "pulseaudio",
@@ -38,16 +36,6 @@
         "max-length": 30,
         "separate-outputs": true
     },
-    "sway/mode": {
-        "format": "<span style=\"italic\">{}</span>"
-    },
-    "sway/scratchpad": {
-        "format": "{icon} {count}",
-        "show-empty": false,
-        "format-icons": ["", ""],
-        "tooltip": true,
-        "tooltip-format": "{app}: {title}"
-    },
     "custom/logo": {
 	"format": "󰣇",
     "tooltip": true,
@@ -65,8 +53,8 @@
     },
 	"custom/audio_idle_inhibitor": {
 		"format": "{icon}",
-		"exec": "sway-audio-idle-inhibit --dry-print-both-waybar",
-		"exec-if": "which sway-audio-idle-inhibit",
+		"exec": "wayland-pipewire-idle-inhibit --dry-print-both-waybar",
+		"exec-if": "which wayland-pipewire-idle-inhibit",
 		"return-type": "json",
 		"format-icons": {
 			"output": "󰐊",
@@ -198,7 +186,7 @@
         "format-linked": "{ifname} (No IP) ",
         "format-disconnected": "Dead 󰤭",
        // "format-alt": "{ifname}: {ipaddr}/{cidr}",
-        "on-click": "wofi-wifi-menu"
+        "on-click": "nm-connection-editor"
     },
     "pulseaudio": {
         // "scroll-step": 1, // %, can be a float

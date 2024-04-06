@@ -42,7 +42,7 @@ animation = "fromRight"
 command = "pavucontrol"
 class = "pavucontrol"
 lazy = true
-size = "40% 60%"
+size = "30% 60%"
 max_size = "1080px 100%"
 unfocus = "hide"
 
