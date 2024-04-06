@@ -21,15 +21,3 @@
     "action" : "shutdown now",
     "text" : "Shutdown"
 }
-
-{
-    "label" : "suspend",
-    "action" : "loginctl suspend",
-    "text" : "Suspend"
-}
-
-{
-    "label" : "reboot",
-    "action" : "reboot",
-    "text" : "Reboot"
-}

@@ -7,19 +7,17 @@
     // Choose the order of the modules
     "modules-left": [
     	"custom/logo",
-        "hyprland/window",
+        "temperature",
+        "clock",
+        "custom/waybar-mpris",
         "gamemode"
     ],
     "modules-center": [
-        "temperature",
-        "custom/waybar-mpris",
-        "hyprland/workspaces",
-        "clock"
+        "hyprland/workspaces"
     ],
     "modules-right": [
         "tray",
         "network",
-        "temperature",
         "pulseaudio",
         "custom/fan-rpm",
         "custom/power_profile",
@@ -120,7 +118,7 @@
 
   "clock": {
     "format": "{:%H:%M %A %m/%d}",
-    "format-alt": "{:%A, %B %d, %Y (%R)}  ",
+    "format-alt": "{:%A, %B %d, %Y (%R)} 󰭦",
     "tooltip-format": "<tt><small>{calendar}</small></tt>",
     "calendar": {
                 "mode"          : "year",
