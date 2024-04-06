@@ -16,6 +16,7 @@
         "hyprland/workspaces"
     ],
     "modules-right": [
+        "custom/audio_idle_inhibitor",
         "tray",
         "network",
         "pulseaudio",
@@ -62,6 +63,18 @@
         "on-click-right": "sleep 0.1; playerctl next",
         "escape": true,
     },
+	"custom/audio_idle_inhibitor": {
+		"format": "{icon}",
+		"exec": "sway-audio-idle-inhibit --dry-print-both-waybar",
+		"exec-if": "which sway-audio-idle-inhibit",
+		"return-type": "json",
+		"format-icons": {
+			"output": "󰐊",
+			"input": "󰍬",
+			"output-input": "󰐊 󰍬",
+			"none": ""
+		}
+	},
     "mpd": {
         "format": "{stateIcon} {consumeIcon}{randomIcon}{repeatIcon}{singleIcon}{artist} - {album} - {title} ({elapsedTime:%M:%S}/{totalTime:%M:%S} ",
         "format-disconnected": "Disconnected ",
