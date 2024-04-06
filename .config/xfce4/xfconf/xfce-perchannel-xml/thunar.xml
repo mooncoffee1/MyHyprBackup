@@ -15,4 +15,5 @@
   <property name="hidden-bookmarks" type="array">
     <value type="string" value="network:///"/>
   </property>
+  <property name="misc-confirm-close-multiple-tabs" type="bool" value="false"/>
 </channel>

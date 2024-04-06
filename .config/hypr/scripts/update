@@ -1,0 +1,5 @@
+#!/bin/bash
+
+# Open kitty terminal and execute the update command
+kitty sh -c "paru -Syu && read -n 1 -s -r -p 'Press any key to continue...'"
+

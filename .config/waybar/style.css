@@ -11,10 +11,6 @@ window#waybar {
     transition-property: background-color;
     transition-duration: .5s;
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1); /* New box shadow on hover */
-    border-radius: 0 0 16px 16px;
-    border-bottom: 2px;
-    border-left: 2px;
-    border-right: 2px;
     border-style: solid;
     border-color: #727169;
     }
@@ -46,26 +42,24 @@ button:hover {
     background: #C0A36E;
 }
 #workspaces{
-  margin-right: 200px;
-  margin-left: 200px;
+  background-color: #2B2B32;
+  border-radius: 20px;
 }
 
 #workspaces button {
     padding: 0 5px;
+    margin-left: 3px;
+    margin-right: 3px;
+    margin-top: 5px;
+    margin-bottom: 5px;
     background-color: transparent;
     color: #727169;
 }
 
 #workspaces button.active {
-  padding-left: 15px;
-  padding-right: 15px;
     background: #C0A36E;
-    margin-left: 2px;
-    margin-right: 2px;
-    margin-top: 4px;
-    margin-bottom: 5px;
     color: #1F1F28;
-    border-radius:   12px 5px 12px 5px;
+    border-radius: 12px;
     font-weight: 900;
     font-size: larger;
 }
@@ -78,9 +72,7 @@ button:hover {
 #workspaces button:hover {
     background-color: #64727D;
     color: #1F1F28;
-    margin-top: 4px;
-    margin-bottom: 5px;
-    border-radius:   5px 12px 5px 12px;
+    border-radius: 12px;
 }
 
 #workspaces button.focused {
@@ -91,9 +83,7 @@ button:hover {
 #workspaces button.urgent {
     color: #1F1F28;
     background-color: #C34043;
-    border-radius:   5px 12px 5px 12px;
-    margin-top: 4px;
-    margin-bottom: 4px;
+    border-radius: 12px;
 }
 
 #mode {
@@ -101,6 +91,8 @@ button:hover {
     box-shadow: inset 0 -3px #ffffff;
 }
 
+#window,
+#custom-power_profile,
 #custom-fan-rpm,
 #custom-logo,
 #clock,
@@ -121,9 +113,14 @@ button:hover {
 #mpd {
     padding: 0 10px;
     color: #DCD7BA;
+    background-color: #2B2B32;
+    border-radius:   12px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 4px;
+    margin-bottom: 5px;
 }
 
-#window,
 #workspaces {
     margin: 0 4px;
 }
@@ -139,16 +136,16 @@ button:hover {
 }
 
 #custom-logo{
-	background: #6A9589;
-	color: #1F1F28;
-    margin-left: 5px;
-    margin-right: 0px;
-    margin-top: 4px;
-    margin-bottom: 5px;
-    border-radius:   5px 12px 5px 12px;
+
 }
 
 #battery {
+    background-color: #2B2B32;
+    border-radius:   12px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 4px;
+    margin-bottom: 5px;
 }
 
 #battery.charging, #battery.plugged {
@@ -192,7 +189,12 @@ label:focus {
 }
 
 #network {
-
+    background-color: #2B2B32;
+    border-radius:   12px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 4px;
+    margin-bottom: 5px;
 }
 
 #network.disconnected {
@@ -200,6 +202,12 @@ label:focus {
 }
 
 #pulseaudio {
+    background-color: #2B2B32;
+    border-radius:   12px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 4px;
+    margin-bottom: 5px;
 }
 
 #pulseaudio.muted {
@@ -216,6 +224,12 @@ label:focus {
 }
 
 #custom-waybar-mpris{
+    background-color: #2B2B32;
+    border-radius:   12px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 4px;
+    margin-bottom: 5px;
   color: #957FB8;
 }
 
@@ -234,6 +248,12 @@ label:focus {
 }
 
 #temperature {
+    background-color: #2B2B32;
+    border-radius:   12px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 4px;
+    margin-bottom: 5px;
 }
 
 #temperature.critical {
@@ -241,7 +261,12 @@ label:focus {
 }
 
 #tray {
-
+    background-color: #2B2B32;
+    border-radius:   12px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 4px;
+    margin-bottom: 5px;
 }
 
 #tray > .passive {
@@ -264,7 +289,8 @@ label:focus {
 }
 
 #custom-power_profile{
-    padding: 0 5px;
+    padding: 0 15px;
+    
 }
 
 #mpd {
@@ -276,15 +302,14 @@ label:focus {
 }
 
 #clock{
-    font-size: 15px;
     font-weight: bolder;
-    background-color: #76946A;
-    color: #1F1F28; 
+    color: #DCD7BA; 
     margin-left: 5px;
     margin-right: 5px;
     margin-top: 4px;
     margin-bottom: 5px;
-    border-radius:   12px 5px 12px 5px;
+    background-color: #2B2B32;
+    border-radius:   12px;
 }
 
 #mpd.stopped {

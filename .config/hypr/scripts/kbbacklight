@@ -1,0 +1,45 @@
+#!/bin/bash
+
+# Define the modes along with their corresponding icons and notifications
+modes=(
+    ["1"]="brightnessctl -d asus::kbd_backlight s 10%" 
+    ["2"]="brightnessctl -d asus::kbd_backlight s 40%" 
+    ["3"]="brightnessctl -d asus::kbd_backlight s 100%"
+)
+
+# Function to determine the next mode based on the current mode
+next_mode() {
+    case "$1" in
+        "1") echo "2" ;;  # If last mode was 1, next mode is 2
+        "2") echo "3" ;; # If last mode was 2, next mode is 3
+        *) echo "1" ;;      # If last mode was anything else, next mode is 1
+    esac
+}
+
+# Determine the next mode based on the last mode used (if any)
+if [[ -f "/tmp/last_mode.txt" ]]; then
+    last_mode=$(cat "/tmp/last_mode.txt")
+else
+    last_mode="1"  # Default to mode 1 if no last mode recorded
+fi
+
+# Execute the next mode
+current_mode=$(next_mode "$last_mode")
+
+# Setting icon
+icon="$HOME/.config/hypr/scripts/icons/keyboard.png"
+
+# Execute the mode
+${modes[$current_mode]}
+
+# Kill any existing notifications
+pkill notify-send
+
+# Description for each brightness level
+brightness_description=("Low brightness" "Mid brightness" "High brightness")
+
+# Display notification for the current mode
+notify-send -i "$icon" -e -h string:x-canonical-private-synchronous:sys-notify -u low -t 2000 "Keyboard backlight mode" "${brightness_description[$current_mode - 1]}"
+
+# Record the current mode for the next execution
+echo "$current_mode" > "/tmp/last_mode.txt"

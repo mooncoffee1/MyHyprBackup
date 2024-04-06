@@ -2,27 +2,28 @@
      "layer": "top", // Waybar at top layer
     // "position": "bottom", // Waybar position (top|bottom|left|right)
     "height": 35, // Waybar height (to be removed for auto height)
-    "width": 1900, // Waybar width
+    "width": 1920, // Waybar width
     "spacing": 0, // Gaps between modules (4px)
     // Choose the order of the modules
     "modules-left": [
     	"custom/logo",
-        "hyprland/workspaces",
+        "hyprland/window",
         "gamemode"
     ],
     "modules-center": [
-        "custom/waybar-mpris"
+        "temperature",
+        "custom/waybar-mpris",
+        "hyprland/workspaces",
+        "clock"
     ],
     "modules-right": [
         "tray",
         "network",
         "temperature",
         "pulseaudio",
-        "backlight",
-        "battery",
         "custom/fan-rpm",
         "custom/power_profile",
-        "clock"
+        "battery"
     ],
     "keyboard-state": {
         "numlock": true,
@@ -32,6 +33,11 @@
             "locked": "",
             "unlocked": ""
         }
+    },
+    "hyprland/window": {
+        "format": "{}",
+        "max-length": 30,
+        "separate-outputs": true
     },
     "sway/mode": {
         "format": "<span style=\"italic\">{}</span>"
@@ -45,21 +51,17 @@
     },
     "custom/logo": {
 	"format": "󰣇",
+    "tooltip": true,
+    "tooltip-format": "amogus",
 	"on-click": "sleep 0.1; .config/hypr/scripts/launcher",
+    "on-click-right": "sleep 0.1; .config/hypr/scripts/update"
 },
     "custom/waybar-mpris": {
         "return-type": "json",
         "max-length": 40,
         "exec": "waybar-mpris --position --autofocus --pause 󰏤 --play 󰐊",
         "on-click": "sleep 0.1; waybar-mpris --send toggle",
-        // This option will switch between players on right click.
-            "on-click-right": "sleep 0.1; playerctl next",
-        // The options below will switch the selected player on scroll
-            // "on-scroll-up": "waybar-mpris --send player-next",
-            // "on-scroll-down": "waybar-mpris --send player-prev",
-        // The options below will go to next/previous track on scroll
-            // "on-scroll-up": "waybar-mpris --send next",
-            // "on-scroll-down": "waybar-mpris --send prev",
+        "on-click-right": "sleep 0.1; playerctl next",
         "escape": true,
     },
     "mpd": {
@@ -116,12 +118,32 @@
   	"tooltip-format": "Games running: {count}"
   },
 
-    "clock": {
-        // "timezone": "America/New_York",
-        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt> ",
-        "format": "{:%H:%M}",
-        "format-alt": "{:%Y-%m-%d}"
-    },
+  "clock": {
+    "format": "{:%H:%M %A %m/%d}",
+    "format-alt": "{:%A, %B %d, %Y (%R)}  ",
+    "tooltip-format": "<tt><small>{calendar}</small></tt>",
+    "calendar": {
+                "mode"          : "year",
+                "mode-mon-col"  : 3,
+                "weeks-pos"     : "right",
+                "on-scroll"     : 1,
+                "on-click-right": "mode",
+                "format": {
+                          "months":     "<span color='#ffead3'><b>{}</b></span>",
+                          "days":       "<span color='#ecc6d9'><b>{}</b></span>",
+                          "weeks":      "<span color='#99ffdd'><b>W{}</b></span>",
+                          "weekdays":   "<span color='#ffcc66'><b>{}</b></span>",
+                          "today":      "<span color='#ff6699'><b><u>{}</u></b></span>"
+                          }
+                },
+    "actions":  {
+                "on-click-right": "mode",
+                "on-click-forward": "tz_up",
+                "on-click-backward": "tz_down",
+                "on-scroll-up": "shift_up",
+                "on-scroll-down": "shift_down"
+                }
+},
     "cpu": {
         "format": "{usage}% ",
         "tooltip": false
@@ -159,11 +181,11 @@
     },
     "network": {
         // "interface": "wlp2*", // (Optional) To force the use of this interface
-        "format-wifi": "{essid} 󰤨",
+        "format-wifi": "Wifi 󰤨",
         "format-ethernet": "Wired 󰣺",
-        "tooltip-format": "{ifname} via {gwaddr}",
+        "tooltip-format": "{essid} via {gwaddr}",
         "format-linked": "{ifname} (No IP) ",
-        "format-disconnected": "Disconnected 󰤭",
+        "format-disconnected": "Dead 󰤭",
        // "format-alt": "{ifname}: {ipaddr}/{cidr}",
         "on-click": "wofi-wifi-menu"
     },
