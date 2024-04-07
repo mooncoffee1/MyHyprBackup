@@ -1,7 +1,7 @@
 max-visible=3
 anchor=top-right
 font=Iosevka 10
-layer=overlay
+layer=top
 default-timeout=4000
 text-alignment=left
 icon-path=/usr/share/icons/Papirus-Dark/
@@ -25,7 +25,7 @@ border-color=#727169
 border-size=2
 border-radius=7
 progress-color= source #33333C
-max-icon-size=32
+max-icon-size=36
 
 
 [urgency=high]
