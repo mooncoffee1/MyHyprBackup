@@ -4,8 +4,7 @@
 
 }
 window {
-  background-color: rgba(9,6,24, 0.7);
-  
+  background-color: RGBa(31, 31, 40,0.7);  
   
 }
 button {
@@ -21,7 +20,6 @@ button {
 
 
 button:focus,
-button:active,
 button:hover  {
   background-size: 22%;
   border-radius: 35px;
@@ -30,6 +28,7 @@ button:hover  {
   color: #DCD7BA;
   outline-style: none;
 }
+
 
 #lock {
   background-image: image(
