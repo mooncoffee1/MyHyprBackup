@@ -1,5 +1,11 @@
 # MyHyprBackup
  my hyprbackup kanagawa
+ ![image](https://github.com/mooncoffee1/MyHyprBackup/assets/118976333/f0e395c4-db94-437a-8036-7b4728a7d5f1)
+![image](https://github.com/mooncoffee1/MyHyprBackup/assets/118976333/a1ea6910-1198-4e57-81d5-448df48b083b)
+ ![image](https://github.com/mooncoffee1/MyHyprBackup/assets/118976333/3a347d7a-2ead-44ca-9e14-f0bf6ccb168c)
+![image](https://github.com/mooncoffee1/MyHyprBackup/assets/118976333/deb48fdd-02ad-4337-9a07-cc30c2dff874)
+
+
 might reflash my arch linux later, soo this will be good to start from where i left ig
 
 
