@@ -1,7 +1,7 @@
 <!-- PROJECT LOGO AND TITLE -->
 <p align="center">
   <a href="https://github.com/mooncoffee1/MyHyprBackup.git">
-    <img src="temp/logo.png" alt="Logo" width="100" height="100">
+    <img src="temp/hyprland.gif" alt="Logo" width="100" height="100">
   </a>
 
   <h2 align="center">Project Title</h2>
