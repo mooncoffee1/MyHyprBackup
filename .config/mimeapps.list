@@ -8,7 +8,7 @@ application/x-shellscript=code-oss.desktop;
 
 [Default Applications]
 audio/mpeg=cantata.desktop
-inode/directory=thunar.desktop
+inode/directory=pcmanfm.desktop
 text/html=firefox.desktop
 x-scheme-handler/http=firefox.desktop
 x-scheme-handler/https=firefox.desktop
