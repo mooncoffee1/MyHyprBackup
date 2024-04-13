@@ -4,11 +4,10 @@
     <img src="temp/hyprland.gif" alt="Logo" width="100" height="100">
   </a>
 
-  <h2 align="center">Project Title</h2>
+  <h2 align="center">Hyprland Dotfiles</h2>
   <p align="center">
-    The purpose of this project described in one line!
+    My Hyprland dotfiles with kanagawa collor scheme!
    
-   my hyprbackup kanagawa
  ![image](https://github.com/mooncoffee1/MyHyprBackup/assets/118976333/f0e395c4-db94-437a-8036-7b4728a7d5f1)
 ![image](https://github.com/mooncoffee1/MyHyprBackup/assets/118976333/a1ea6910-1198-4e57-81d5-448df48b083b)
  ![image](https://github.com/mooncoffee1/MyHyprBackup/assets/118976333/3a347d7a-2ead-44ca-9e14-f0bf6ccb168c)
