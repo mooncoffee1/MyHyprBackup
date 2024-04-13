@@ -8,7 +8,7 @@
  **/
 * {
     font:                        "Iosevka 10";
-    background:                  #1F1F2899;
+    background:                  #1F1F28BF;
     background-alt:              #1F1F28;
     foreground:                  #DCD7BA;
     selected:                    #C0A36E;
