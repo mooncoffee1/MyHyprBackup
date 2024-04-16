@@ -12,7 +12,7 @@ window#waybar {
     transition-duration: .5s;
     box-shadow: 4px 4px 2px 1px #101010;    
     border-style: solid;
-    border-color: #727169;
+    border-bottom: 1px solid #727169;
     }
 
 window#waybar.hidden {

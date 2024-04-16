@@ -8,7 +8,7 @@ window {
 }
 button {
   color: #C0A36E;
-  background-color: rgb(9,6,24);
+  background: none;
   border-radius: 26px;
   margin: 25px;
   background-repeat: no-repeat;

@@ -21,10 +21,10 @@ padding=16
 
 background-color=#1F1F28BF
 text-color=#DCD7BA
-border-color=#72716966
+border-color=#727169bf
 border-size=1
 border-radius=7
-progress-color= source #090618BF
+progress-color= source #16161CD9
 max-icon-size=36
 
 
