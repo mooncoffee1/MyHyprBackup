@@ -19,6 +19,7 @@
 configuration {
 	modi:                       "drun";
     show-icons:                 true;
+    icon-theme:              "Papirus";
     display-drun:               " 󱓞 ";
 	drun-display-format:        "{name}";
 }
@@ -147,7 +148,7 @@ element selected.normal {
 element-icon {
     background-color:            transparent;
     text-color:                  inherit;
-    size:                        32px;
+    size:                        28px;
     cursor:                      inherit;
 }
 element-text {

@@ -54,7 +54,7 @@ button:hover {
     margin-right: 3px;
     margin-top: 5px;
     margin-bottom: 5px;
-    background-color: transparent;
+    background-color: #1F1F28;
     border-radius: 12px;
     color: #DCD7BA;
 }
@@ -75,8 +75,8 @@ button:hover {
 
 
 #workspaces button:hover {
-    background-color: #1F1F28;
-    color: #DCD7BA;
+    background-color: #727169;
+    color: #1F1F28;
     border-radius: 12px;
 }
 
@@ -119,7 +119,7 @@ button:hover {
 #mpd {
     padding: 0 10px;
     color: #DCD7BA;
-    background-color: transparent;
+    background-color: #1F1F28;
     border-radius:   12px;
     margin-left: 5px;
     margin-right: 5px;
@@ -262,7 +262,7 @@ label:focus {
 }
 
 #tray {
-    border-radius: 12px;
+    border-radius:   12px;
     margin-left: 5px;
     margin-right: 5px;
     margin-top: 4px;
