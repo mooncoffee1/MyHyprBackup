@@ -168,22 +168,25 @@ window.notification-popups box.notifications {
     margin-top:2px;
     font-size: 13px;
     }
-    
-    .profile-label {
-        margin-top: 3px;
-    }
+
     .profile-balanced {
         margin-top: 3px;
+        margin-right: 3px;
+
     }
     
     .profile-performance {
         margin-top: 3px;
         color: #C34043;
+        margin-right: 3px;
+
     }
     
     .profile-powersaver {
         margin-top: 3px;
         color: #957FB8;
+        margin-right: 3px;
+
     }
     .active {
         background-color: blue;  

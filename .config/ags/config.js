@@ -37,9 +37,9 @@ async function PowerProfile() {
 
     // Custom labels for each profile
     const profileLabels = {
-        'balanced': '󰈐 B',
-        'performance': '󰈐 H',
-        'power-saver': '󰈐 L'
+        'balanced': '󰈐',
+        'performance': '󱑬',
+        'power-saver': '󰠝'
     };
 
     // Initial state to keep track of the current profile index
@@ -188,14 +188,13 @@ const volumeIndicator = Widget.Button({
 const batteryProgress = Widget.Box({
     visible: battery.bind('available'),
     class_name: battery.bind('charging').as(ch => ch ? 'charging' : ''),
+    tooltip_text: battery.bind('percent').as(p => `Battery: ${p}%`), // Tooltip shows the percentage
     children: [
         Widget.Icon({
             icon: battery.bind('icon_name')
+            
         }),
-        Widget.Label({
-            label: battery.bind('percent').as(p => `${p}`), // Bind the percent and format it
-            class_name: 'battery-percentage' // Optional: for additional styling
-        })
+        // Removed the always visible percentage label
     ],
     css: "display: flex; align-items: center; gap: 5px;", // Ensures horizontal layout and center alignment
 });
