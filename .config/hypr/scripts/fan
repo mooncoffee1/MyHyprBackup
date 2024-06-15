@@ -1,13 +1,27 @@
 #!/bin/bash
 
+# Function to format RPM values
+format_rpm() {
+    local rpm=$1
+    if [ "$rpm" -ge 1000 ]; then
+        if [ $(($rpm % 1000)) -eq 0 ]; then
+            rpm=$(awk -v rpm="$rpm" 'BEGIN {printf "%dk", rpm/1000}')
+        else
+            rpm=$(awk -v rpm="$rpm" 'BEGIN {printf "%.1fk", rpm/1000}')
+        fi
+    fi
+    echo "$rpm"
+}
+
+# Get the average RPM
 rpm=$(sensors | grep -E 'cpu_fan|gpu_fan' | awk '{print $(NF-1)}' | awk '{sum += $1; count++} END {if(count > 0) print sum/count; else print "N/A"}')
 
 if [ "$rpm" != "N/A" ]; then
+    formatted_rpm=$(format_rpm "$rpm")
     icon="󰈐"  # You can replace this with your preferred fan icon (Font Awesome icon in this case)
-    result="$rpm $icon"
+    result="$formatted_rpm $icon"
 else
     result="N/A"
 fi
 
 echo "{\"text\":\"$result\",\"class\":\"custom-fan-rpm\",\"tooltip\":\"Fan RPM\",\"alt\":\"Fan RPM\"}"
-

@@ -1,26 +1,77 @@
 #!/bin/bash
 
+ICON_DIR="/$HOME/.config/hypr/scripts/icons"
+
+# Function to get the current power profile
 get_pwr() {
-    PWR=$(asusctl profile -p | sed s:'Active profile is'::)
+    PWR=$(powerprofilesctl get | sed 's/^[ \t]*//; s/[ \t]*$//')
 }
 
+# Function to cycle to the next profile
+cycle_profile() {
+    current_profile=$(powerprofilesctl get)
+    case $current_profile in
+        power-saver)
+            powerprofilesctl set balanced
+            ;;
+        balanced)
+            powerprofilesctl set performance
+            ;;
+        performance)
+            powerprofilesctl set power-saver
+            ;;
+        *)
+            powerprofilesctl set balanced
+            ;;
+    esac
+}
+
+# Function to send a notification
+send_notification() {
+    case $PWR in
+        balanced)
+            notify-send -i "$ICON_DIR/balanced.png" -h string:x-canonical-private-synchronous:sys-notify -u low "Balanced Profile"
+            ;;
+        performance)
+            notify-send -i "$ICON_DIR/performance.png" -h string:x-canonical-private-synchronous:sys-notify -u low "Performance Profile"
+            ;;
+        power-saver)
+            notify-send -i "$ICON_DIR/power-saver.png" -h string:x-canonical-private-synchronous:sys-notify -u low "Power Saver Profile"
+            ;;
+        *)
+            notify-send -i "$ICON_DIR/unknown.png" -h string:x-canonical-private-synchronous:sys-notify -u low "Unknown Profile"
+            ;;
+    esac
+}
+
+# Get the current power profile
 get_pwr
 
-if [ $PWR == Balanced ]; then
-    text="󰾅"
+# Debugging: Print the current profile to verify it's correctly fetched
+echo "Current profile: '$PWR'" >&2
+
+# Set icon and tooltip based on the current profile
+if [ "$PWR" == "balanced" ]; then
+    text="󱩅"
     tooltip="Balanced"
-elif [ $PWR == Performance ]; then
-    text="󰓅"
+elif [ "$PWR" == "performance" ]; then
+    text="󰈸"
     tooltip="Performance"
-elif [ $PWR == Quiet ]; then
-    text="󰾆"
-    tooltip="Quiet"
+elif [ "$PWR" == "power-saver" ]; then
+    text="󰜗"
+    tooltip="Power Saver"
+else
+    text="?"
+    tooltip="Unknown"
 fi
 
+# Output JSON for Waybar
 echo '{"text": "'$text'", "tooltip": "'$tooltip'"}'
 
+# Handle click event to cycle profiles
 if [[ "$1" == "next" ]]; then
-    asusctl profile -n; pkill -SIGRTMIN+8 waybar
+    cycle_profile
     get_pwr
-    notify-send -h string:x-canonical-private-synchronous:sys-notify -u low "$PWR Power Profile"
+    send_notification
+    pkill -SIGRTMIN+8 waybar
 fi

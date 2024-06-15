@@ -1,12 +1,29 @@
 #!/bin/bash
 
+# Lock file path
+LOCKFILE=/tmp/color_picker.lock
+
+# Create a lock file if it doesn't exist, or exit if it does
+if [ -e "$LOCKFILE" ]; then
+    echo "Script is already running. Exiting."
+    exit 1
+else
+    touch "$LOCKFILE"
+fi
+
+# Function to remove the lock file upon script exit
+cleanup() {
+    rm -f "$LOCKFILE"
+}
+trap cleanup EXIT
+
 TMPPCK=$(hyprpicker -a -n)
 TMPPST=$(wl-paste)
 CMD=$(echo "$TMPPST")
 TMP=/tmp/xcolor_$CMD.png
 
 hyprpick() {
-  $TMPPCK
+    $TMPPCK
 }
 
 check_dependencies() {
@@ -27,3 +44,6 @@ main() {
 check_dependencies
 hyprpick
 main
+
+# Remove the lock file before exiting (cleanup function will handle this)
+cleanup

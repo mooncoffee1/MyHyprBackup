@@ -1,15 +1,33 @@
 #!/bin/bash
- 
+
+# Lock file path
+LOCKFILE=/tmp/screenshot_script.lock
+
+# Create a lock file if it doesn't exist, or exit if it does
+if [ -e "$LOCKFILE" ]; then
+    echo "Script is already running. Exiting."
+    exit 1
+else
+    touch "$LOCKFILE"
+fi
+
+# Function to remove the lock file upon script exit
+cleanup() {
+    rm -f "$LOCKFILE"
+}
+trap cleanup EXIT
+
 SAVEDIR=~/Pictures/Screenshots
 mkdir -p -- "$SAVEDIR"
 FILENAME="$SAVEDIR/$(date +'%Y-%m-%d-%H%M%S_screenshot.png')"
 EXPENDED_FILENAME="${FILENAME/#\~/$HOME}"
- 
+
 grim -g "$(slurp)" "$EXPENDED_FILENAME"
 swappy -f "$EXPENDED_FILENAME" -o "$EXPENDED_FILENAME"
- 
- 
-if wl-copy < "$EXPENDED_FILENAME"
-then
-notify-send "Screenshot" "File saved as <i>'$FILENAME'</i> and copied to the clipboard." -i "$EXPENDED_FILENAME"
+
+if wl-copy < "$EXPENDED_FILENAME"; then
+    notify-send "Screenshot" "File saved as <i>'$FILENAME'</i> and copied to the clipboard." -i "$EXPENDED_FILENAME"
 fi
+
+# Remove the lock file before exiting (cleanup function will handle this)
+cleanup
