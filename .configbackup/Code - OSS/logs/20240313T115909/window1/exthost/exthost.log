@@ -1,8 +1,0 @@
-2024-03-13 11:59:26.577 [info] Extension host with pid 10957 started
-2024-03-13 11:59:26.577 [info] Skipping acquiring lock for /home/ananas/.config/Code - OSS/User/workspaceStorage/d231bdf135a682638c56e8c8941e1e2a.
-2024-03-13 11:59:26.610 [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*', root cause: vscode.git
-2024-03-13 11:59:26.626 [info] ExtensionService#_doActivateExtension vscode.git, startup: true, activationEvent: '*'
-2024-03-13 11:59:26.794 [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
-2024-03-13 11:59:26.962 [info] Eager extensions activated
-2024-03-13 11:59:27.034 [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: false, activationEvent: 'onStartupFinished'
-2024-03-13 11:59:27.039 [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'

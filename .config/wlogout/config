@@ -1,10 +1,4 @@
 {
-    "label" : "lock",
-    "action" : "hyprlock",
-    "text" : "Lock"
-}
-
-{
     "label" : "hibernate",
     "action" : "systemctl hibernate",
     "text" : "Hibernate"

@@ -1,3 +1,0 @@
-2024-03-02 19:55:48.943 [info] Initial editor state {"filesToOpenOrCreate":[{"fileUri":{"$mid":1,"path":"/home/ananas/.config/wlogout/config","scheme":"file"},"type":1,"exists":true,"options":{}}],"filesToDiff":[],"filesToMerge":[]}
-2024-03-02 19:55:49.103 [info] Started local extension host with pid 29623.
-2024-03-02 19:55:51.851 [info] [perf] Render performance baseline is 20ms

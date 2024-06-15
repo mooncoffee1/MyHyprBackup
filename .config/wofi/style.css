@@ -1,9 +1,12 @@
+@import url('../ananas/.config/waybar/colors.css');
+
+
 window {
   font-family: "Iosevka", "MaterialDesignIcons";
   margin: 0px;
-  border: 2px solid #727169;
-  background-color: RGBa(31, 31, 40, 0.7);
-  border-radius: 10px;
+  border: 1px solid @dark-gray;
+  background-color: @opacity-back;
+  border-radius: 12px;
 }
 
 #input {

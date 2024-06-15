@@ -1,3 +1,5 @@
+@import url('colors.css');
+
 * {
     /* `otf-font-awesome` is required to be a for icons */
     font-family: MaterialDesignIcons, Iosevka;
@@ -6,13 +8,13 @@
 }
 
 window#waybar {
-    background-color: RGBa(31, 31, 40,0.75);
-    color: #DCD7BA;
+    background-color: @opacity-back;
+    color: @font;
     transition-property: background-color;
     transition-duration: .5s;
-    box-shadow: 4px 4px 2px 1px #101010;    
+    box-shadow: 4px 4px 2px 1px @dark-gray;    
     border-style: solid;
-    border-bottom: 1px solid #727169;
+    border-bottom: 1px solid @dark-gray;
     }
 
 window#waybar.hidden {
@@ -56,27 +58,44 @@ button:hover {
     margin-bottom: 5px;
     background-color: transparent;
     border-radius: 12px;
-    color: #DCD7BA;
+    color: @dark-gray;
 }
 
 #workspaces button.active {
     padding-left: 15px;
     padding-right: 15px;
-    background: #C0A36E;
-    color: #1F1F28;
+    background: @light-blue;
+    color: @background;
     border-radius: 12px;
     font-weight: 900;
     font-size: larger;
+transition:transform 1s ease-in-out 0s;
+animation-duration: 2.2s;
+animation-name: paragato;
+animation-iteration-count: infinite;
+animation-direction: alternate;
+animation-timing-function: ease-in-out;
+-webkit-animation-timing-function: ease-in-out;
+
 }
-@keyframes fadeIn {
-   0% {opacity: 0;}
-   100% {opacity: 1;}
-} 
+/* Define the @keyframes rule for the elementspin animation */
+@keyframes elementfade {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  .element {
+      animation: elementfade;
+      animation-duration: 2s;
+  }
 
 
 #workspaces button:hover {
-    background-color: #1F1F28;
-    color: #DCD7BA;
+    background-color: @aqua;
+    color: @background;
     border-radius: 12px;
 }
 
@@ -86,8 +105,8 @@ button:hover {
 }
 
 #workspaces button.urgent {
-    color: #1F1F28;
-    background-color: #C34043;
+    color: @red;
+    background-color: @light-red;
     border-radius: 12px;
 }
 
@@ -96,6 +115,7 @@ button:hover {
     box-shadow: inset 0 -3px #ffffff;
 }
 
+#custom-notification,
 #custom-waybar-mpris,
 #custom-audio_idle_inhibitor,
 #window,
@@ -118,7 +138,7 @@ button:hover {
 #scratchpad,
 #mpd {
     padding: 0 10px;
-    color: #DCD7BA;
+    color: @font;
     background-color: transparent;
     border-radius:   12px;
     margin-left: 5px;
@@ -154,18 +174,18 @@ button:hover {
 }
 
 #battery.charging, #battery.plugged {
-    color: #76946A;
+    color: @green;
 }
 
 @keyframes blink {
     to {
-        color: #7E9CD8;
+        color: @blue;
     }
 }
 
 /* Using steps() instead of linear as a timing function to limit cpu usage */
 #battery.critical:not(.charging) {
-    color: #C34043;
+    color: @red;
     animation-name: blink;
     animation-duration: 0.5s;
     animation-timing-function: steps(12);
@@ -176,6 +196,7 @@ button:hover {
 label:focus {
 
 }
+
 
 #cpu {
     background-color: #2ecc71;
@@ -214,7 +235,7 @@ label:focus {
 }
 
 #pulseaudio.muted {
-    color: #DCD7BA;
+    color: @gray;
 }
 
 #wireplumber {
@@ -232,7 +253,7 @@ label:focus {
     margin-right: 5px;
     margin-top: 4px;
     margin-bottom: 5px;
-    color: #957FB8;
+    color: @magenta;
 }
 
 #custom-media {
@@ -258,7 +279,7 @@ label:focus {
 }
 
 #temperature.critical {
-    color: #eb4d4b;
+    color: @light-red;
 }
 
 #tray {
@@ -275,7 +296,7 @@ label:focus {
 
 #tray > .needs-attention {
     -gtk-icon-effect: highlight;
-    background-color: #eb4d4b;
+    background-color: @red;
 }
 
 #idle_inhibitor {
@@ -289,7 +310,7 @@ label:focus {
 }
 
 #custom-power_profile{
-    padding: 0 15px;
+    padding: 0 10px;
     
 }
 
@@ -303,7 +324,7 @@ label:focus {
 
 #clock{
     font-weight: bolder;
-    color: #DCD7BA; 
+    color: @yellow; 
     margin-left: 5px;
     margin-right: 5px;
     margin-top: 4px;

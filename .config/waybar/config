@@ -10,13 +10,12 @@
         "clock",
         "custom/waybar-mpris",
         "gamemode"
-    ],
+        ],
     "modules-center": [
         "hyprland/workspaces"
     ],
     "modules-right": [
         "tray",
-        "network",
         "pulseaudio",
         "custom/fan-rpm",
         "custom/power_profile",
@@ -63,6 +62,25 @@
 			"none": ""
 		}
 	},
+
+    "wlr/taskbar": {
+	"format": "{icon}",
+	"icon-size": 14,
+	"icon-theme": "Numix-Circle",
+	"tooltip-format": "{title}",
+	"on-click": "activate",
+	"on-click-middle": "close",
+	"ignore-list": [
+	    "Alacritty"
+	],
+	"app_ids-mapping": {
+		"firefoxdeveloperedition": "firefox-developer-edition"
+	},
+	"rewrite": {
+		"Firefox Web Browser": "Firefox",
+		"Foot Server": "Terminal"
+	}
+},
     "mpd": {
         "format": "{stateIcon} {consumeIcon}{randomIcon}{repeatIcon}{singleIcon}{artist} - {album} - {title} ({elapsedTime:%M:%S}/{totalTime:%M:%S} ",
         "format-disconnected": "Disconnected ",
@@ -91,7 +109,7 @@
     },
     "custom/power_profile": {
   //shows the current power profile and switches to next on click
-    "exec": "~/.config/hypr/scripts//power_profile",
+    "exec": "~/.config/hypr/scripts/power_profile",
     "return-type": "json",
     "interval": 20,
     "format": "{}",
@@ -115,6 +133,27 @@
   	"icon-size": 14,
   	"tooltip": true,
   	"tooltip-format": "Games running: {count}"
+  },
+
+  "custom/notification": {
+    "tooltip": false,
+    "format": "{icon}",
+    "format-icons": {
+      "notification": "󱅫",
+      "none": "󰂜",
+      "dnd-notification": "󰂠",
+      "dnd-none": "",
+      "inhibited-notification": "<span foreground='red'><sup></sup></span>",
+      "inhibited-none": "",
+      "dnd-inhibited-notification": "<span foreground='red'><sup></sup></span>",
+      "dnd-inhibited-none": ""
+    },
+    "return-type": "json",
+    "exec-if": "which swaync-client",
+    "exec": "swaync-client -swb",
+    "on-click": "swaync-client -t -sw",
+    "on-click-right": "swaync-client -d -sw",
+    "escape": true
   },
 
   "clock": {

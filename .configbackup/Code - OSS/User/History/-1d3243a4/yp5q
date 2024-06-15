@@ -1,8 +1,0 @@
-#!/bin/bash
-
-# Set the new profile
-asusctl profile -n
-
-# Get the current profile and send a notification
-current_profile=$(asusctl profile -p)
-notify-send -e -h string:x-canonical-private-synchronous:sys-notify -u normal -t 555  "$current_profile"

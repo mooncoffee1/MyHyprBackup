@@ -1,4 +1,0 @@
-2024-03-02 19:41:36.581 [info] Initial editor state {"filesToOpenOrCreate":[{"fileUri":{"$mid":1,"path":"/home/ananas/.config/wlogout/style.css","scheme":"file"},"type":1,"exists":true,"options":{}}],"filesToDiff":[],"filesToMerge":[]}
-2024-03-02 19:41:36.771 [info] Started local extension host with pid 24687.
-2024-03-02 19:41:39.976 [info] [perf] Render performance baseline is 21ms
-2024-03-02 19:49:19.856 [error] [text file model] handleSaveError(0) - exit - resulted in a save error: Error: Unable to write file '/home/ananas/.config/waybar/style.css' (Error: File Modified Since) file:///home/ananas/.config/waybar/style.css

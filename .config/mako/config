@@ -1,6 +1,6 @@
 max-visible=3
 anchor=top-right
-font=Iosevka 10
+font=Iosevka 11
 layer=top
 default-timeout=4000
 text-alignment=left
@@ -9,22 +9,22 @@ icon-location=right
 format=<b>%s</b>\n%b
 
 width=380
-height=80
-margin=9,4,4
+height=100
+margin=18,18,0
 
 icons=1
 markup=1
 
-padding=16
+padding=23
 
 # Colors
 
-background-color=#1F1F28BF
+background-color=#282828BF
 text-color=#DCD7BA
-border-color=#727169bf
+border-color=#928374
 border-size=1
 border-radius=7
-progress-color= source #16161CD9
+progress-color= source #1D2021D9
 max-icon-size=36
 
 

@@ -1,3 +1,0 @@
-2024-03-03 11:38:12.745 [info] Initial editor state {"filesToOpenOrCreate":[{"fileUri":{"$mid":1,"path":"/home/ananas/.ncmpcpp/config","scheme":"file"},"type":1,"exists":true,"options":{}}],"filesToDiff":[],"filesToMerge":[]}
-2024-03-03 11:38:13.506 [info] Started local extension host with pid 18032.
-2024-03-03 11:38:16.491 [info] [perf] Render performance baseline is 73ms
