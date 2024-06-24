@@ -22,7 +22,7 @@
   "notification-visibility": {},
   "notification-window-width": 400,
   "positionX": "right",
-  "positionY": "top",
+  "positionY": "bottom",
   "script-fail-notify": true,
   "scripts": {},
   "timeout": 10,

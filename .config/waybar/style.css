@@ -46,7 +46,8 @@ button:hover {
 #workspaces{
   background-color: transparent;
   border-radius: 20px;
-  margin: 2px;
+  padding: 0px;
+  margin: 20px;
 
 }
 
@@ -58,12 +59,12 @@ button:hover {
     margin-bottom: 5px;
     background-color: transparent;
     border-radius: 12px;
-    color: @dark-gray;
+    color: @dark-font;
 }
 
 #workspaces button.active {
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
     background: @light-blue;
     color: @background;
     border-radius: 12px;
@@ -105,8 +106,8 @@ animation-timing-function: ease-in-out;
 }
 
 #workspaces button.urgent {
-    color: @red;
-    background-color: @light-red;
+    color: @light-red;
+    background-color: @red;
     border-radius: 12px;
 }
 
@@ -115,6 +116,8 @@ animation-timing-function: ease-in-out;
     box-shadow: inset 0 -3px #ffffff;
 }
 
+#pulseaudio-slider,
+#power-profiles-daemon,
 #custom-notification,
 #custom-waybar-mpris,
 #custom-audio_idle_inhibitor,
@@ -139,7 +142,7 @@ animation-timing-function: ease-in-out;
 #mpd {
     padding: 0 10px;
     color: @font;
-    background-color: transparent;
+    background: @background;
     border-radius:   12px;
     margin-left: 5px;
     margin-right: 5px;
@@ -160,6 +163,11 @@ animation-timing-function: ease-in-out;
 .modules-right > widget:last-child > #workspaces {
     margin-right: 0;
 }
+
+#power-profiles-daemon {
+    padding-right: 13px;
+}
+
 
 #custom-logo{
 
@@ -228,7 +236,6 @@ label:focus {
 
 #pulseaudio {
     border-radius:   12px;
-    margin-left: 5px;
     margin-right: 5px;
     margin-top: 4px;
     margin-bottom: 5px;
@@ -391,4 +398,29 @@ label:focus {
 
 #privacy-item.audio-out {
     background-color: #0069d4;
+}
+
+#pulseaudio-slider slider {
+    min-height: 0px;
+    opacity: 0;
+    background: transparent;
+    border: none;
+    border-radius: 20px;
+    box-shadow: none;
+}
+#pulseaudio-slider trough {
+    min-width: 30px;
+    border-radius: 20px;
+    background: blue;
+
+}
+#pulseaudio-slider trough, #backlight-slider trough {
+    min-height: 10px;
+    min-width: 80px;
+    background-color: @background;
+}
+
+#pulseaudio-slider highlight {
+    min-width: 10px;
+    border-radius: 5px;
 }

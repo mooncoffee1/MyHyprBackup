@@ -1,7 +1,7 @@
 {
      "layer": "top", // Waybar at top layer
   //  "position": "bottom", // Waybar position (top|bottom|left|right)
-    "height": 35, // Waybar height (to be removed for auto height)
+    "height": 40, // Waybar height (to be removed for auto height)
     "width": 1920, // Waybar width
     "spacing": 0, // Gaps between modules (4px)
     // Choose the order of the modules
@@ -18,7 +18,7 @@
         "tray",
         "pulseaudio",
         "custom/fan-rpm",
-        "custom/power_profile",
+        "power-profiles-daemon",
         "battery"
     ],
     "keyboard-state": {
@@ -30,6 +30,17 @@
             "unlocked": ""
         }
     },
+    "power-profiles-daemon": {
+  "format": "{icon}",
+  "tooltip-format": "Power profile: {profile}\nDriver: {driver}",
+  "tooltip": true,
+  "format-icons": {
+    "default": "",
+    "performance": "",
+    "balanced": "",
+    "power-saver": ""
+  }
+},
     "hyprland/window": {
         "format": "{}",
         "max-length": 30,
@@ -50,18 +61,6 @@
         "on-click-right": "sleep 0.1; playerctl next",
         "escape": true,
     },
-	"custom/audio_idle_inhibitor": {
-		"format": "{icon}",
-		"exec": "wayland-pipewire-idle-inhibit --dry-print-both-waybar",
-		"exec-if": "which wayland-pipewire-idle-inhibit",
-		"return-type": "json",
-		"format-icons": {
-			"output": "󰐊",
-			"input": "󰍬",
-			"output-input": "󰐊 󰍬",
-			"none": ""
-		}
-	},
 
     "wlr/taskbar": {
 	"format": "{icon}",
@@ -123,12 +122,12 @@
     },
     
       "gamemode": {
-  	"format": "",
+  	"format": "󰊴",
   	"format-alt": "{glyph} {count}",
-  	"glyph": "󰊴",
+  	"glyph": "",
   	"hide-not-running": true,
-  	"use-icon": true,
-  	"icon-name": "󰊴",
+  	"use-icon": false,
+  	"icon-name": "",
   	"icon-spacing": 4,
   	"icon-size": 14,
   	"tooltip": true,
@@ -227,6 +226,13 @@
        // "format-alt": "{ifname}: {ipaddr}/{cidr}",
         "on-click": "nm-connection-editor"
     },
+
+    "pulseaudio/slider": {
+    "min": 0,
+    "max": 100,
+    "orientation": "horizontal"
+},
+
     "pulseaudio": {
         // "scroll-step": 1, // %, can be a float
         "format": "{volume} {icon} {format_source}",
@@ -244,7 +250,7 @@
             "car": "",
             "default": ["󰕿", "󰖀", "󰕾"]
         },
-        "on-click": "pypr toggle volume"
+        "on-click": "pavucontrol"
     },
 "custom/fan-rpm": {
   "exec": "~/.config/hypr/scripts/fan",

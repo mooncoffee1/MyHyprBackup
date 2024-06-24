@@ -1,20 +1,23 @@
-@define-color red #CC241D;
-@define-color green #98971A;
-@define-color yellow #D79921;
-@define-color blue #458588;
-@define-color magenta #B16286;
-@define-color aqua #689D6A;
-@define-color gray #A89984;
+@define-color red #EA6962;
+@define-color green #A9B665;
+@define-color yellow #D8A657;
+@define-color blue #7DAEA3;
+@define-color magenta #D3869B;
+@define-color aqua #89B482;
+@define-color gray #3C3836;
 
-@define-color dark-gray #928374;
-@define-color light-red #FB4934;
-@define-color light-green #B8BB26;
-@define-color light-yellow #FABD2F;
-@define-color light-blue #83A598;
+@define-color dark-gray #3C3836;
+@define-color light-red #A73224;
+@define-color light-green #A9B665;
+@define-color light-yellow #D8A657;
+@define-color light-blue #7DAEA3;
 @define-color light-magenta #D3869B;
-@define-color light-aqua #8EC07C;
-@define-color font #EBDBB2;
+@define-color light-aqua #89B482;
+
+@define-color font #D4BE98;
 @define-color background #282828;
+@define-color dark-font #928374;
+
 
 @define-color opacity-back rgba(40, 40, 40, 0.80);
 @define-color wlogout-back rgba(40, 40, 40, 0.57);
