@@ -1,11 +1,11 @@
-@import url('../ananas/.config/waybar/colors.css');
+@import url('../ananas/.cache/wal/colors-waybar.css');
 
 
 window {
   font-family: "Iosevka", "MaterialDesignIcons";
   margin: 0px;
-  border: 1px solid @dark-gray;
-  background-color: @opacity-back;
+  border: 1px solid @color1;
+  background: alpha(@background, .70);
   border-radius: 12px;
 }
 
@@ -26,7 +26,7 @@ window {
 
 #outer-box {
   border: none;
-  #background-color: transparent;
+  background-color: transparent;
 }
 
 #scroll {
@@ -42,5 +42,9 @@ window {
 
 #entry {
   border: none;
+}
+
+#entry:selected {
+  border-radius: 5px;
 }
 

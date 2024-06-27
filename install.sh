@@ -51,7 +51,7 @@ packages=(
     noto-fonts-emoji polkit-gnome imagemagick hyprpicker-git hyprpaper-git hypridle gpick acpi acpi_call qview qt5ct
     kvantum-qt5 colloid-cursors-git lightdm lightdm-elephant-greeter-git spotify waybar-mpris-git
     brightnessctl pamixer papirus-icon-theme ttf-jetbrains-mono-nerd pipewire pipewire-jack
-    pipewire-alsa pipewire-pulse thunar cava-git spicetify-cli atuin wlogout gruvbox-gtk-theme-git gruvbox-icon-theme-git
+    pipewire-alsa pipewire-pulse thunar cava-git spicetify-cli atuin wlogout python-pywal gradience zsh-autosuggestions zsh-sudo zsh-syntax-highlighting
 )
 
 # Ask for confirmation before installing packages with paru

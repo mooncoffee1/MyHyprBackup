@@ -6,6 +6,15 @@ return {
       require "configs.conform"
     end,
   },
+    {
+    "nvim-telescope/telescope.nvim",
+    opts = function()
+      local conf = require "nvchad.configs.telescope"
+
+      conf.defaults.mappings.i = {
+        ["<C-j>"] = require("telescope.actions").move_selection_next,
+        ["<Esc>"] = require("telescope.actions").close,
+      }
 
   -- These are some examples, uncomment them if you want to see them work!
   -- {

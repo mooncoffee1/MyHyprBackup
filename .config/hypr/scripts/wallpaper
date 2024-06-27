@@ -1,0 +1,23 @@
+#!/bin/bash
+
+python3 .config/hypr/scripts/build-gradience.py
+
+gradience-cli apply -n pywal --gtk both 
+
+
+# Reload Waybar
+pkill -SIGUSR2 waybar
+
+# Reload swaync
+swaync-client -rs
+
+python3 .config/hypr/scripts/build-kvantum.py
+
+python3 .config/hypr/scripts/colors-hypr.py
+
+.config/hypr/scripts/colors
+
+walogram
+
+
+echo "Waybar and swaync and more reloaded."

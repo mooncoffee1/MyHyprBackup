@@ -121,7 +121,7 @@
         "show-passive-items": false
     },
     
-      "gamemode": {
+    "gamemode": {
   	"format": "󰊴",
   	"format-alt": "{glyph} {count}",
   	"glyph": "",

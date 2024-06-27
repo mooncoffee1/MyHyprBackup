@@ -1,4 +1,4 @@
-@import url('colors.css');
+@import url('~../../../../.cache/wal/colors-waybar.css');
 
 * {
     /* `otf-font-awesome` is required to be a for icons */
@@ -8,13 +8,15 @@
 }
 
 window#waybar {
-    background-color: @opacity-back;
-    color: @font;
+    background: alpha(@background, .55);
+    color: @foreground;
     transition-property: background-color;
     transition-duration: .5s;
-    box-shadow: 4px 4px 2px 1px @dark-gray;    
+    box-shadow: 10px 45px 45px 0px @background;
+-webkit-box-shadow: 10px 45px 45px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 45px 45px 0px rgba(0,0,0,0.75);
     border-style: solid;
-    border-bottom: 1px solid @dark-gray;
+ /*   border-bottom: 1px solid @color0; */
     }
 
 window#waybar.hidden {
@@ -53,21 +55,24 @@ button:hover {
 
 #workspaces button {
     padding: 0 5px;
+    margin: 8px;
     margin-left: 3px;
     margin-right: 3px;
-    margin-top: 5px;
-    margin-bottom: 5px;
+    margin-top: 8px;
+    margin-bottom: 8px;
     background-color: transparent;
     border-radius: 12px;
-    color: @dark-font;
+    color: @color2;
 }
 
 #workspaces button.active {
-    padding-left: 10px;
-    padding-right: 10px;
-    background: @light-blue;
+    padding-left: 12px;
+    padding-right: 12px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background: @color6; 
     color: @background;
-    border-radius: 12px;
+    border-radius: 15px;
     font-weight: 900;
     font-size: larger;
 transition:transform 1s ease-in-out 0s;
@@ -77,6 +82,7 @@ animation-iteration-count: infinite;
 animation-direction: alternate;
 animation-timing-function: ease-in-out;
 -webkit-animation-timing-function: ease-in-out;
+
 
 }
 /* Define the @keyframes rule for the elementspin animation */
@@ -95,9 +101,8 @@ animation-timing-function: ease-in-out;
 
 
 #workspaces button:hover {
-    background-color: @aqua;
-    color: @background;
-    border-radius: 12px;
+    background-color: @color2;
+    color: @color0;
 }
 
 #workspaces button.focused {
@@ -106,8 +111,8 @@ animation-timing-function: ease-in-out;
 }
 
 #workspaces button.urgent {
-    color: @light-red;
-    background-color: @red;
+    color: @color0;
+    background-color: @color3;
     border-radius: 12px;
 }
 
@@ -116,7 +121,8 @@ animation-timing-function: ease-in-out;
     box-shadow: inset 0 -3px #ffffff;
 }
 
-#pulseaudio-slider,
+#gamemode,
+#pulseaudio,
 #power-profiles-daemon,
 #custom-notification,
 #custom-waybar-mpris,
@@ -127,6 +133,8 @@ animation-timing-function: ease-in-out;
 #custom-logo,
 #clock,
 #battery,
+#battery.charging, 
+#battery.plugged,
 #cpu,
 #memory,
 #disk,
@@ -141,13 +149,13 @@ animation-timing-function: ease-in-out;
 #scratchpad,
 #mpd {
     padding: 0 10px;
-    color: @font;
-    background: @background;
+    color: @foreground;
+    background: @color0;
     border-radius:   12px;
     margin-left: 5px;
     margin-right: 5px;
-    margin-top: 4px;
-    margin-bottom: 5px;
+    margin-top: 8px;
+    margin-bottom: 8px;
 }
 
 #workspaces {
@@ -165,35 +173,34 @@ animation-timing-function: ease-in-out;
 }
 
 #power-profiles-daemon {
-    padding-right: 13px;
+    padding-right: 16px;
 }
 
+#gamemode{
+    background-color: transparent;
+}
 
 #custom-logo{
 
 }
 
 #battery {
-    border-radius:   12px;
-    margin-left: 5px;
-    margin-right: 5px;
-    margin-top: 4px;
-    margin-bottom: 5px;
+ 
 }
 
 #battery.charging, #battery.plugged {
-    color: @green;
+    color: @color6;
 }
 
 @keyframes blink {
     to {
-        color: @blue;
+        color: @color5;
     }
 }
 
 /* Using steps() instead of linear as a timing function to limit cpu usage */
 #battery.critical:not(.charging) {
-    color: @red;
+    color: @color11;
     animation-name: blink;
     animation-duration: 0.5s;
     animation-timing-function: steps(12);
@@ -234,15 +241,9 @@ label:focus {
     color: #DCD7BA;
 }
 
-#pulseaudio {
-    border-radius:   12px;
-    margin-right: 5px;
-    margin-top: 4px;
-    margin-bottom: 5px;
-}
 
 #pulseaudio.muted {
-    color: @gray;
+    color: @color8;
 }
 
 #wireplumber {
@@ -255,12 +256,7 @@ label:focus {
 }
 
 #custom-waybar-mpris{
-    border-radius:   12px;
-    margin-left: 5px;
-    margin-right: 5px;
-    margin-top: 4px;
-    margin-bottom: 5px;
-    color: @magenta;
+    color: @color14;
 }
 
 #custom-media {
@@ -277,24 +273,8 @@ label:focus {
     background-color: #ffa000;
 }
 
-#temperature {
-    border-radius:   12px;
-    margin-left: 5px;
-    margin-right: 5px;
-    margin-top: 4px;
-    margin-bottom: 5px;
-}
-
 #temperature.critical {
     color: @light-red;
-}
-
-#tray {
-    border-radius: 12px;
-    margin-left: 5px;
-    margin-right: 5px;
-    margin-top: 4px;
-    margin-bottom: 5px;
 }
 
 #tray > .passive {
@@ -331,12 +311,7 @@ label:focus {
 
 #clock{
     font-weight: bolder;
-    color: @yellow; 
-    margin-left: 5px;
-    margin-right: 5px;
-    margin-top: 4px;
-    margin-bottom: 5px;
-    border-radius:   12px;
+    color: @color13; 
 }
 
 #mpd.stopped {

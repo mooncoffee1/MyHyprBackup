@@ -1,4 +1,4 @@
-@import url('../waybar/colors.css');
+@import url('../../.cache/wal/colors-waybar.css');
 
 
 * {
@@ -7,10 +7,10 @@
 
 }
 window {
-  background-color: @wlogout-back;  
+  background: alpha(@background, .55);
 }
 button {
-  color: @font;
+  color: @foreground;
   background-color: @background;
   outline-style: none;
   border: none;
@@ -35,7 +35,7 @@ button:hover  {
   background-size: 25%;
   border-radius: 30px;
   -webkit-transform: translate(0px, 50px);
-  background-color: @light-blue;
+  background-color: @color4;
   color: @background;
   animation: gradient_f 20s ease-in infinite;
     transition: all 0.3s cubic-bezier(.55,0.0,.28,1.682);
