@@ -1,5 +1,5 @@
 <!-- PROJECT LOGO AND TITLE -->
-  <h3 align="center">  <img src="temp/hyprland.gif" alt="Logo" width="100" height="100"></h3> <h3 align="center"><img src="https://i.imgur.com/5WgMACe.gif"></h3>
+  <h3 align="center">  <img src="temp/hyprland.gif" alt="Logo" width="100" height="100"></h3> <h3 align="center"><img src="https://i.imgur.com/5WgMACe.gif weight="90px"></h3>
 
   <h2 align="center">Hyprland Dotfiles</h2>
   <p align="center">
