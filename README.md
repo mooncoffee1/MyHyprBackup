@@ -1,10 +1,6 @@
 <!-- PROJECT LOGO AND TITLE -->
   <h3 align="center">  <img src="temp/hyprland.gif" alt="Logo" width="100" height="100"></h3> <h3 align="center"><img src="https://i.imgur.com/5WgMACe.gif" width="200px"></h3>
 
-    
-    <img src="temp/hyprland.gif" alt="Logo" width="100" height="100">
-  </a>
-
   <h2 align="center">Hyprland Dotfiles</h2>
   <p align="center">
     My Hyprland dotfiles with Pywal color scheme! 
