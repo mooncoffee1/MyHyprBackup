@@ -6,7 +6,7 @@ colors_json_path = os.path.expanduser("~/.cache/wal/colors.json")
 
 # Define the directory and file paths for the Kvantum theme
 kvantum_dir = os.path.expanduser("~/.config/Kvantum/Pywal")
-kvantum_file_path = os.path.join(kvantum_dir, "pywal.kvconfig")
+kvantum_file_path = os.path.join(kvantum_dir, "Pywal.kvconfig")
 
 # Create the Kvantum directory if it doesn't exist
 os.makedirs(kvantum_dir, exist_ok=True)
