@@ -1,6 +1,7 @@
 <!-- PROJECT LOGO AND TITLE -->
 <p align="center">
-  <a href="https://github.com/mooncoffee1/MyHyprBackup.git"> + ![pywal](https://github.com/mooncoffee1/MyHyprBackup/assets/118976333/2fcddb9a-6ad4-414c-b10d-6e97832e87a3)
+  <a href="https://github.com/mooncoffee1/MyHyprBackup.git"> + 
+  <h3 align="center"><img src="https://i.imgur.com/5WgMACe.gif" width="200px"></h3>
 
     
     <img src="temp/hyprland.gif" alt="Logo" width="100" height="100">
