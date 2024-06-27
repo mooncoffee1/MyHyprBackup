@@ -6,43 +6,43 @@ Issues caused by theming should be reported to Gradience repository, and not to 
 https://github.com/GradienceTeam/Gradience
 */
 
-@define-color accent_color #F6A738;
-@define-color accent_bg_color #F6A738;
-@define-color accent_fg_color #fce4c3;
-@define-color destructive_color #A87F59;
-@define-color destructive_bg_color #A87F59;
-@define-color destructive_fg_color #e4d8cd;
-@define-color success_color #B49262;
-@define-color success_bg_color #B49262;
-@define-color success_fg_color #e4d5ba;
-@define-color warning_color #C8A972;
-@define-color warning_bg_color #C8A972;
-@define-color warning_fg_color #e4d5ba;
-@define-color error_color #A87F59;
-@define-color error_bg_color #A87F59;
-@define-color error_fg_color #e4d5ba;
-@define-color window_bg_color #100e0a;
-@define-color window_fg_color #e4d5ba;
-@define-color view_bg_color #12100c;
-@define-color view_fg_color #e4d5ba;
-@define-color headerbar_bg_color #100e0a;
-@define-color headerbar_fg_color #e4d5ba;
-@define-color headerbar_border_color #171511;
-@define-color headerbar_backdrop_color #171511;
-@define-color headerbar_shade_color #14120e;
-@define-color card_bg_color #14120e;
-@define-color card_fg_color #e4d5ba;
-@define-color card_shade_color #12100c;
-@define-color dialog_bg_color #100e0a;
-@define-color dialog_fg_color #e4d5ba;
-@define-color popover_bg_color #100e0a;
-@define-color popover_fg_color #e4d5ba;
-@define-color shade_color #171511;
-@define-color scrollbar_outline_color #F6A738;
-@define-color sidebar_bg_color #100e0a;
-@define-color sidebar_fg_color #e4d5ba;
-@define-color sidebar_backdrop_color #12100c;
-@define-color sidebar_shade_color #14120e;
+@define-color accent_color #6A705B;
+@define-color accent_bg_color #6A705B;
+@define-color accent_fg_color #d2d4cd;
+@define-color destructive_color #556752;
+@define-color destructive_bg_color #556752;
+@define-color destructive_fg_color #ccd1cb;
+@define-color success_color #A05148;
+@define-color success_bg_color #A05148;
+@define-color success_fg_color #ccc1a8;
+@define-color warning_color #77836B;
+@define-color warning_bg_color #77836B;
+@define-color warning_fg_color #ccc1a8;
+@define-color error_color #556752;
+@define-color error_bg_color #556752;
+@define-color error_fg_color #ccc1a8;
+@define-color window_bg_color #0f1112;
+@define-color window_fg_color #ccc1a8;
+@define-color view_bg_color #111314;
+@define-color view_fg_color #ccc1a8;
+@define-color headerbar_bg_color #0f1112;
+@define-color headerbar_fg_color #ccc1a8;
+@define-color headerbar_border_color #161819;
+@define-color headerbar_backdrop_color #161819;
+@define-color headerbar_shade_color #131516;
+@define-color card_bg_color #131516;
+@define-color card_fg_color #ccc1a8;
+@define-color card_shade_color #111314;
+@define-color dialog_bg_color #0f1112;
+@define-color dialog_fg_color #ccc1a8;
+@define-color popover_bg_color #0f1112;
+@define-color popover_fg_color #ccc1a8;
+@define-color shade_color #161819;
+@define-color scrollbar_outline_color #6A705B;
+@define-color sidebar_bg_color #0f1112;
+@define-color sidebar_fg_color #ccc1a8;
+@define-color sidebar_backdrop_color #111314;
+@define-color sidebar_shade_color #131516;
 @define-color blue_1 #99c1f1;
 @define-color blue_2 #62a0ea;
 @define-color blue_3 #3584e4;
@@ -90,5 +90,5 @@ https://github.com/GradienceTeam/Gradience
 @define-color dark_5 #000000;
 
 .navigation-sidebar {
-background-color: #100e0a;
+background-color: #0f1112;
 }
