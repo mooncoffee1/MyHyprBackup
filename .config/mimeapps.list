@@ -1,10 +1,15 @@
 [Added Associations]
-text/css=vscodium-wayland.desktop;
+text/css=code-oss.desktop;
 audio/mpeg=cantata.desktop;
-text/plain=org.gnome.TextEditor.desktop;
+text/plain=code-oss.desktop;geany.desktop;
 image/svg+xml=firefox.desktop;
 application/vnd.efi.iso=org.gnome.FileRoller.desktop;
 application/x-shellscript=code-oss.desktop;
+x-scheme-handler/sms=org.gnome.Shell.Extensions.GSConnect.desktop;
+x-scheme-handler/tel=org.gnome.Shell.Extensions.GSConnect.desktop;
+image/png=swayimg.desktop;
+image/jpeg=swayimg.desktop;
+application/json=code-oss.desktop;
 
 [Default Applications]
 audio/mpeg=cantata.desktop
@@ -15,3 +20,4 @@ x-scheme-handler/https=firefox.desktop
 x-scheme-handler/about=firefox.desktop
 x-scheme-handler/unknown=firefox.desktop
 x-scheme-handler/terminal=kitty.desktop
+image/jpeg=swayimg.desktop
