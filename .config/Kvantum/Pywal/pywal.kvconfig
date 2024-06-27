@@ -77,25 +77,25 @@ menu_blur_radius=0
 tooltip_blur_radius=0
 
 [GeneralColors]
-window.color=#110c03
-base.color=#110c03
-alt.base.color=#ab9b88
-button.color=#B06847
-light.color=#8b7b68
-mid.light.color=#867663
-dark.color=#161108
-mid.color=#18130a
-highlight.color=#B06847
-inactive.highlight.color=#B06847
-text.color=#d1ba9f
-window.text.color=#d1ba9f
-button.text.color=#d1ba9f
-disabled.text.color=#92826f
-tooltip.text.color=#d1ba9f
-highlight.text.color=#d1ba9f
-link.color=#A15332
-link.visited.color=#A15332
-progress.indicator.text.color=#d1ba9f
+window.color=#2d3924
+base.color=#2d3924
+alt.base.color=#b7b7b3
+button.color=#98AA9A
+light.color=#979793
+mid.light.color=#92928e
+dark.color=#323e29
+mid.color=#34402b
+highlight.color=#98AA9A
+inactive.highlight.color=#98AA9A
+text.color=#e2e3dc
+window.text.color=#e2e3dc
+button.text.color=#e2e3dc
+disabled.text.color=#9e9e9a
+tooltip.text.color=#e2e3dc
+highlight.text.color=#e2e3dc
+link.color=#2FB1B0
+link.visited.color=#2FB1B0
+progress.indicator.text.color=#e2e3dc
 
 [Hacks]
 transparent_ktitle_label=true
@@ -135,10 +135,10 @@ frame.right=6
 interior=true
 interior.element=button
 indicator.size=8
-text.normal.color=#d1ba9f
-text.focus.color=#d1ba9f
-text.press.color=#d1ba9f
-text.toggle.color=#d1ba9f
+text.normal.color=#e2e3dc
+text.focus.color=#e2e3dc
+text.press.color=#e2e3dc
+text.toggle.color=#e2e3dc
 text.shadow=0
 text.margin=4
 text.iconspacing=4
@@ -147,10 +147,10 @@ frame.expansion=0
 
 [PanelButtonTool]
 inherits=PanelButtonCommand
-text.normal.color=#d1ba9f
-text.focus.color=#d1ba9f
-text.press.color=#d1ba9f
-text.toggle.color=#d1ba9f
+text.normal.color=#e2e3dc
+text.focus.color=#e2e3dc
+text.press.color=#e2e3dc
+text.toggle.color=#e2e3dc
 text.bold=false
 indicator.element=arrow
 indicator.size=0
@@ -165,10 +165,10 @@ frame.bottom=16
 frame.left=16
 frame.right=16
 indicator.element=tarrow
-text.normal.color=#d1ba9f
-text.focus.color=#d1ba9f
-text.press.color=#d1ba9f
-text.toggle.color=#d1ba9f
+text.normal.color=#e2e3dc
+text.focus.color=#e2e3dc
+text.press.color=#e2e3dc
+text.toggle.color=#e2e3dc
 text.bold=false
 frame.expansion=32
 
@@ -180,14 +180,14 @@ frame.top=1
 frame.bottom=1
 frame.left=1
 frame.right=1
-text.normal.color=#d1ba9f
+text.normal.color=#e2e3dc
 
 [DockTitle]
 inherits=PanelButtonCommand
 frame=false
 interior=false
-text.normal.color=#d1ba9f
-text.focus.color=#d1ba9f
+text.normal.color=#e2e3dc
+text.focus.color=#e2e3dc
 text.bold=false
 
 [IndicatorSpinBox]
@@ -200,7 +200,7 @@ frame.left=2
 frame.right=2
 indicator.element=spin
 indicator.size=8
-text.normal.color=#d1ba9f
+text.normal.color=#e2e3dc
 text.margin.top=2
 text.margin.bottom=2
 text.margin.left=2
@@ -210,8 +210,8 @@ text.margin.right=2
 inherits=PanelButtonCommand
 frame=false
 interior.element=radio
-text.normal.color=#d1ba9f
-text.focus.color=#d1ba9f
+text.normal.color=#e2e3dc
+text.focus.color=#e2e3dc
 min_width=+0.3font
 min_height=+0.3font
 
@@ -219,8 +219,8 @@ min_height=+0.3font
 inherits=PanelButtonCommand
 frame=false
 interior.element=checkbox
-text.normal.color=#d1ba9f
-text.focus.color=#d1ba9f
+text.normal.color=#e2e3dc
+text.focus.color=#e2e3dc
 min_width=+0.3font
 min_height=+0.3font
 
@@ -272,9 +272,9 @@ indicator.size=8
 
 [ToolboxTab]
 inherits=PanelButtonCommand
-text.normal.color=#d1ba9f
-text.press.color=#d1ba9f
-text.focus.color=#d1ba9f
+text.normal.color=#e2e3dc
+text.press.color=#e2e3dc
+text.focus.color=#e2e3dc
 
 [Tab]
 inherits=PanelButtonCommand
@@ -314,10 +314,10 @@ inherits=Menu
 inherits=PanelButtonCommand
 frame=false
 interior=false
-text.normal.color=#d1ba9f
-text.focus.color=#d1ba9f
-text.press.color=#d1ba9f
-text.toggle.color=#d1ba9f
+text.normal.color=#e2e3dc
+text.focus.color=#e2e3dc
+text.press.color=#e2e3dc
+text.toggle.color=#e2e3dc
 
 [MenuButton]
 inherits=PanelButtonCommand
@@ -484,8 +484,8 @@ inherits=PanelButtonCommand
 frame=false
 interior.element=progress
 indicator.element=progress
-text.normal.color=#d1ba9f
-text.focus.color=#d1ba9f
+text.normal.color=#e2e3dc
+text.focus.color=#e2e3dc
 
 [SplitHandle]
 inherits=PanelButtonCommand
@@ -503,8 +503,8 @@ indicator.element=scrollbarhandle
 inherits=PanelButtonCommand
 frame.element=tooltip
 interior.element=tooltip
-text.normal.color=#d1ba9f
-text.focus.color=#d1ba9f
+text.normal.color=#e2e3dc
+text.focus.color=#e2e3dc
 
 [SplitterHandle]
 inherits=PanelButtonCommand
