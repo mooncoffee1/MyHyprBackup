@@ -1,6 +1,6 @@
 #!/bin/bash
 
-python3 .config/hypr/scripts/build-gradience.py
+python3 .config/hypr/scripts/build-gradience-without-blur.py
 
 gradience-cli apply -n pywal --gtk both 
 
