@@ -1,6 +1,6 @@
 {
   "control-center-height": 2,
-  "layer": "overlay",
+  "layer": "top",
   "control-center-layer": "top",
   "control-center-margin-bottom": 20,
   "control-center-margin-left": 0,
@@ -86,9 +86,8 @@
 },
 
   "widgets": [
-    "title",
-    "notifications",
     "mpris",
-    "buttons-grid"
-  ]
+    "title",
+    "notifications"
+    ]
 }

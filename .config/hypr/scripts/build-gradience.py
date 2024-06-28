@@ -2,48 +2,31 @@
 
 import json
 import argparse
-import sys
 import os
-
-
-#############
-# functions #
-#############
-
 
 def hex_to_rgb(color: str) -> tuple:
     """Convert a hex color to rgb."""
     return tuple(bytes.fromhex(color.strip("#")))
 
-
 def rgb_to_hex(color: tuple) -> str:
     """Convert an rgb color to hex."""
     return "#%02x%02x%02x" % (*color,)
 
-
 def darken_color(color: str, amount: int) -> str:
     """Darken a hex color."""
-    # color = [int(col * (1 - amount)) for col in hex_to_rgb(color)]
     ctup = hex_to_rgb(color)
-    nctup = []
-    for col in ctup:
-        nctup.append(int(col * (1 - (amount/100))))
+    nctup = [max(0, int(col * (1 - (amount / 100)))) for col in ctup]
     return rgb_to_hex(nctup)
-
 
 def lighten_color(color: str, amount: int) -> str:
     """Lighten a hex color."""
-    # color = [int(col + (255 - col) * amount) for col in hex_to_rgb(color)]
     ctup = hex_to_rgb(color)
-    nctup = []
-    for col in ctup:
-        nctup.append(int(col + (255 - col) * (amount/100)))
+    nctup = [min(255, int(col + (255 - col) * (amount / 100))) for col in ctup]
     return rgb_to_hex(nctup)
 
-
-def blend_color(color: str, color2: str) -> str:
+def blend_color(color1: str, color2: str) -> str:
     """Blend two colors together."""
-    r1, g1, b1 = hex_to_rgb(color)
+    r1, g1, b1 = hex_to_rgb(color1)
     r2, g2, b2 = hex_to_rgb(color2)
 
     r3 = int(0.5 * r1 + 0.5 * r2)
@@ -52,102 +35,54 @@ def blend_color(color: str, color2: str) -> str:
 
     return rgb_to_hex((r3, g3, b3))
 
+def add_transparency(color: str, alpha: float) -> str:
+    """Add transparency to a hex color."""
+    r, g, b = hex_to_rgb(color)
+    return f"rgba({r}, {g}, {b}, {alpha})"
 
-########
-# Main #
-########
-
-# Initialize parser
 parser = argparse.ArgumentParser()
-
-# Adding optional argument
-parser.add_argument("-d", "--debug", action='store_true',
-                    help="Show Debug Output")
-parser.add_argument("-n", "--dry-run", dest='dryrun', action='store_true',
-                    help="do not write output files")
-parser.add_argument("--pwfox", dest='pwfox', action='store_true',
-                    help="pywalfox matching colors")
-
-# Read arguments from command line
+parser.add_argument("-d", "--debug", action='store_true', help="Show Debug Output")
+parser.add_argument("-n", "--dry-run", dest='dryrun', action='store_true', help="Do not write output files")
+parser.add_argument("--pwfox", dest='pwfox', action='store_true', help="Pywalfox matching colors")
 args = parser.parse_args()
 
 if args.debug:
     print("Displaying Debug Output of % s" % parser.prog)
 
 username = os.environ['USER']
-base_cache_dir = os.environ.get('XDG_CACHE_HOME',
-                                '/home/{}/.cache/'.format(username))
-wal_cache_file = base_cache_dir + '/wal/colors.json'
+base_cache_dir = os.environ.get('XDG_CACHE_HOME', f'/home/{username}/.cache/')
+wal_cache_file = f"{base_cache_dir}/wal/colors.json"
 
 with open(wal_cache_file) as json_file:
     data = json.load(json_file)
     if args.debug:
         print("Data read from file:", wal_cache_file)
-        # print("Name:", data["name"])
-        # print("Vars:", data["variables"])
-        for keys, values in data["colors"].items():
-            print("{key: >24}: {value}".format(key=keys, value=values))
+        for key, value in data["colors"].items():
+            print(f"{key: >24}: {value}")
 
-col = {
-    "col0": data["colors"]["color0"],
-    "col1": data["colors"]["color1"],
-    "col2": data["colors"]["color2"],
-    "col3": data["colors"]["color3"],
-    "col4": data["colors"]["color4"],
-    "col5": data["colors"]["color5"],
-    "col6": data["colors"]["color6"],
-    "col7": data["colors"]["color7"],
-    "col8": data["colors"]["color8"],
-    "col9": data["colors"]["color9"],
-    "col10": data["colors"]["color10"],
-    "col11": data["colors"]["color11"],
-    "col12": data["colors"]["color12"],
-    "col13": data["colors"]["color13"],
-    "col14": data["colors"]["color14"],
-    "col15": data["colors"]["color15"],
-}
+col = {f"col{i}": data["colors"][f"color{i}"] for i in range(16)}
 
 if args.pwfox:
-    pwf_l = 1.25
-    pwf_e_l = 1.85
-    pwf_e_e_l = 2.15
+    pwf_l, pwf_e_l, pwf_e_e_l = 1.25, 1.85, 2.15
 
     bgt = hex_to_rgb(col["col0"])
-    # print("bg hex: {h} rgb: {t}".format(h=col["col0"], t=bgt))
-    # print(bgtuple[0])
-    # print(bgtuple[1])
-    # print(bgtuple[2])
-    bg_l = []
-    bg_l.append(min((max(0, int(bgt[0] + (bgt[0] * pwf_l)))), 255))
-    bg_l.append(min((max(0, int(bgt[1] + (bgt[1] * pwf_l)))), 255))
-    bg_l.append(min((max(0, int(bgt[2] + (bgt[2] * pwf_l)))), 255))
-    bg_e_l = []
-    bg_e_l.append(min((max(0, int(bgt[0] + (bgt[0] * pwf_e_l)))), 255))
-    bg_e_l.append(min((max(0, int(bgt[1] + (bgt[1] * pwf_e_l)))), 255))
-    bg_e_l.append(min((max(0, int(bgt[2] + (bgt[2] * pwf_e_l)))), 255))
-    bg_e_e_l = []
-    bg_e_e_l.append(min((max(0, int(bgt[0] + (bgt[0] * pwf_e_e_l)))), 255))
-    bg_e_e_l.append(min((max(0, int(bgt[1] + (bgt[1] * pwf_e_e_l)))), 255))
-    bg_e_e_l.append(min((max(0, int(bgt[2] + (bgt[2] * pwf_e_e_l)))), 255))
-    bglight = rgb_to_hex(bg_l)
-    bgexlight = rgb_to_hex(bg_e_l)
-    bgeexlight = rgb_to_hex(bg_e_e_l)
-    # print(bg_l)
-    # print(bg_e_l)
-    # print("bg l: {}".format(rgb_to_hex(bg_l)))
-    # print("bg el: {}".format(rgb_to_hex(bg_e_l)))
-    ec1 = bglight
-    ec2 = bgexlight
-    ec3 = bgeexlight
+    bglight = [min(255, int(bgt[i] + (bgt[i] * pwf_l))) for i in range(3)]
+    bgexlight = [min(255, int(bgt[i] + (bgt[i] * pwf_e_l))) for i in range(3)]
+    bgeexlight = [min(255, int(bgt[i] + (bgt[i] * pwf_e_e_l))) for i in range(3)]
+    ec1, ec2, ec3 = map(rgb_to_hex, [bglight, bgexlight, bgeexlight])
 else:
     ec1 = lighten_color(col["col0"], 1)
     ec2 = lighten_color(col["col0"], 2)
     ec3 = lighten_color(col["col0"], 3)
 
+col["cole1"], col["cole2"], col["cole3"] = ec1, ec2, ec3
 
-col["cole1"] = ec1
-col["cole2"] = ec2
-col["cole3"] = ec3
+# Add transparency to background colors
+transparent_background = add_transparency(col["col0"], 0.4)
+transparent_view_bg = add_transparency(col["cole1"], 0.4)
+transparent_dialog_bg = add_transparency(col["col0"], 0.4)
+transparent_popover_bg = add_transparency(col["col0"], 0.4)
+transparent_sidebar_bg = add_transparency(col["col0"], 0.4)
 
 gradience_theme = {
     "name": "pywal",
@@ -167,11 +102,11 @@ gradience_theme = {
         "error_color": col["col11"],
         "error_bg_color": col["col3"],
         "error_fg_color": col["col15"],
-        "window_bg_color": col["col0"],
+        "window_bg_color": transparent_background,
         "window_fg_color": col["col15"],
-        "view_bg_color": col["cole1"],
+        "view_bg_color": transparent_view_bg,
         "view_fg_color": col["col15"],
-        "headerbar_bg_color": col["col0"],
+        "headerbar_bg_color": transparent_background,
         "headerbar_fg_color": col["col15"],
         "headerbar_border_color": col["cole3"],
         "headerbar_backdrop_color": col["cole3"],
@@ -179,81 +114,27 @@ gradience_theme = {
         "card_bg_color": col["cole2"],
         "card_fg_color": col["col15"],
         "card_shade_color": col["cole1"],
-        "dialog_bg_color": col["col0"],
+        "dialog_bg_color": transparent_dialog_bg,
         "dialog_fg_color": col["col15"],
-        "popover_bg_color": col["col0"],
+        "popover_bg_color": transparent_popover_bg,
         "popover_fg_color": col["col15"],
         "shade_color": col["cole3"],
         "scrollbar_outline_color": col["col12"],
-        "sidebar_bg_color": col["col0"],
+        "sidebar_bg_color": transparent_sidebar_bg,
         "sidebar_fg_color": col["col15"],
         "sidebar_backdrop_color": col["cole1"],
         "sidebar_shade_color": col["cole2"],
     },
     "palette": {
-        "blue_": {
-            "1": "#99c1f1",
-            "2": "#62a0ea",
-            "3": "#3584e4",
-            "4": "#1c71d8",
-            "5": "#1a5fb4"
-        },
-        "green_": {
-            "1": "#8ff0a4",
-            "2": "#57e389",
-            "3": "#33d17a",
-            "4": "#2ec27e",
-            "5": "#26a269"
-        },
-        "yellow_": {
-            "1": "#f9f06b",
-            "2": "#f8e45c",
-            "3": "#f6d32d",
-            "4": "#f5c211",
-            "5": "#e5a50a"
-        },
-        "orange_": {
-            "1": "#ffbe6f",
-            "2": "#ffa348",
-            "3": "#ff7800",
-            "4": "#e66100",
-            "5": "#c64600"
-        },
-        "red_": {
-            "1": "#f66151",
-            "2": "#ed333b",
-            "3": "#e01b24",
-            "4": "#c01c28",
-            "5": "#a51d2d"
-        },
-        "purple_": {
-            "1": "#dc8add",
-            "2": "#c061cb",
-            "3": "#9141ac",
-            "4": "#813d9c",
-            "5": "#613583"
-        },
-        "brown_": {
-            "1": "#cdab8f",
-            "2": "#b5835a",
-            "3": "#986a44",
-            "4": "#865e3c",
-            "5": "#63452c"
-        },
-        "light_": {
-            "1": "#ffffff",
-            "2": "#f6f5f4",
-            "3": "#deddda",
-            "4": "#c0bfbc",
-            "5": "#9a9996"
-        },
-        "dark_": {
-            "1": "#77767b",
-            "2": "#5e5c64",
-            "3": "#3d3846",
-            "4": "#241f31",
-            "5": "#000000"
-        }
+        "blue_": {str(i): col[f"col{4 + i}"] for i in range(5)},
+        "green_": {str(i): col[f"col{10 + i}"] for i in range(5)},
+        "yellow_": {str(i): col[f"col{3 + i}"] for i in range(5)},
+        "orange_": {str(i): col[f"col{9 + i}"] for i in range(5)},
+        "red_": {str(i): col[f"col{1 + i}"] for i in range(5)},
+        "purple_": {str(i): col[f"col{5 + i}"] for i in range(5)},
+        "brown_": {str(i): col[f"col{6 + i}"] for i in range(5)},
+        "light_": {str(i): col[f"col{7 + i}"] for i in range(5)},
+        "dark_": {str(i): col[f"col{8 + i}"] for i in range(5)},
     },
     "custom_css": {
         "gtk4": "",
@@ -264,18 +145,19 @@ gradience_theme = {
 
 if args.debug:
     print("gradience theme values")
-    for keys, values in gradience_theme["variables"].items():
-        print("{key: >24}: {value}".format(key=keys, value=values))
+    for key, value in gradience_theme["variables"].items():
+        print(f"{key: >24}: {value}")
 
-home_dir = os.environ.get('HOME', '/home/{}'.format(username))
+home_dir = os.environ.get('HOME', f'/home/{username}')
 gr_dir = ".config/presets/user"
-out_dir = "{}/{}".format(home_dir, gr_dir)
+out_dir = f"{home_dir}/{gr_dir}"
 theme_file = "pywal.json"
-o_file = "{d}/{f}".format(d=out_dir, f=theme_file)
+o_file = f"{out_dir}/{theme_file}"
 
 if not args.dryrun:
     if args.debug:
-        print("writing {}".format(o_file))
+        print("writing", o_file)
+    os.makedirs(out_dir, exist_ok=True)
     with open(o_file, "w") as outfile:
         json.dump(gradience_theme, outfile, indent=4)
 else:
