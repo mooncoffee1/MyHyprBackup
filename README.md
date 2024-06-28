@@ -1,12 +1,10 @@
 <!-- PROJECT LOGO AND TITLE -->
-<p align="center">
-  <a href="https://github.com/mooncoffee1/MyHyprBackup.git">
-    <img src="temp/hyprland.gif" alt="Logo" width="100" height="100">
-  </a>
+  <h3 align="center">  <img src="temp/hyprland.gif" alt="Logo" width="100" height="100"></h3> <h3 align="center"><img src="https://i.imgur.com/5WgMACe.gif weight="90px"></h3>
 
   <h2 align="center">Hyprland Dotfiles</h2>
   <p align="center">
-    My Hyprland dotfiles with kanagawa collor scheme!
+    My Hyprland dotfiles with Pywal color scheme! 
+    I have and install script too, hope it works.
    
  ![image](https://github.com/mooncoffee1/MyHyprBackup/assets/118976333/f0e395c4-db94-437a-8036-7b4728a7d5f1)
 ![image](https://github.com/mooncoffee1/MyHyprBackup/assets/118976333/a1ea6910-1198-4e57-81d5-448df48b083b)
