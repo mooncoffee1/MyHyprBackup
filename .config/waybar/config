@@ -17,6 +17,7 @@
     "modules-right": [
         "tray",
         "pulseaudio",
+        "backlight",
         "custom/fan-rpm",
         "power-profiles-daemon",
         "battery"

@@ -11,7 +11,7 @@ pkill -SIGUSR2 waybar
 # Reload swaync
 swaync-client -rs
 
-python3 .config/hypr/scripts/build-kvantum.py
+./.config/hypr/scripts/build-qt
 
 python3 .config/hypr/scripts/colors-hypr.py
 
