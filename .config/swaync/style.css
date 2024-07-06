@@ -22,7 +22,7 @@
 
   all: unset;
   font-size: 14px;
-  font-family: "Iosevka";
+  font-family: "Roboto";
   transition: 200ms;
 
 }

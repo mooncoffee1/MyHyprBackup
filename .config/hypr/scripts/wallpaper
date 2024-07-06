@@ -1,24 +1,75 @@
 #!/bin/bash
 
-python3 .config/hypr/scripts/build-gradience-without-blur.py
+# Define formatting variables
+GREEN='\033[1;32m'
+NC='\033[0m' # No Color
+GLYPH='󰏘'
 
-gradience-cli apply -n pywal --gtk both 
+# Directory containing PNG files
+icon_dir="$HOME/.config/hypr/scripts/icons/"
 
-# Reload Waybar
+echo -e "${GREEN}${GLYPH} Choosing a random PNG icon from $icon_dir...${NC}"
+
+# Get a list of PNG files starting with "pywal-"
+icons=("$icon_dir"pywal-*.png)
+
+# Check if there are PNG files
+if [ ${#icons[@]} -eq 0 ]; then
+    echo -e "${GREEN}${GLYPH} Error: No PNG files found in $icon_dir${NC}"
+    exit 1
+fi
+
+# Choose a random icon
+random_index=$(( RANDOM % ${#icons[@]} ))
+icon=${icons[$random_index]}
+echo -e "${GREEN}${GLYPH} Selected icon: $icon${NC}"
+
+# Notification details
+title="Changing system colors"
+message="New colors goes brrr!"
+
+echo -e "${GREEN}${GLYPH} Sending notification with icon: $icon${NC}"
+
+# Send the notification
+notify-send -i "$icon" -e -h string:x-canonical-private-synchronous:sys-notify -u low -t 2800 "$title" "$message"
+
+# Execute other commands
+echo -e "\n${GREEN}${GLYPH} Running build-gradience-without-blur.py (for GTK theme) ${NC}"
+python3 ~/.config/hypr/scripts/build-gradience-without-blur.py
+
+echo -e "\n${GREEN}${GLYPH} Applying gtk theme ${NC}"
+gradience-cli apply -n pywal --gtk both
+
+echo -e "\n${GREEN}${GLYPH} Reloading Waybar ${NC}"
 pkill -SIGUSR2 waybar
 
-# Reload swaync
+echo -e "\n${GREEN}${GLYPH} Reloading swaync (notifications)${NC}"
 swaync-client -rs
 
-python .config/hypr/scripts/colors-folders.py
+echo -e "\n${GREEN}${GLYPH} Running colors-folders.py (for papirus colored folders).${NC}"
+python ~/.config/hypr/scripts/colors-folders.py
 
-./.config/hypr/scripts/build-qt
+echo -e "\n${GREEN}${GLYPH} Building Qt theme with script build-qt ${NC}"
+~/.config/hypr/scripts/build-qt
 
-python3 .config/hypr/scripts/colors-hypr.py
+echo -e "\n${GREEN}${GLYPH} Aplying hyprland colors (for window borders) ${NC}"
+python3 ~/.config/hypr/scripts/colors-hypr.py
 
-.config/hypr/scripts/colors
+echo -e "\n${GREEN}${GLYPH} Running colors script (for hyprlock, lock screen) ${NC}"
+~/.config/hypr/scripts/colors
 
+echo -e "\n${GREEN}${GLYPH} Running walogram (for telegram) ${NC}"
 walogram
 
+echo -e "\n${GREEN}${GLYPH} Script execution completed.${NC}"
 
-echo "Waybar and swaync and more reloaded."
+# Randomly decide whether to show the "Did you notice?" notification
+show_notice=$(( RANDOM % 5 ))  # 20% chance
+
+if [ $show_notice -eq 0 ]; then
+    # Choose a new random icon
+    random_index=$(( RANDOM % ${#icons[@]} ))
+    icon=${icons[$random_index]}
+    echo -e "${GREEN}${GLYPH} Sending 'Did you notice?' notification with icon: $icon${NC}"
+    notify-send -i "$icon" -e -h string:x-canonical-private-synchronous:sys-notify -u low -t 10000 "Did you notice?" "The notification icon has changed!"
+fi

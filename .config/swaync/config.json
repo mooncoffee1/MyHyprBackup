@@ -80,7 +80,7 @@
     },
     "title": {
       "text": "Notifications",
-      "button-text": "󰎟 Clear",
+      "button-text": " 󰎟  ",
       "clear-all-button": true      
     }
 },
