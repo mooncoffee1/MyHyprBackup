@@ -4,12 +4,13 @@ python3 .config/hypr/scripts/build-gradience-without-blur.py
 
 gradience-cli apply -n pywal --gtk both 
 
-
 # Reload Waybar
 pkill -SIGUSR2 waybar
 
 # Reload swaync
 swaync-client -rs
+
+python .config/hypr/scripts/colors-folders.py
 
 ./.config/hypr/scripts/build-qt
 

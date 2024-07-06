@@ -8,7 +8,7 @@
 }
 
 window#waybar {
-    background: alpha(@background, .60);
+    background: alpha(@background, .85);
     color: @foreground;
     transition-property: background-color;
     transition-duration: .5s;
@@ -63,6 +63,7 @@ button:hover {
     background-color: transparent;
     border-radius: 12px;
     color: @color2;
+    
 }
 
 #workspaces button.active {
@@ -73,7 +74,9 @@ button:hover {
     background: @color6; 
     color: @background;
     border-radius: 15px;
-    font-weight: 900;
+    font-weight: bolder;
+    font-style: italic;
+
     font-size: larger;
 transition:transform 1s ease-in-out 0s;
 animation-duration: 2.2s;
@@ -190,6 +193,8 @@ animation-timing-function: ease-in-out;
 
 #battery.charging, #battery.plugged {
     color: @color6;
+    border: 1px solid;
+
 }
 
 @keyframes blink {
@@ -201,6 +206,7 @@ animation-timing-function: ease-in-out;
 /* Using steps() instead of linear as a timing function to limit cpu usage */
 #battery.critical:not(.charging) {
     color: @color11;
+    border: 1px solid;
     animation-name: blink;
     animation-duration: 0.5s;
     animation-timing-function: steps(12);
@@ -256,7 +262,7 @@ label:focus {
 }
 
 #custom-waybar-mpris{
-    color: @color14;
+    color: @color12;
 }
 
 #custom-media {
@@ -274,8 +280,8 @@ label:focus {
 }
 
 #temperature.critical {
-    color: @light-red;
-}
+    color: @background;
+    background-image: linear-gradient(@color4, @color5);}
 
 #tray > .passive {
     -gtk-icon-effect: dim;
@@ -310,6 +316,9 @@ label:focus {
 }
 
 #clock{
+    border: 1px solid;
+    font-style: italic;
+    font-size:  medium;
     font-weight: bolder;
     color: @color13; 
 }

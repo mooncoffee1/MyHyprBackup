@@ -1,9 +1,5 @@
 #!/usr/bin/env sh
-
-# Check the current status of animations:enabled
 HYPRGAMEMODE=$(hyprctl getoption animations:enabled | awk 'NR==1{print $2}')
-
-# If HYPRGAMEMODE is 1, set various Hyprland settings to optimize performance
 if [ "$HYPRGAMEMODE" = 1 ] ; then
     hyprctl --batch "\
         keyword animations:enabled 0;\
@@ -13,28 +9,6 @@ if [ "$HYPRGAMEMODE" = 1 ] ; then
         keyword general:gaps_out 0;\
         keyword general:border_size 1;\
         keyword decoration:rounding 0"
-    
-    # Append the CSS code to .config/wofi/style.css with a space before it
-    {
-        echo ""
-        echo "window {"
-        echo "  border-radius: 0px;"
-        echo "}"
-    } >> ~/.config/wofi/style.css
-
-    # Append the CSS code to .config/swaync/style.css with a space before it
-    {
-        echo ""
-        echo ".floating-notifications.background .notification-row .notification-background {"
-        echo "  border-radius: 0px;"
-        echo "}"
-    } >> ~/.config/swaync/style.css
-
-    # Reload SwayNC
-    swaync-client -rs
-
     exit
 fi
-
-# Reload Hyprland configuration
 hyprctl reload

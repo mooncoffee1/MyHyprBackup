@@ -7,7 +7,7 @@
 
 }
 window {
-  background: alpha(@background, .55);
+  background: alpha(@background, .80);
 }
 button {
   color: @foreground;

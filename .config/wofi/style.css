@@ -5,7 +5,7 @@ window {
   font-family: "Iosevka", "MaterialDesignIcons";
   margin: 0px;
   border: 1px solid @color6;
-  background: alpha(@background, .70);
+  background: alpha(@background, .85);
   border-radius: 12px;
 }
 
@@ -48,59 +48,3 @@ window {
   border-radius: 5px;
 }
 
-
-window {
-  border-radius: 0px;
-}
-
-window {
-  border-radius: 0px;
-}
-
-window {
-  border-radius: 0px;
-}
-
-window {
-  border-radius: 0px;
-}
-
-window {
-  border-radius: 0px;
-}
-
-window {
-  border-radius: 0px;
-}
-
-window {
-  border-radius: 0px;
-}
-
-window {
-  border-radius: 0px;
-}
-
-window {
-  border-radius: 0px;
-}
-
-window {
-  border-radius: 0px;
-}
-
-window {
-  border-radius: 0px;
-}
-
-window {
-  border-radius: 0px;
-}
-
-window {
-  border-radius: 0px;
-}
-
-window {
-  border-radius: 0px;
-}
