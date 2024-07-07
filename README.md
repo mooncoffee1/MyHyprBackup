@@ -26,9 +26,6 @@
   might reflash my arch linux later, so this will be good to start from where I left off.
 </p>
 
-<p align="center">
-  <a href="https://github.com/mooncoffee1/MyHyprBackup/assets/118976333/67bf2180-a1bf-4669-a834-cad5a429496d">View Demo</a>
-</p>
 
 <!-- Installation Instructions -->
 ## Installation
