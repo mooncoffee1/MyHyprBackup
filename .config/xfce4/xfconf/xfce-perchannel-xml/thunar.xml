@@ -14,6 +14,7 @@
   <property name="last-toolbar-visible-buttons" type="string" value="0,1,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0"/>
   <property name="hidden-bookmarks" type="array">
     <value type="string" value="network:///"/>
+    <value type="string" value="computer:///"/>
   </property>
   <property name="misc-confirm-close-multiple-tabs" type="bool" value="false"/>
   <property name="last-sort-column" type="string" value="THUNAR_COLUMN_DATE_MODIFIED"/>
