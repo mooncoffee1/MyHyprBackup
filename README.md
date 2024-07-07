@@ -1,9 +1,12 @@
 <!-- PROJECT LOGO AND TITLE -->
 <h3 align="center">
-  <img src="temp/hyprland.gif" alt="Logo" width="100" height="100">
-</h3>
-<h3 align="center">
-  <img src="https://i.imgur.com/5WgMACe.gif" width="90px">
+  <table style="border: none; margin: auto;">
+    <tr style="border: none;">
+      <td style="    border: 1px solid transparent;"><img src="temp/hyprland.gif" alt="Hyprland Logo" width="100" height="100"></td>
+      <td style="border: none;"><h1>+</h1></td>
+      <td style="border: none;"><img src="https://i.imgur.com/5WgMACe.gif" alt="Pywal Logo" width="100" height="100"></td>
+    </tr>
+  </table>
 </h3>
 
 <h2 align="center">Hyprland Dotfiles V2</h2>
@@ -31,6 +34,7 @@
   <a href="https://github.com/mooncoffee1/MyHyprBackup/assets/118976333/67bf2180-a1bf-4669-a834-cad5a429496d">View Demo</a>
 </p>
 
+<!-- Installation Instructions -->
 ## Installation
 
 To install and set up the Hyprland dotfiles, follow these steps:
@@ -61,3 +65,22 @@ To install and set up the Hyprland dotfiles, follow these steps:
 
 This will set up everything you need to get started with your Hyprland dotfiles.
 
+<!-- Video Preview Button -->
+<h2 align="center">Preview the Pywal Rice Video</h2>
+<p align="center">
+  <a href="temp/thePywalRiceVideo.mp4" target="_blank" style="text-decoration: none;">
+    <button style="
+      background-color: #4CAF50; /* Green */
+      border: none;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+      border-radius: 12px;
+    ">View Video Preview</button>
+  </a>
+</p>
