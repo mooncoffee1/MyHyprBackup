@@ -1,10 +1,9 @@
-<!-- PROJECT LOGO AND TITLE -->
 <h3 align="center">
-  <table>
-    <tr>
-      <td><img src="temp/hyprland.gif" alt="Hyprland Logo" width="100" height="100"></td>
-      <td><h1>+</h1></td>
-      <td><img src="https://i.imgur.com/5WgMACe.gif" alt="Pywal Logo" width="100" height="100"></td>
+  <table style="border: none; margin: auto;">
+    <tr style="border: none;">
+      <td style="border: none;"><img src="temp/hyprland.gif" alt="Hyprland Logo" width="100" height="100"></td>
+      <td style="border: none;"><h1>+</h1></td>
+      <td style="border: none;"><img src="https://i.imgur.com/5WgMACe.gif" alt="Pywal Logo" width="100" height="100"></td>
     </tr>
   </table>
 </h3>
