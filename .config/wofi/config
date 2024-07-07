@@ -1,4 +1,4 @@
-allow_images=true
+allow_images=false
 hide_scroll=true
 gtk_dark=true
 image_size=32

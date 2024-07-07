@@ -253,7 +253,7 @@ progressbar {
 .widget-title button {
   border-radius: 10px;
   padding: 4px 16px;
-  border: 1px solid transparent;
+  border: 1px solid @color6;
 }
 
 .widget-title button:hover {
@@ -270,6 +270,7 @@ progressbar {
 .widget-dnd {
   margin: 8px 2px;
   font-size: 1.2rem;
+  
 }
 
 .widget-dnd > switch {

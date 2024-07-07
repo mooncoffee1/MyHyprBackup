@@ -278,8 +278,9 @@ label:focus {
 }
 
 #temperature.critical {
-    color: @background;
-    background-image: linear-gradient(@color4, @color5);}
+    color: @color14;
+    border: 2px dotted @color4;
+}
 
 #tray > .passive {
     -gtk-icon-effect: dim;

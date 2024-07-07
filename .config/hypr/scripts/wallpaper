@@ -61,6 +61,9 @@ echo -e "\n${GREEN}${GLYPH} Running colors script (for hyprlock, lock screen) ${
 echo -e "\n${GREEN}${GLYPH} Running walogram (for telegram) ${NC}"
 walogram
 
+echo -e "\n${GREEN}${GLYPH} Running pywal-discord (for discord) ${NC}"
+pywal-discord
+
 echo -e "\n${GREEN}${GLYPH} Script execution completed.${NC}"
 
 # Randomly decide whether to show the "Did you notice?" notification
