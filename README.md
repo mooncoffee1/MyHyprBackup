@@ -1,7 +1,7 @@
 <!-- PROJECT LOGO AND TITLE -->
 <h3 align="center">
   <img src="temp/hyprland.gif" alt="Hyprland Logo" width="100" height="100" style="vertical-align: middle;">
-  <span style="font-size: 80px; vertical-align: middle;">  and  </span>
+  <span style="font-size: 100px; vertical-align: middle;">   and   </span>
   <img src="https://i.imgur.com/5WgMACe.gif" alt="Pywal Logo" width="100" height="100" style="vertical-align: middle;">
 </h3>
 
