@@ -1,3 +1,4 @@
+<!-- PROJECT LOGO AND TITLE -->
 <h3 align="center">
   <table style="border: none; margin: auto;">
     <tr style="border: none;">
