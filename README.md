@@ -1,9 +1,9 @@
 <!-- PROJECT LOGO AND TITLE -->
-<div style="display: flex; justify-content: center; align-items: center;">
-  <img src="temp/hyprland.gif" alt="Hyprland Logo" width="100" height="100">
-  <span style="font-size: 50px; margin: 0 10px;">+</span>
-  <img src="https://i.imgur.com/5WgMACe.gif" alt="Pywal Logo" width="100" height="100">
-</div>
+<h3 align="center">
+  <img src="temp/hyprland.gif" alt="Hyprland Logo" width="100" height="100" style="vertical-align: middle;">
+  <span style="font-size: 80px; vertical-align: middle;">  and  </span>
+  <img src="https://i.imgur.com/5WgMACe.gif" alt="Pywal Logo" width="100" height="100" style="vertical-align: middle;">
+</h3>
 
 <h2 align="center">Hyprland Dotfiles V2</h2>
 <p align="center">
@@ -11,20 +11,21 @@
   I have an install script too, hope it works.
 </p>
 
-<table align="center" style="border: none;">
-  <tr style="border: none;">
-    <td style="border: none;"><img src="https://github.com/mooncoffee1/MyHyprBackup/assets/118976333/0240dd19-d9a2-4f3a-a106-96c2d579ff96" alt="image1"></td>
-    <td style="border: none;"><img src="https://github.com/mooncoffee1/MyHyprBackup/assets/118976333/1436d6c1-fd9a-4894-8eed-93c3484ffb86" alt="image2"></td>
+<table align="center">
+  <tr>
+    <td><img src="https://github.com/mooncoffee1/MyHyprBackup/assets/118976333/0240dd19-d9a2-4f3a-a106-96c2d579ff96" alt="image1"></td>
+    <td><img src="https://github.com/mooncoffee1/MyHyprBackup/assets/118976333/1436d6c1-fd9a-4894-8eed-93c3484ffb86" alt="image2"></td>
   </tr>
-  <tr style="border: none;">
-    <td style="border: none;"><img src="https://github.com/mooncoffee1/MyHyprBackup/assets/118976333/d16fc40a-e3f4-4c98-92af-013676ec63b4" alt="image3"></td>
-    <td style="border: none;"><img src="https://github.com/mooncoffee1/MyHyprBackup/assets/118976333/bcfcb32d-357f-4ed8-8b99-d947799fc41a" alt="image4"></td>
+  <tr>
+    <td><img src="https://github.com/mooncoffee1/MyHyprBackup/assets/118976333/d16fc40a-e3f4-4c98-92af-013676ec63b4" alt="image3"></td>
+    <td><img src="https://github.com/mooncoffee1/MyHyprBackup/assets/118976333/bcfcb32d-357f-4ed8-8b99-d947799fc41a" alt="image4"></td>
   </tr>
 </table>
 
 <p align="center">
   might reflash my arch linux later, so this will be good to start from where I left off.
 </p>
+
 
 <!-- Installation Instructions -->
 ## Installation
@@ -33,27 +34,39 @@ To install and set up the Hyprland dotfiles, follow these steps:
 
 1. Clone the repository:
 
-    ```sh
+    
+
+sh
     git clone https://github.com/mooncoffee1/MyHyprBackup.git
-    ```
+
+
 
 2. Change to the repository directory:
 
-    ```sh
+    
+
+sh
     cd MyHyprBackup
-    ```
+
+
 
 3. Make the install script executable:
 
-    ```sh
+    
+
+sh
     sudo chmod +x ./install.sh
-    ```
+
+
 
 4. Run the install script:
 
-    ```sh
+    
+
+sh
     ./install.sh
-    ```
+
+
 
 This will set up everything you need to get started with your Hyprland dotfiles.
 
