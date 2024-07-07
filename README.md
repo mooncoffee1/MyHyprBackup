@@ -60,19 +60,17 @@ This will set up everything you need to get started with your Hyprland dotfiles.
 <!-- Video Preview Button -->
 <h2 align="center">Preview the Pywal Rice Video</h2>
 <p align="center">
-  <a href="https://youtu.be/h14Wet6MgbM" target="_blank" style="text-decoration: none;">
-    <button style="
-      background-color: #4CAF50; /* Green */
-      border: none;
-      color: white;
-      padding: 15px 32px;
-      text-align: center;
-      text-decoration: none;
-      display: inline-block;
-      font-size: 16px;
-      margin: 4px 2px;
-      cursor: pointer;
-      border-radius: 12px;
-    ">View Video Preview</button>
-  </a>
+  <a href="https://youtu.be/h14Wet6MgbM" target="_blank" style="
+    background-color: #4CAF50; /* Green */
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 12px;
+    border: none;
+    ">View Video Preview</a>
 </p>
