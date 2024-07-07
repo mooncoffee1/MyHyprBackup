@@ -30,3 +30,34 @@
 <p align="center">
   <a href="https://github.com/mooncoffee1/MyHyprBackup/assets/118976333/67bf2180-a1bf-4669-a834-cad5a429496d">View Demo</a>
 </p>
+
+## Installation
+
+To install and set up the Hyprland dotfiles, follow these steps:
+
+1. Clone the repository:
+
+    ```sh
+    git clone https://github.com/mooncoffee1/MyHyprBackup.git
+    ```
+
+2. Change to the repository directory:
+
+    ```sh
+    cd MyHyprBackup
+    ```
+
+3. Make the install script executable:
+
+    ```sh
+    sudo chmod +x ./install.sh
+    ```
+
+4. Run the install script:
+
+    ```sh
+    ./install.sh
+    ```
+
+This will set up everything you need to get started with your Hyprland dotfiles.
+
