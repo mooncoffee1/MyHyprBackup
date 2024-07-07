@@ -1,12 +1,8 @@
 <!-- PROJECT LOGO AND TITLE -->
 <h3 align="center">
-  <table style="border: none; margin: auto;">
-    <tr style="border: none;">
-      <td style="    border: 1px solid transparent;"><img src="temp/hyprland.gif" alt="Hyprland Logo" width="100" height="100"></td>
-      <td style="border: none;"><h1>+</h1></td>
-      <td style="border: none;"><img src="https://i.imgur.com/5WgMACe.gif" alt="Pywal Logo" width="100" height="100"></td>
-    </tr>
-  </table>
+  <img src="temp/hyprland.gif" alt="Hyprland Logo" width="100" height="100" style="vertical-align: middle;">
+  <span style="font-size: 50px; vertical-align: middle;"> + </span>
+  <img src="https://i.imgur.com/5WgMACe.gif" alt="Pywal Logo" width="100" height="100" style="vertical-align: middle;">
 </h3>
 
 <h2 align="center">Hyprland Dotfiles V2</h2>
@@ -68,7 +64,7 @@ This will set up everything you need to get started with your Hyprland dotfiles.
 <!-- Video Preview Button -->
 <h2 align="center">Preview the Pywal Rice Video</h2>
 <p align="center">
-  <a href="temp/thePywalRiceVideo.mp4" target="_blank" style="text-decoration: none;">
+  <a href="https://youtu.be/h14Wet6MgbM" target="_blank" style="text-decoration: none;">
     <button style="
       background-color: #4CAF50; /* Green */
       border: none;
