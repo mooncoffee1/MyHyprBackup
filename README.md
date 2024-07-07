@@ -1,7 +1,7 @@
 <!-- PROJECT LOGO AND TITLE -->
 <h3 align="center">
   <img src="temp/hyprland.gif" alt="Hyprland Logo" width="100" height="100" style="vertical-align: middle;">
-  <span style="font-size: 100px; vertical-align: middle;">   and   </span>
+  <span style="font-size: 50px; vertical-align: middle;"> + </span>
   <img src="https://i.imgur.com/5WgMACe.gif" alt="Pywal Logo" width="100" height="100" style="vertical-align: middle;">
 </h3>
 
@@ -26,6 +26,9 @@
   might reflash my arch linux later, so this will be good to start from where I left off.
 </p>
 
+<p align="center">
+  <a href="https://github.com/mooncoffee1/MyHyprBackup/assets/118976333/67bf2180-a1bf-4669-a834-cad5a429496d">View Demo</a>
+</p>
 
 <!-- Installation Instructions -->
 ## Installation
@@ -34,39 +37,27 @@ To install and set up the Hyprland dotfiles, follow these steps:
 
 1. Clone the repository:
 
-    
-
-sh
+    ```sh
     git clone https://github.com/mooncoffee1/MyHyprBackup.git
-
-
+    ```
 
 2. Change to the repository directory:
 
-    
-
-sh
+    ```sh
     cd MyHyprBackup
-
-
+    ```
 
 3. Make the install script executable:
 
-    
-
-sh
+    ```sh
     sudo chmod +x ./install.sh
-
-
+    ```
 
 4. Run the install script:
 
-    
-
-sh
+    ```sh
     ./install.sh
-
-
+    ```
 
 This will set up everything you need to get started with your Hyprland dotfiles.
 
