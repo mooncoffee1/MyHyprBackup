@@ -19,4 +19,5 @@
   <property name="misc-confirm-close-multiple-tabs" type="bool" value="false"/>
   <property name="last-sort-column" type="string" value="THUNAR_COLUMN_DATE_MODIFIED"/>
   <property name="last-sort-order" type="string" value="GTK_SORT_DESCENDING"/>
+  <property name="last-menubar-visible" type="bool" value="false"/>
 </channel>

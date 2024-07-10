@@ -1,0 +1,31 @@
+#!/bin/bash
+
+get_gpu_mode() {
+    mode=$(supergfxctl -g)
+    if [ "$mode" == "Integrated" ]; then
+        echo "I"
+    elif [ "$mode" == "Hybrid" ]; then
+        echo "H"
+    else
+        echo "Unknown"
+    fi
+}
+
+switch_gpu_mode() {
+    current_mode=$(supergfxctl -g)
+    if [ "$current_mode" == "Integrated" ]; then
+        supergfxctl -s hybrid
+        notify-send "GPU Mode Changed" "Switched to Hybrid mode. Please logout to take effect."
+    elif [ "$current_mode" == "Hybrid" ]; then
+        supergfxctl -s integrated
+        notify-send "GPU Mode Changed" "Switched to Integrated mode. Please logout to take effect."
+    else
+        echo "Unknown mode: $current_mode"
+    fi
+}
+
+if [ "$1" == "--click" ]; then
+    switch_gpu_mode
+else
+    echo "{\"text\": \"$(get_gpu_mode)\"}"
+fi
