@@ -3,7 +3,6 @@
 * {
     /* `otf-font-awesome` is required to be a for icons */
     font-family: MaterialDesignIcons, Iosevka;
-    font-weight: bold;
 }
 
 window#waybar {
@@ -49,6 +48,8 @@ button:hover {
   border-radius: 20px;
   padding: 0px;
   margin: 20px;
+  animation: ws_hover 20s ease-in-out 1;
+  transition: all 0.3s cubic-bezier(.55,-0.68,.48,1.682);
 
 }
 
@@ -62,12 +63,12 @@ button:hover {
     background-color: transparent;
     border-radius: 12px;
     color: @color2;
-    
+    animation: ws_normal 20s ease-in-out 1;
 }
 
 #workspaces button.active {
-    padding-left: 12px;
-    padding-right: 12px;
+    padding-left: 10px;
+    padding-right: 10px;
     margin-top: 10px;
     margin-bottom: 10px;
     background: @color6; 
@@ -75,30 +76,13 @@ button:hover {
     border-radius: 15px;
     font-weight: bolder;
     font-style: italic;
-
-transition:transform 1s ease-in-out 0s;
-animation-duration: 2.2s;
-animation-name: paragato;
-animation-iteration-count: infinite;
-animation-direction: alternate;
-animation-timing-function: ease-in-out;
--webkit-animation-timing-function: ease-in-out;
+    animation: ws_active 20s ease-in-out 1;
+    transition: all 0.4s cubic-bezier(.55,-0.68,.48,1.682);
 
 
 }
 /* Define the @keyframes rule for the elementspin animation */
-@keyframes elementfade {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
-  }
-  .element {
-      animation: elementfade;
-      animation-duration: 2s;
-  }
+
 
 
 #workspaces button:hover {
@@ -292,6 +276,7 @@ label:focus {
     -gtk-icon-effect: highlight;
     background-color: @red;
 }
+
 
 #idle_inhibitor {
     background-color: #2d3436;

@@ -12,8 +12,9 @@
         "gamemode"
         ],
     "modules-center": [
-        "hyprland/workspaces"
-    ],
+        "hyprland/workspaces",
+        "river/tags"
+        ],
     "modules-right": [
         "tray",
         "pulseaudio",
@@ -42,11 +43,32 @@
     "power-saver": ""
   }
 },
+
+"wlr/workspaces": {
+  "format": "{icon}",
+  "on-click": "activate",
+  "format-icons": {
+    "1": "",
+    "2": "",
+    "3": "",
+    "4": "",
+    "5": "",
+    "urgent": "",
+    "active": "",
+    "default": ""
+  },
+  "sort-by-number": true
+},
+
+"river/mode": {
+    "format": "mode: {}"
+},
     "hyprland/window": {
         "format": "{}",
         "max-length": 30,
         "separate-outputs": true
     },
+    
     "custom/logo": {
 	"format": "󰣇",
     "tooltip": true,

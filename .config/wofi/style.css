@@ -5,7 +5,7 @@ window {
   margin: 0px;
   border: 1px solid @color6;
   background: alpha(@background, .85);
-  border-radius: 12px;
+  border-radius: 0px;
 }
 
 #input {
@@ -14,6 +14,8 @@ window {
   margin-top: 10px;
   margin-bottom: 10px;
   background-color: transparent;
+  border-radius: 0px;
+
 }
 
 #inner-box {
@@ -43,5 +45,7 @@ window {
 #entry:selected {
   border-radius: 5px;
   font-weight: bold;
+  border-radius: 0px;
+
 }
 

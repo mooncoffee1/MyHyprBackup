@@ -32,20 +32,24 @@
   margin: 0;
   padding: 0px;
   color: @foreground;
+  animation: ws_active 20s ease-in-out 1;
+  transition: all 0.4s cubic-bezier(.55,-0.68,.48,1.682);
 }
 
 .floating-notifications.background .notification-row .notification-background {
   background: alpha(@background, .85);
   box-shadow: 0 2px 3px 0 @color0;
   border: 1px solid @color13;
-  border-radius: 12px;
+  border-radius: 0px;
   margin: 16px;
   padding: 0;
+  animation: ws_active 20s ease-in-out 1;
+  transition: all 0.4s cubic-bezier(.55,-0.68,.48,1.682);
 }
 
 .floating-notifications.background .notification-row .notification-background .notification {
   padding: 6px;
-  border-radius: 12px;
+  border-radius: 0px;
 }
 
 .floating-notifications.background .notification-row .notification-background .notification.critical {
@@ -130,7 +134,7 @@
 .control-center {
   color: @foreground;
   background: alpha(@background, .85);
-  border-radius: 12px;
+  border-radius: 0px;
   border: 1px solid @color1;
   box-shadow: 0 2px 8px 0 @color0;   
   margin: 18px;
@@ -202,7 +206,7 @@
 progressbar,
 progress,
 trough {
-  border-radius: 12px;
+  border-radius: 0px;
 }
 
 progressbar {
@@ -302,7 +306,7 @@ progressbar {
   font-size: x-large;
   padding: 6px 2px;
   margin: 6px;
-  border-radius: 12px;
+  border-radius: 0px;
   background: alpha(@color1, .2);
 }
 
