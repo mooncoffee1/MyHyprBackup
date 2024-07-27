@@ -3,7 +3,7 @@
 @define-color main-color @color13;
 
 * {
-  font-family: MaterialDesignIcons, PixelifySans;
+  font-family: MaterialDesignIcons, Iosevka;
   font-size: 14px;
   border: none;
   border-radius: 0px;
@@ -25,7 +25,7 @@ window#waybar {
 }
 
 tooltip {
-  background: alpha(@background, 0.51);
+  background: alpha(@background, 0.60);
   border: 1px solid alpha(lighter(@main-color), 0.3);
   border-radius: 10px;
 }
@@ -157,7 +157,7 @@ tray > .passive {
 
 
 #clock {
-font-size: large;
+font-weight: bolder;
   padding: 0px 8px;
   margin: 4px 4px 4px 2px;
   background: alpha(@background, 0.3);
@@ -172,6 +172,10 @@ font-size: large;
 }
 
 #battery {
-  padding: 0px 8px;
+  padding: 0px 0px;
 }
-    
+
+#power-profiles-daemon {
+  padding: 0px 0px 0px 8px;
+
+}

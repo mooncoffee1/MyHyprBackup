@@ -82,6 +82,7 @@ if confirm "Do you want to link the .config directory from the current directory
     ln -s "$(pwd)/.config/"* ~/.config/
     ln -s "$(pwd)/.zshrc"* ~/
     color_echo $GREEN "Dotfiles linked."
+    gsettings set org.gnome.desktop.wm.preferences button-layout :
 else
     color_echo $RED "Exiting without linking dotfiles."
 fi

@@ -71,7 +71,7 @@
   },
   "group/control-center": {
     "orientation": "inherit",
-    "modules": ["group/audio", "group/connection", "battery", "power-profiles-daemon"],
+    "modules": ["group/audio", "group/connection", "group/batterys", "power-profiles-daemon"],
   },
   "hyprland/language": {
     "format": "{}",
@@ -85,10 +85,11 @@
     "orientation": "inherit",
     "drawer": {
       "transition-duration": 300,
-      "transition-left-to-right": false,
+      "transition-left-to-right": true,
     },
     "modules": [
       "pulseaudio",
+      "pulseaudio#volume",
       "pulseaudio#mic"
       // "pulseaudio/slider"
     ]
@@ -124,10 +125,8 @@
     "on-scroll-down": "pactl set-source-volume 0 -1%",
     "on-scroll-up": "pactl set-source-volume 0 +1%",
   },
-  "pulseaudio/slider": {
-    "min": 0,
-    "max": 100,
-    "orientation": "horizontal",
+  "pulseaudio#volume": {
+    "format": "{volume} %",
   },
   "group/connection": {
     "orientation": "inherit",
@@ -272,8 +271,17 @@
       "transition-duration": 300,
       "transition-left-to-right": false,
     },
-    "modules": ["battery", "power-profiles-daemon"],
+    "modules": ["batterys", "power-profiles-daemon"],
   },
+  "group/batterys": {
+    "orientation": "inherit",
+    "drawer": {
+      "transition-duration": 300,
+      "transition-left-to-right": true,
+    },
+    "modules": ["battery", "battery#capacity"],
+  },
+
   "battery": {
     "states": {
       "good": 95,
@@ -295,6 +303,14 @@
       "󰂂"
     ],
     "tooltip-format": " 󱟞 {timeTo} | 󱈑 {capacity} % |  {power} W"
+  },
+  "battery#capacity": {
+    "states": {
+      "good": 95,
+      "warning": 30,
+      "critical": 15
+    },
+    "format": "{capacity} %"
   },
   "tray": {
     "icon-size": 14,
