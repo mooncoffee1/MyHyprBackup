@@ -41,7 +41,8 @@ echo -e "\n${GREEN}${GLYPH} Applying gtk theme ${NC}"
 gradience-cli apply -n pywal --gtk both
 
 echo -e "\n${GREEN}${GLYPH} Reloading Waybar ${NC}"
-pkill -SIGUSR2 waybar
+#pkill -SIGUSR2 waybar
+.config/hypr/scripts/waybar
 
 echo -e "\n${GREEN}${GLYPH} Reloading swaync (notifications)${NC}"
 swaync-client -rs

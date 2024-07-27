@@ -1,0 +1,16 @@
+#!/bin/bash
+
+# Specify the file path
+file_path="$HOME/.config/waybar/style.css"
+
+# Use a temporary file to hold the content
+temp_file=$(mktemp)
+
+# Copy the content of the original file to the temporary file
+cat "$file_path" > "$temp_file"
+
+# Move the temporary file back to the original file path
+mv "$temp_file" "$file_path"
+
+# Output a message
+echo "File content re-saved: $file_path"

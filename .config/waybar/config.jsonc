@@ -1,0 +1,24 @@
+{
+  "layer": "bottom",
+  "position": "top",
+  "margin": "6 200 0 200",
+  "fixed-center": true,
+  "reload_style_on_change": true,
+  "include": ["~/.config/waybar/modules.jsonc"],
+  "modules-left": [
+    "hyprland/window",
+    "group/info",
+    "custom/waybar-mpris"
+
+  ],
+  
+  "modules-center": [
+    "hyprland/workspaces"
+  ],
+
+  "modules-right": [
+    "group/control-center",
+    "group/hub"
+    // "group/power"
+  ],
+}

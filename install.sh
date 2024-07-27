@@ -48,8 +48,8 @@ packages=(
     hyprland-git waybar-git network-manager-applet blueman python rustup kitty zsh wofi waypaper
     xdg-desktop-portal-hyprland hyprlock-git grim slurp swaync wl-clipboard cliphist nwg-look
     swappy wofi-calc wofi-emoji ttf-material-design-icons-extended ttf-iosevka ttf-iosevka-nerd xdg-user-dirs
-    noto-fonts-emoji polkit-gnome imagemagick hyprpicker-git hyprpaper-git hypridle gpick acpi acpi_call qview qt5ct
-    kvantum-qt5 colloid-cursors-git lightdm lightdm-elephant-greeter-git spotify waybar-mpris-git papirus-folders walogram pywal-discord
+    noto-fonts-emoji polkit-gnome imagemagick hyprpicker-git hyprpaper-git hypridle-git gpick acpi acpi_call qview qt5ct qt5-wayland qt6-wayland
+    kvantum-qt5 colloid-cursors-git gdm spotify waybar-mpris-git papirus-folders walogram pywal-discord
     brightnessctl pamixer papirus-icon-theme ttf-jetbrains-mono-nerd pipewire pipewire-jack python-webcolors python-scipy
     pipewire-alsa pipewire-pulse thunar cava-git spicetify-cli atuin wlogout python-pywal gradience zsh-autosuggestions zsh-sudo zsh-syntax-highlighting adw-gtk3
 )
@@ -80,6 +80,7 @@ if confirm "Do you want to link the .config directory from the current directory
     color_echo $YELLOW "Creating symbolic links for .config files..."
     mkdir -p ~/.config
     ln -s "$(pwd)/.config/"* ~/.config/
+    ln -s "$(pwd)/.zshrc"* ~/
     color_echo $GREEN "Dotfiles linked."
 else
     color_echo $RED "Exiting without linking dotfiles."
