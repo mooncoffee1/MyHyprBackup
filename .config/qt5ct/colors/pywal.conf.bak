@@ -1,5 +1,5 @@
 [ColorScheme]
-active_colors=#ffcbd9cc, #ff253633, #ff62AFA6, #ff1399AF, #ff7EC1AE, #ff8BBCAA, #ffcbd9cc, #ffcbd9cc, #ffcbd9cc, #ff253633, #ff253633, #ffcbd9cc, #ff7EC1AE, #ffcbd9cc, #ff62AFA6, #ff2C9FA9, #ff62AFA6, #ff253633, #ff253633, #ffcbd9cc, #ff253633
-disabled_colors=#ff8e978e, #ff253633, #ff62AFA6, #ff1399AF, #ff7EC1AE, #ff8BBCAA, #ff8e978e, #ff8e978e, #ff8e978e, #ff8e978e, #ff253633, #ffcbd9cc, #ff7EC1AE, #ff8e978e, #ff62AFA6, #ff2C9FA9, #ff62AFA6, #ff253633, #ff253633, #ff8e978e, #ff253633
-inactive_colors=#ffcbd9cc, #ff253633, #ff62AFA6, #ff1399AF, #ff7EC1AE, #ff8BBCAA, #ffcbd9cc, #ffcbd9cc, #ffcbd9cc, #ff253633, #ff253633, #ffcbd9cc, #ff7EC1AE, #ffcbd9cc, #ff62AFA6, #ff2C9FA9, #ff62AFA6, #ff253633, #ff253633, #ffcbd9cc, #ff253633
+active_colors=#ffdfc7c1, #ff122323, #ffCE7056, #ffC06031, #ffCF8C69, #ff75969C, #ffdfc7c1, #ffdfc7c1, #ffdfc7c1, #ff122323, #ff122323, #ffdfc7c1, #ffCF8C69, #ffdfc7c1, #ffCE7056, #ffA36158, #ffCE7056, #ff122323, #ff122323, #ffdfc7c1, #ff122323
+disabled_colors=#ff9c8b87, #ff122323, #ffCE7056, #ffC06031, #ffCF8C69, #ff75969C, #ff9c8b87, #ff9c8b87, #ff9c8b87, #ff9c8b87, #ff122323, #ffdfc7c1, #ffCF8C69, #ff9c8b87, #ffCE7056, #ffA36158, #ffCE7056, #ff122323, #ff122323, #ff9c8b87, #ff122323
+inactive_colors=#ffdfc7c1, #ff122323, #ffCE7056, #ffC06031, #ffCF8C69, #ff75969C, #ffdfc7c1, #ffdfc7c1, #ffdfc7c1, #ff122323, #ff122323, #ffdfc7c1, #ffCF8C69, #ffdfc7c1, #ffCE7056, #ffA36158, #ffCE7056, #ff122323, #ff122323, #ffdfc7c1, #ff122323
 
