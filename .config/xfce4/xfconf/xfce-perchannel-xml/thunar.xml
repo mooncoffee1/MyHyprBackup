@@ -22,4 +22,5 @@
   <property name="last-menubar-visible" type="bool" value="true"/>
   <property name="last-window-width" type="int" value="1229"/>
   <property name="last-window-height" type="int" value="463"/>
+  <property name="misc-exec-shell-scripts-by-default" type="bool" value="true"/>
 </channel>

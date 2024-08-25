@@ -13,12 +13,12 @@
 
 window#waybar {
   background: alpha(@background, 0.5);
-  border-radius: 10px;
+  border-radius: 0px 0px 10px 10px;
 }
 
 #window {
   padding: 2px 10px;
-  margin: 4px 2px 4px 4px;
+  margin: 4px 2px 4px 5px;
   background: alpha(@background, 0.3);
   border-radius: 10px;
   color: lighter(@main-color);
@@ -82,23 +82,28 @@ tooltip label {
 
 #workspaces button.urgent,
 #workspaces button:hover {
-  border-radius: 10px;
+  border-radius: 8px;
   color: @color5;
   background: alpha(@background, 0.8);
 }
 
 #control-center {
-  padding: 0px 8px;
-  margin: 8px 4px;
+  padding: 3px 8px;
+  margin: 5px 4px;
   color: lighter(@main-color);
   background: alpha(@background, 0.3);
   border-radius: 10px;
 }
 
-#bluetooth,
+#bluetooth{
+  padding: 0px 0px 0px 4px;
+
+}
+
+
 #network,
 #pulseaudio {
-  padding: 0px 0 0 4px;
+  padding: 0px 0px 0px 4px;
 }
 
 #pulseaudio-slider slider {
@@ -159,7 +164,7 @@ tray > .passive {
 #clock {
 font-weight: bolder;
   padding: 0px 8px;
-  margin: 4px 4px 4px 2px;
+  margin: 4px 5px 4px 2px;
   background: alpha(@background, 0.3);
   border-radius: 10px;
   color: lighter(@main-color);
@@ -172,10 +177,10 @@ font-weight: bolder;
 }
 
 #battery {
-  padding: 0px 0px;
+  padding: 0px 4px;
 }
 
 #power-profiles-daemon {
-  padding: 0px 0px 0px 8px;
+  padding: 0px 0px 0px 4px;
 
 }

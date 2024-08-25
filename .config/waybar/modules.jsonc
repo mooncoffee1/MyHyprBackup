@@ -8,7 +8,7 @@
       "^.*v( .*|$)": " Neovim",
       "^.*~$": "󰄛 Kitty",
       
-      "(.*) ": "󱞃 Empty"
+      "(.*) ": "󰍹 Desktop"
     },
   },
   "group/info": {
@@ -17,7 +17,7 @@
       "transition-duration": 300,
       "transition-left-to-right": false,
     },
-    "modules": ["custom/arrow-right", "cpu", "memory", "disk", "temperature", "custom/updates"],
+    "modules": ["custom/arrow-right", "cpu",  "memory", "disk", "temperature", "custom/updates"],
   },
   "custom/arrow-right": {
     "format": "󰁔",
@@ -206,18 +206,30 @@
       "transition-duration": 300,
       "transition-left-to-right": true,
     },
-    "modules": ["custom/arrow-left", "custom/notifications", "custom/weather", "tray", "custom/theme-switcher"],
+    "modules": ["custom/arrow-left", "gamemode", "custom/notifications", "custom/weather", "tray", "custom/theme-switcher"],
   },
   "custom/arrow-left": {
     "format": "󰁍",
     "tooltip": false,
   },
+  "gamemode": {
+  	"format": "󰊴",
+  	"format-alt": "{glyph} {count}",
+  	"glyph": "󰊴",
+  	"hide-not-running": true,
+  	"use-icon": true,
+  	"icon-name": "input-gaming-symbolic",
+  	"icon-spacing": 4,
+  	"icon-size": 20,
+  	"tooltip": true,
+  	"tooltip-format": "Games running: {count}"
+  },
   "custom/notifications": {
     "tooltip": false,
     "format": "{icon} {}",
     "format-icons": {
-      "notification": "󱅫",
-      "none": "󰂚",
+      "notification": "󱥁",
+      "none": "󰍡",
       "dnd-notification": "󰂛",
       "dnd-none": "󰂛",
       "inhibited-notification": "󰂚",
