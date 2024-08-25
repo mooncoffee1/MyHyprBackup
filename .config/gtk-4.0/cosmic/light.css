@@ -1,36 +1,36 @@
 
 @define-color window_bg_color rgba(198, 224, 248, 1.00);
-@define-color window_fg_color rgba(23, 22, 21, 1.00);
+@define-color window_fg_color rgba(21, 25, 0, 1.00);
 
 @define-color view_bg_color rgba(231, 244, 255, 1.00);
-@define-color view_fg_color rgba(37, 36, 35, 1.00);
+@define-color view_fg_color rgba(34, 40, 8, 1.00);
 
 @define-color headerbar_bg_color rgba(198, 224, 248, 1.00);
-@define-color headerbar_fg_color rgba(23, 22, 21, 1.00);
-@define-color headerbar_border_color_color rgba(163, 184, 203, 1.00);
+@define-color headerbar_fg_color rgba(21, 25, 0, 1.00);
+@define-color headerbar_border_color_color rgba(162, 185, 199, 1.00);
 @define-color headerbar_backdrop_color rgba(198, 224, 248, 1.00);
 
 @define-color sidebar_bg_color rgba(231, 244, 255, 1.00);
-@define-color sidebar_fg_color rgba(37, 36, 35, 1.00);
+@define-color sidebar_fg_color rgba(34, 40, 8, 1.00);
 @define-color sidebar_shade_color rgba(0, 0, 0, 0.32);
 @define-color sidebar_backdrop_color rgba(238, 247, 255, 1.00);
 
 @define-color secondary_sidebar_bg_color rgba(186, 195, 158, 1.00);
-@define-color secondary_sidebar_fg_color rgba(4, 3, 3, 1.00);
+@define-color secondary_sidebar_fg_color rgba(3, 4, 0, 1.00);
 @define-color secondary_sidebar_shade_color rgba(0, 0, 0, 0.32);
 @define-color secondary_sidebar_backdrop_color rgba(208, 214, 189, 1.00);
 
 @define-color card_bg_color rgba(249, 252, 255, 1.00);
-@define-color card_fg_color rgba(45, 44, 43, 1.00);
+@define-color card_fg_color rgba(42, 47, 16, 1.00);
 
 @define-color thumbnail_bg_color rgba(249, 252, 255, 1.00);
-@define-color thumbnail_fg_color rgba(45, 44, 43, 1.00);
+@define-color thumbnail_fg_color rgba(42, 47, 16, 1.00);
 
 @define-color dialog_bg_color rgba(231, 244, 255, 1.00);
-@define-color dialog_fg_color rgba(37, 36, 35, 1.00);
+@define-color dialog_fg_color rgba(34, 40, 8, 1.00);
 
 @define-color popover_bg_color rgba(249, 252, 255, 1.00);
-@define-color popover_fg_color rgba(45, 44, 43, 1.00);
+@define-color popover_fg_color rgba(42, 47, 16, 1.00);
 
 @define-color shade_color rgba(0, 0, 0, 0.08);
 @define-color scrollbar_outline_color rgba(198, 224, 248, 0.50);
