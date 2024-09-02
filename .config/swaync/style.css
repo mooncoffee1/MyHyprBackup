@@ -38,17 +38,20 @@
 
 .floating-notifications.background .notification-row .notification-background {
   background: alpha(@background, .85);
-  box-shadow: 0 2px 3px 0 @color0;
+  box-shadow: 0 2px 8px 0 @color0;   
   border: 1px solid @color13;
 border-radius: 12px;  margin: 16px;
   padding: 0;
   animation: ws_active 20s ease-in-out 1;
   transition: all 0.4s cubic-bezier(.55,-0.68,.48,1.682);
+  
 }
 
 .floating-notifications.background .notification-row .notification-background .notification {
   padding: 6px;
-border-radius: 12px;}
+border-radius: 12px;
+box-shadow: 0 2px 8px 0 @color0;   
+}
 
 .floating-notifications.background .notification-row .notification-background .notification.critical {
   border: 2px solid @color13;

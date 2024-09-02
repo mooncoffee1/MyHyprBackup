@@ -110,3 +110,10 @@ source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zs
 source /usr/share/zsh/plugins/zsh-sudo/sudo.plugin.zsh
 
 export PATH=$PATH:/home/ananas/.spicetify
+
+# bun completions
+[ -s "/home/ananas/.bun/_bun" ] && source "/home/ananas/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"

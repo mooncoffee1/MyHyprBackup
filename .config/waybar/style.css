@@ -9,11 +9,17 @@
   border-radius: 0px;
   box-shadow: none;
   text-shadow: none;
+  
 }
 
+
 window#waybar {
-  background: alpha(@background, 0.5);
-  border-radius: 0px 0px 10px 10px;
+  background: alpha(@background, 0.55);
+  border-radius: 0px 0px 14px 14px;
+  border-bottom: 1px solid darker(@main-color);
+  border-left: 1px solid darker(@main-color);
+  border-right: 1px solid darker(@main-color);
+
 }
 
 #window {
@@ -35,7 +41,7 @@ tooltip label {
 }
 
 #custom-arrow-right {
-  color: @main-color;
+  color: lighter(@main-color);
   margin: 0px 4px;
 }
 

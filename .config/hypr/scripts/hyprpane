@@ -1,0 +1,25 @@
+#!/bin/bash
+
+# Read the colors into an array
+mapfile -t colors < ~/.cache/wal/colors
+
+# Extract colors from the array
+panel_background=${colors[0]}
+highlight=${colors[4]}
+indicator=${colors[1]}
+border=$highlight
+
+# Function to convert hex color to rgba
+hex_to_rgba() {
+    local hex=$1
+    local alpha=$2
+    printf "rgba(%d, %d, %d, %.1f)" 0x${hex:1:2} 0x${hex:3:2} 0x${hex:5:2} $alpha
+}
+
+# Generate the desired output
+echo "@define-color Highlight $(hex_to_rgba $highlight 0.9);"
+echo "@define-color Indicator $(hex_to_rgba $indicator 0.5);"
+echo "@define-color PanelBackground $(hex_to_rgba $panel_background 0.6);"
+echo "@define-color ModuleBackground rgba(0, 0, 0, 0.0);"
+echo "@define-color NotificationBackground $(hex_to_rgba $panel_background 1.0);"
+echo "@define-color Border $(hex_to_rgba $border 0.4);"
