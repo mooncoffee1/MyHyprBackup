@@ -44,6 +44,9 @@ echo -e "\n${GREEN}${GLYPH} Reloading Waybar ${NC}"
 #pkill -SIGUSR2 waybar
 .config/hypr/scripts/waybar
 
+echo -e "\n${GREEN}${GLYPH} Running ASUS changing colors script for keyboard ${NC}"
+~/.config/hypr/scripts/asus-colors
+
 echo -e "\n${GREEN}${GLYPH} Reloading swaync (notifications)${NC}"
 swaync-client -rs
 
@@ -64,6 +67,7 @@ walogram
 
 echo -e "\n${GREEN}${GLYPH} Running pywal-discord (for discord) ${NC}"
 pywal-discord
+
 
 echo -e "\n${GREEN}${GLYPH} Script execution completed.${NC}"
 

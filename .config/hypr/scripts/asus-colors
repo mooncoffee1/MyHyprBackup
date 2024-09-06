@@ -1,0 +1,10 @@
+#!/bin/bash
+
+# Read the 5th color from the file
+color=$(sed -n '5p' ~/.cache/wal/colors)
+
+# Remove the '#' from the color
+color_without_hash=${color#\#}
+
+# Run the asusctl command with the color
+asusctl led-mode static -c "$color_without_hash"
