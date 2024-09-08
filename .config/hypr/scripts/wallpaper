@@ -28,10 +28,19 @@ echo -e "${GREEN}${GLYPH} Selected icon: $icon${NC}"
 title="Changing system colors"
 message="New colors goes brrr!"
 
-echo -e "${GREEN}${GLYPH} Sending notification with icon: $icon${NC}"
+# Path to palette.png
+palette_icon="$icon_dir/palette.png"
 
-# Send the notification
-notify-send -i "$icon" -e -h string:x-canonical-private-synchronous:sys-notify -u low -t 2800 "$title" "$message"
+# Check if palette.png exists
+if [ ! -f "$palette_icon" ]; then
+    echo -e "${GREEN}${GLYPH} Error: palette.png not found in $icon_dir${NC}"
+    exit 1
+fi
+
+echo -e "${GREEN}${GLYPH} Sending notification with icon: $palette_icon${NC}"
+
+# Send the notification with palette.png as the icon
+notify-send -i "$palette_icon" -e -h string:x-canonical-private-synchronous:sys-notify -u low -t 2800 "$title" "$message"
 
 # Execute other commands
 echo -e "\n${GREEN}${GLYPH} Running build-gradience-without-blur.py (for GTK theme) ${NC}"
@@ -40,14 +49,16 @@ python3 ~/.config/hypr/scripts/build-gradience-without-blur.py
 echo -e "\n${GREEN}${GLYPH} Applying gtk theme ${NC}"
 gradience-cli apply -n pywal --gtk both
 
+echo -e "\n${GREEN}${GLYPH} Changing icons color ${NC}"
+python ~/.config/hypr/scripts/icons-colors.py
+
 echo -e "\n${GREEN}${GLYPH} Reloading Waybar ${NC}"
-#pkill -SIGUSR2 waybar
-.config/hypr/scripts/waybar
+~/.config/hypr/scripts/waybar
 
 echo -e "\n${GREEN}${GLYPH} Running ASUS changing colors script for keyboard ${NC}"
 ~/.config/hypr/scripts/asus-colors
 
-echo -e "\n${GREEN}${GLYPH} Reloading swaync (notifications)${NC}"
+echo -e "\n${GREEN}${GLYPH} Reloading swaync (notifications) ${NC}"
 swaync-client -rs
 
 echo -e "\n${GREEN}${GLYPH} Running colors-folders.py (for papirus colored folders).${NC}"
@@ -67,7 +78,6 @@ walogram
 
 echo -e "\n${GREEN}${GLYPH} Running pywal-discord (for discord) ${NC}"
 pywal-discord
-
 
 echo -e "\n${GREEN}${GLYPH} Script execution completed.${NC}"
 

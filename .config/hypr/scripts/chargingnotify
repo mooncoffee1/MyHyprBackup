@@ -14,10 +14,12 @@ export DBUS_SESSION_BUS_ADDRESS="unix:path=/run/user/1000/bus"
 BATTERY_CHARGING=$1
 BATTERY_LEVEL=$(acpi -b | grep "Battery 0" | grep -P -o '[0-9]+(?=%)')
 
+# Get the directory where the script is located
+SCRIPT_DIR=$(dirname "$(readlink -f "$0")")
+
 # Send notifications
 if [ "$BATTERY_CHARGING" -eq 1 ]; then
-    notify-send -h string:x-canonical-private-synchronous:sys-notify "Charging" "${BATTERY_LEVEL}% of battery charged." -u low -i "battery" -t 5000 -r 9991
+    notify-send -h string:x-canonical-private-synchronous:sys-notify "Charging" "${BATTERY_LEVEL}% of battery charged." -u low -i "$SCRIPT_DIR/icons/battery-charging.png" -t 5000 -r 9991
 elif [ "$BATTERY_CHARGING" -eq 0 ]; then
-    notify-send -h string:x-canonical-private-synchronous:sys-notify "Discharging" "${BATTERY_LEVEL}% of battery remaining." -u low -i "laptop" -t 5000 -r 9991
+    notify-send -h string:x-canonical-private-synchronous:sys-notify "Discharging" "${BATTERY_LEVEL}% of battery remaining." -u low -i "$SCRIPT_DIR/icons/battery.png" -t 5000 -r 9991
 fi
-
