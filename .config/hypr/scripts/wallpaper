@@ -51,6 +51,7 @@ gradience-cli apply -n pywal --gtk both
 
 echo -e "\n${GREEN}${GLYPH} Changing icons color ${NC}"
 python ~/.config/hypr/scripts/icons-colors.py
+python ~/.config/hypr/scripts/wlogout-icons.py
 
 echo -e "\n${GREEN}${GLYPH} Reloading Waybar ${NC}"
 ~/.config/hypr/scripts/waybar
