@@ -37,10 +37,11 @@
 }
 
 .floating-notifications.background .notification-row .notification-background {
-  background: alpha(@background, .85);
+  background: alpha(@background, .75);
   box-shadow: 0 2px 8px 0 @color0;   
   border: 1px solid @color13;
-border-radius: 12px;  margin: 16px;
+  border-radius: 12px;  
+  margin: 16px;
   padding: 0;
   animation: ws_active 20s ease-in-out 1;
   transition: all 0.4s cubic-bezier(.55,-0.68,.48,1.682);

@@ -11,7 +11,7 @@ window {
 }
 button {
   color: @foreground;
-  background-color: @background;
+  background: alpha(@background, 0.6);
   outline-style: none;
   border: none;
   border-width: 0px;
@@ -26,7 +26,6 @@ button {
 
 
 button:focus {
-  background-color: @background;
   background-size: 20%;
   -webkit-transform: translate(0px, 5px);
 }

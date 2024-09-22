@@ -71,7 +71,7 @@
   },
   "group/control-center": {
     "orientation": "inherit",
-    "modules": ["group/audio", "group/connection", "group/batterys", "power-profiles-daemon"],
+    "modules": ["group/audio", "group/connection", "group/batterys", "power-profiles-daemon","custom/notifications"],
   },
   "hyprland/language": {
     "format": "{}",
@@ -206,7 +206,7 @@
       "transition-duration": 300,
       "transition-left-to-right": true,
     },
-    "modules": ["custom/arrow-left", "gamemode", "custom/notifications", "custom/weather", "tray", "custom/theme-switcher"],
+    "modules": ["custom/arrow-left", "gamemode", "custom/weather", "tray", "custom/theme-switcher"],
   },
   "custom/arrow-left": {
     "format": "󰁍",
@@ -225,7 +225,7 @@
   	"tooltip-format": "Games running: {count}"
   },
   "custom/notifications": {
-    "tooltip": false,
+    "tooltip": true,
     "format": "{icon} {}",
     "format-icons": {
       "notification": "󱥁",
