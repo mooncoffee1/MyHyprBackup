@@ -31,53 +31,40 @@
   "timeout-low": 5,
   "transition-time": 100,
   "widget-config": {
-    "buttons-grid": {
-      "actions": [
+    "volume": {
+      "label": "󰕾    "
+  },
+
+  "backlight": {
+    "label": "󰃠    ",
+    "device": "nvidia_wmi_ec_backlight"
+  },
+  "buttons-grid": {
+    "actions": [
         {
-          "active": false,
-          "command": "systemctl suspend",
-          "label": "󰤄",
-          "type": "toggle"
+            "label": " Wi-FI",
+            "command": "nm-connection-editor"
         },
         {
-          "active": false,
-          "command": "systemctl hibernate",
-          "label": "",
-          "type": "toggle"
+            "label": "󰕾 Mute",
+            "command": "pactl set-sink-mute @DEFAULT_SINK@ toggle"
+
         },
         {
-          "active":false,
-          "command":"hyprshot -m region --clipboard-only",
-          "label":"󰄀",
-          "type": "button"
+            "label": "󰂯 Bluetooth",
+            "command": "blueman-manager"
         },
         {
-          "active":false,
-          "command":"kooha",
-          "label":"󰕧",
-          "type": "button"
-        },
-        {
-          "active": false,
-          "command": "asusctl profile -n",
-          "label": "󰾅",
-          "type": "toggle"
-        },
-        {
-          "active": false,
-          "command": "wlogout",
-          "label": "",
-          "type": "toggle"
+            "label": "  Theme",
+            "command":"/home/alien/.config/hypr/scripts/themechanging"
+
+            
         }
       ]
     },
     "mpris": {
       "image-radius": 12,
       "image-size": 96
-    },
-    "backlight": {
-      "label": " ",
-      "device": "nvidia_wmi_ec_backlight"
     },
     "title": {
       "text": "Notifications",
@@ -87,8 +74,12 @@
 },
 
   "widgets": [
+    
     "mpris",
     "title",
-    "notifications"
+    "notifications",
+    "buttons-grid",
+    "volume", 
+    "backlight"
     ]
 }

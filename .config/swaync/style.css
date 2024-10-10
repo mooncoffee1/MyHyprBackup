@@ -145,9 +145,9 @@ border-radius: 12px;  border: 1px solid @color1;
 /* Notifications  */
 .control-center .notification-row .notification-background,
 .control-center .notification-row .notification-background .notification.critical {
-  background: alpha(@background, .90);
-  border-left: 1px solid @color1;
-
+  background: @background;
+  color: alpha(@foreground, .8);
+  border: 1px solid alpha(@color13, .5);
   border-radius: 10px;
   margin: 4px 0px;
   padding: 4px;
@@ -303,22 +303,27 @@ progressbar {
 
   /* Buttons menu */
 .widget-buttons-grid {
-  font-size: x-large;
-  padding: 6px 2px;
+  padding: 10px 2px;
   margin: 6px;
-border-radius: 12px;  background: alpha(@color1, .2);
+  border-radius: 24px;  
+  background: lighter(@background);
 }
 
 .widget-buttons-grid>flowbox>flowboxchild>button {
-  margin: 4px 10px;
-  padding: 6px 12px;
-  background: transparent;
-  border-radius: 8px;
+  margin: 8px;
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  background: @color4;
+  color: alpha(@background, .8);
+  border-radius: 24px;
   border: 2px solid transparent;
 }
 
 .widget-buttons-grid>flowbox>flowboxchild>button:hover {
-  background: alpha(@background, .6);
+  background: lighter(@color4);
+  color: lighter(@background);
 }
 
   /* Music player */
@@ -361,13 +366,54 @@ border-radius: 12px;  background: alpha(@color1, .2);
     font-size: 0.8rem;
 }
 
-
-/* Volume */
-.widget-volume {
-  background: @background;
-  color: @foreground;
-  padding: 12px;
-  margin: 6px;
-  border-radius: 6px;
+/* Volume widget */
+trough {
+  border-radius: 20px;
+  background: alpha(@color4, .3);
+  border: 1px solid @background;
 }
+
+trough highlight {
+  /* ´trough´ is the background of the slider, ´highlight´ is the actual slider */
+  padding: 2px;
+  background: @color4;
+  border: 1px solid @color4;
+  border-radius: 20px;
+}
+
+trough slider {
   
+  padding: 2px;
+  background: @color4;
+  border: 1px solid @color4;
+  border-radius: 20px;
+
+}
+trough highlight:hover {
+  padding: 2px;
+  background: @color5;
+  border-radius: 20px;
+
+}
+
+.widget-volume {
+  padding: 20px 10px;
+  background-color: alpha(@background, 0.0);
+  border-radius: 20px 20px 0px 0px;
+  font-size: 45px;
+  margin-left: 10px;
+  margin-right: 10px;
+  border: 0px solid transparent;
+}
+
+
+.widget-backlight {
+  padding: 20px 10px;
+  background-color: alpha(@background, 0.0);
+  font-size: 15px;
+  margin-top: -8px;
+  margin-left: 10px;
+  margin-right: 10px;
+  border-radius: 0px 0px 20px 20px;
+  border: 0px solid transparent;
+}

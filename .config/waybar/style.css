@@ -15,25 +15,21 @@
 
 window#waybar {
   background: alpha(@background, 0.75);
-  border-radius: 0px 0px 14px 14px;
-  border-bottom: 1px solid darker(@color13);
-  border-left: 1px solid darker(@color13);
-  border-right: 1px solid darker(@color13);
 
 }
 
 #window {
   padding: 2px 10px;
-  margin: 4px 2px 4px 5px;
-  background: alpha(@background, 0.8);
-  border-radius: 10px;
+  margin: 8px 4px;
+    background: alpha(@background, 0.8);
+  border-radius: 14px;
   color: lighter(@main-color);
 }
 
 tooltip {
   background: alpha(@background, 0.60);
   border: 1px solid alpha(lighter(@main-color), 0.3);
-  border-radius: 10px;
+  border-radius: 14px;
 }
 
 tooltip label {
@@ -54,7 +50,7 @@ tooltip label {
   margin: 8px 4px;
   background: alpha(darker(@main-color), 0.3);
   color: @main-color;
-  border-radius: 10px;
+  border-radius: 14px;
 }
 
 #temperature.critical {
@@ -66,18 +62,20 @@ tooltip label {
 #workspaces {
   margin: 4px 4px;
   background: alpha(@background, 0.7);
-  border-radius: 10px;
+  border-radius: 16px;
 }
 
 #workspaces button {
   padding: 0px 4px;
-  margin: 4px 4px;
+  margin: 3px 4px;
   color: alpha(@foreground, 0.5);
   animation: ws_normal 20s ease-in-out 1;
 }
 
 #workspaces button.active {
-  color: lighter(@color4);
+  color: lighter(@background);
+  border-radius: 16px;
+  background: alpha(@color4, 0.7);
   margin-left: 3px;
   padding-left: 10px;
   padding-right: 10px;
@@ -89,6 +87,7 @@ tooltip label {
 #workspaces button.urgent,
 #workspaces button:hover {
   color: @color5;  
+  border-radius: 14px;
   animation: ws_hover 20s ease-in-out 1;
   transition: all 0.3s cubic-bezier(.55,-0.68,.48,1.682);
 }
@@ -96,39 +95,27 @@ tooltip label {
 
 
 #control-center {
-  padding: 3px 8px;
-  margin: 5px 4px;
+  padding: 0px 6px;
+  margin: 8px 4px;
   color: lighter(@main-color);
   background: alpha(@background, 0.75);
-  border-radius: 10px;
+  border-radius: 14px;
 }
 
 #bluetooth{
-  padding: 0px 0px 0px 4px;
+  padding: 0px 2px 0px 5px;
 
+}
+
+#custom-notifications{
+  margin-right: 8px;
+  
 }
 
 #custom-notifications,
 #network,
 #pulseaudio {
-  padding: 0px 0px 0px 4px;
-}
-
-#pulseaudio-slider slider {
-  min-height: 0px;
-  min-width: 0px;
-  background-color: transparent;
-  border: none;
-  box-shadow: none;
-}
-
-#pulseaudio-slider {
-  margin: 10px;
-}
-
-#pulseaudio-slider highlight {
-  border-radius: 8px;
-  background-color: lighter(@main-color);
+  padding: 0px 0px 0px 6px;
 }
 
 #language {
@@ -145,13 +132,17 @@ tooltip label {
 #custom-weather,
 #tray,
 #custom-theme-switcher {
-  padding: 0px 8px;
+  padding: 0px 6px;
   margin: 8px 4px;
   color: @main-color;
   background: alpha(darker(@main-color), 0.3);
-  border-radius: 10px;
+  border-radius: 14px;
 }
 
+#tray menu * {
+  border-radius: 14px;
+
+}
 #tray .child {
   padding: 0 10px;
 }
@@ -170,11 +161,12 @@ tray > .passive {
 
 #clock {
 font-weight: bolder;
-  padding: 0px 8px;
-  margin: 4px 5px 4px 2px;
+padding: 0px 10px;
+margin: 8px 4px;
   background: alpha(@background, 0.8);
   border-radius: 10px;
   color: lighter(@color10);
+  
 }
 
 #power {
@@ -183,11 +175,79 @@ font-weight: bolder;
   margin: 4px;
 }
 
+#backlight,
 #battery {
-  padding: 0px 4px;
+  padding: 0px 6px;
+}
+
+#battery.charging {
+  color: @color4;
 }
 
 #power-profiles-daemon {
-  padding: 0px 0px 0px 4px;
+  padding: 0px 6px 0px 4px;
 
+}
+
+
+#backlight-slider slider,
+#pulseaudio-slider slider {
+  background: #A1BDCE;
+  background-color: transparent;
+  box-shadow: none;
+  margin-right: 7px;
+}
+
+#backlight-slider trough,
+#pulseaudio-slider trough {
+  margin-top: -4px;
+  min-width: 90px;
+  min-height: 10px;
+  margin-bottom: -4px;
+  border-radius: 8px;
+  background: #343434;
+}
+
+#backlight-slider highlight,
+#pulseaudio-slider highlight {
+  border-radius: 8px;
+  background-color: #2096C0;
+}
+
+#audio:hover,
+#light:hover,
+#custom-notifications:hover,
+#connection:hover,
+#batterys:hover {
+  padding: 0px 8px;
+  margin: 0px 4px;
+  background-color: alpha(@color8, 0.30);
+  border-radius: 14px;
+  animation: ws_hover 20s ease-in-out 1;
+  transition: all 0.3s cubic-bezier(.55,-0.68,.48,1.682);
+}
+
+#clock:hover{
+  background-color: alpha(@color8, 0.30);
+  border-radius: 14px;
+  animation: ws_hover 20s ease-in-out 1;
+  transition: all 0.3s cubic-bezier(.55,-0.68,.48,1.682);
+}
+
+#temperature:hover,
+#cpu:hover,
+#memory:hover,
+#disk:hover,
+#custom-updates:hover,
+#custom-theme-switcher:hover,
+#gamemode.hover,
+#custom-weather:hover,
+#tray:hover,
+#window:hover,
+#custom-waybar-mpris:hover{
+  background-color: alpha(@color4, .7);
+  color: @background;
+  border-radius: 14px;
+  animation: ws_hover 20s ease-in-out 1;
+  transition: all 0.3s cubic-bezier(.55,-0.68,.48,1.682);
 }
