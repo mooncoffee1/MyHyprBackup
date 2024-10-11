@@ -51,7 +51,7 @@ packages=(
     noto-fonts-emoji polkit-gnome imagemagick hyprpicker-git tumbler hyprpaper-git hypridle-git gpick acpi acpi_call qview qt5ct qt5-wayland qt6-wayland
     kvantum-qt5 colloid-cursors-git gdm spotify waybar-mpris-git papirus-folders walogram pywal-discord lightdm-elephant-greeter-git github-desktop
     brightnessctl pamixer papirus-icon-theme ttf-jetbrains-mono-nerd pipewire pipewire-jack gst-plugin-pipewire gst-plugins-good python-webcolors python-scipy steam steam-native-runtime gamemode lib32-amdvlk lib32-gamemode
-    pipewire-alsa pipewire-pulse thunar wttrbar thunar-archive-plugin cava-git spicetify-cli atuin wlogout python-pywal gradience zsh-autosuggestions zsh-sudo zsh-syntax-highlighting adw-gtk3
+    pipewire-alsa pipewire-pulse thunar wlsunset wttrbar thunar-archive-plugin cava-git spicetify-cli atuin wlogout python-pywal gradience zsh-autosuggestions zsh-sudo zsh-syntax-highlighting adw-gtk3
 )
 
 # Ask for confirmation before installing packages with paru

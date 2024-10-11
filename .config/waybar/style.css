@@ -60,22 +60,23 @@ tooltip label {
 }
 
 #workspaces {
-  margin: 4px 4px;
+  margin: 7.8px 4px;
   background: alpha(@background, 0.7);
   border-radius: 16px;
 }
 
 #workspaces button {
+  font-size:smaller;
   padding: 0px 4px;
-  margin: 3px 4px;
+  margin: 0px 4px;
   color: alpha(@foreground, 0.5);
   animation: ws_normal 20s ease-in-out 1;
 }
 
 #workspaces button.active {
-  color: lighter(@background);
-  border-radius: 16px;
-  background: alpha(@color4, 0.7);
+  color: @background;
+  border-radius: 40px;
+  background: alpha(@color4, 0.85);
   margin-left: 3px;
   padding-left: 10px;
   padding-right: 10px;
@@ -84,7 +85,15 @@ tooltip label {
   transition: all 0.4s cubic-bezier(.55,-0.68,.48,1.682);
 }
 
-#workspaces button.urgent,
+#workspaces button.urgent {
+  background-color: @color6;  
+  color: @background;
+  border-radius: 12px;
+  animation: ws_hover 20s ease-in-out 1;
+  transition: all 0.3s cubic-bezier(.55,-0.68,.48,1.682);
+}
+
+
 #workspaces button:hover {
   color: @color5;  
   border-radius: 14px;
@@ -184,9 +193,25 @@ margin: 8px 4px;
   color: @color4;
 }
 
-#power-profiles-daemon {
-  padding: 0px 6px 0px 4px;
 
+#battery.warning {
+  color: @color7;
+}
+
+
+#battery.critical {
+  color: @color6;
+  animation: fadeColor 2s forwards;
+}
+
+
+#power-profiles-daemon  {
+  border-radius: 15px;
+  padding-left: 8px;
+  margin-left: 6px;
+  margin-right: 4px;
+  background: linear-gradient(90deg, @color8 1%, transparent 31%); 
+  color: @backgorund;
 }
 
 
@@ -216,7 +241,6 @@ margin: 8px 4px;
 
 #audio:hover,
 #light:hover,
-#custom-notifications:hover,
 #connection:hover,
 #batterys:hover {
   padding: 0px 8px;
@@ -233,6 +257,19 @@ margin: 8px 4px;
   animation: ws_hover 20s ease-in-out 1;
   transition: all 0.3s cubic-bezier(.55,-0.68,.48,1.682);
 }
+#custom-notifications:hover{
+  background-color: alpha(@color4, .7);
+  padding: 0px 10px 0px 10px;
+  color: @background;
+  border-radius: 14px;
+  animation: ws_hover 20s ease-in-out 1;
+  transition: all 0.3s cubic-bezier(.55,-0.68,.48,1.682);
+
+}
+
+
+
+
 
 #temperature:hover,
 #cpu:hover,

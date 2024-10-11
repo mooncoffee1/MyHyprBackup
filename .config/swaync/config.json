@@ -42,21 +42,21 @@
   "buttons-grid": {
     "actions": [
         {
-            "label": " Wi-FI",
+            "label": "󰖩  Wi-FI",
             "command": "nm-connection-editor"
         },
         {
-            "label": "󰕾 Mute",
+            "label": "󰝟  Mute",
             "command": "pactl set-sink-mute @DEFAULT_SINK@ toggle"
 
         },
         {
-            "label": "󰂯 Bluetooth",
+            "label": "󰂯  Bluetooth",
             "command": "blueman-manager"
         },
         {
-            "label": "  Theme",
-            "command":"/home/alien/.config/hypr/scripts/themechanging"
+            "label": "󰌵  Night Light",
+            "command":"home/ananas/.config/hypr/scripts/wlsunset-bluelight"
 
             
         }

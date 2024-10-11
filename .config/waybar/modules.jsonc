@@ -56,18 +56,6 @@
     "format": "{name}",
     "on-click": "activate",
     "all-outputs": true,
-    "format-icons": {
-      "1": "",
-      "2": "󰖟",
-      "3": "󰅩",
-      "4": "󰞶",
-      "5": "",
-      "6": "󰓇",
-      "7": "",
-      "8": "󰕧",
-      "9": "󰭠",
-      "10": "󰭠",
-    },
   },
   "group/control-center": {
     "orientation": "inherit",
@@ -207,6 +195,7 @@
     "drawer": {
       "transition-duration": 300,
       "transition-left-to-right": true,
+      "click-to-reveal": true,
     },
     "modules": ["custom/arrow-left", "gamemode", "custom/weather", "tray", "custom/theme-switcher"],
   },

@@ -117,3 +117,9 @@ export PATH=$PATH:/home/ananas/.spicetify
 # bun
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
+
+## [Completion]
+## Completion scripts setup. Remove the following line to uninstall
+[[ -f /home/ananas/.dart-cli-completion/zsh-config.zsh ]] && . /home/ananas/.dart-cli-completion/zsh-config.zsh || true
+## [/Completion]
+
