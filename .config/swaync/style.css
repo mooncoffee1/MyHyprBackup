@@ -39,7 +39,7 @@
 .floating-notifications.background .notification-row .notification-background {
   background: alpha(@background, .75);
   box-shadow: 0 2px 8px 0 @color0;   
-  border: 1px solid @color13;
+  border: 1.5px solid @color13;
   border-radius: 12px;  
   margin: 16px;
   padding: 0;
@@ -117,14 +117,18 @@ box-shadow: 0 2px 8px 0 @color0;
 
 .notification.critical progress {
   background-color: @color11;
+  border: none;
 }
 
 .notification.low progress,
 .notification.normal progress {
   background: alpha(@color4, .85);
+  border: none;
 }
 
-
+.notification.low trough{
+  border: none;
+}
 
 /* Avoid 'annoying' backgroud */
 .blank-window {  
@@ -136,7 +140,8 @@ box-shadow: 0 2px 8px 0 @color0;
 .control-center {
   color: @foreground;
   background: alpha(@background, .85);
-border-radius: 12px;  border: 1px solid @color1;
+  border-radius: 12px;  
+  border: 1.5px solid @color1;
   box-shadow: 0 2px 8px 0 @color0;   
   margin: 18px;
   padding: 12px;
@@ -209,11 +214,8 @@ progress,
 trough {
 border-radius: 12px;
 border: none;
-}
+background: transparent;
 
-progressbar {
-  background-color: @background;
-  border: none;
 }
 
 /* Notifications expanded-group */
@@ -258,14 +260,15 @@ progressbar {
 }
 
 .widget-title button {
-  border-radius: 10px;
+  border-radius: 24px;
   padding: 4px 16px;
-  border: 1px solid @color6;
+  border: 1.5px solid @color6;
 }
 
 .widget-title button:hover {
-  background-color: alpha(@background, .2);
-  border: 1px solid @color13;
+  background-color: alpha(@color4, .2);
+  border: 1.5px solid @color12;
+  color: @color5;
 }
 
 .widget-title button:active {
@@ -307,9 +310,9 @@ progressbar {
   /* Buttons menu */
 .widget-buttons-grid {
   padding: 10px 2px;
-  margin: 6px;
+  margin: 20px;
   border-radius: 24px;  
-  background: lighter(@background);
+  background: alpha(@background, .80);
 }
 
 .widget-buttons-grid>flowbox>flowboxchild>button {
@@ -335,7 +338,7 @@ progressbar {
     border-radius: 16px;
     color: @foreground;
     padding: 6px;
-    margin:  20px 6px;
+    margin:  5px 6px;
 }
  
 .widget-mpris button {

@@ -16,7 +16,7 @@
       "transition-duration": 300,
       "transition-left-to-right": false,
     },
-    "modules": ["custom/arrow-right", "cpu",  "memory", "disk", "temperature", "custom/updates"],
+    "modules": ["custom/arrow-right", "cpu",  "memory", "disk", "temperature", "custom/gpu-usage", "custom/updates"],
   },
   "custom/arrow-right": {
     "format": "󰁔",
@@ -223,7 +223,7 @@
       "transition-left-to-right": true,
       "click-to-reveal": true,
     },
-    "modules": ["custom/arrow-left", "tray", "idle_inhibitor","gamemode", "custom/weather", "custom/gpu-usage", "custom/screenrecorder", "custom/theme-switcher"],
+    "modules": ["custom/arrow-left", "tray", "custom/weather", "idle_inhibitor", "custom/screenrecorder", "gamemode", "custom/theme-switcher"],
   },
   "custom/arrow-left": {
     "format": "󰁍",
