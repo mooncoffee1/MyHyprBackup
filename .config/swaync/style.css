@@ -207,10 +207,13 @@ border-radius: 12px;  border: 1px solid @color1;
 progressbar,
 progress,
 trough {
-border-radius: 12px;}
+border-radius: 12px;
+border: none;
+}
 
 progressbar {
   background-color: @background;
+  border: none;
 }
 
 /* Notifications expanded-group */

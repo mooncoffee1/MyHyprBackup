@@ -7,7 +7,6 @@
       "^.*( — Firefox|Firefox)$": "󰈹 Firefox",
       "^.*v( .*|$)": " Neovim",
       "^.*~$": "󰄛 Kitty",
-      
       "(.*) ": "󰍹 Desktop"
     },
   },
@@ -26,6 +25,7 @@
   "cpu": {
     "format": "󰘚 {usage}󱉸",
   },
+  
   "temperature": {
     // "thermal-zone": 2,
     // "hwmon-path": "/sys/class/hwmon/hwmon2/temp1_input",
@@ -59,8 +59,31 @@
   },
   "group/control-center": {
     "orientation": "inherit",
-    "modules": ["group/audio", "group/connection", "group/batterys", "group/light","custom/notifications"],
+    "on-click": "swaync-client -t -sw",
+    "modules": [ "privacy","group/audio", "group/connection", "group/batterys", "group/light","custom/notifications"],
   },
+  "privacy": {
+	"icon-spacing": 14,
+	"icon-size": 11,
+	"transition-duration": 250,
+	"modules": [
+		{
+			"type": "screenshare",
+			"tooltip": true,
+			"tooltip-icon-size": 10
+		},
+		{
+			"type": "audio-out",
+			"tooltip": true,
+			"tooltip-icon-size": 10
+		},
+		{
+			"type": "audio-in",
+			"tooltip": true,
+			"tooltip-icon-size": 10
+		}
+	]
+},
   "hyprland/language": {
     "format": "{}",
     "format-en": "en",
@@ -71,14 +94,15 @@
   },
   "group/audio": {
     "orientation": "inherit",
+    "on-click": "swaync-client -t -sw",
     "drawer": {
       "transition-duration": 300,
       "transition-left-to-right": true,
     },
     "modules": [
       "pulseaudio",
-      "pulseaudio#volume",
-      "pulseaudio#mic"
+      "pulseaudio#volume"
+     // "pulseaudio#mic"
      // "pulseaudio/slider"
     ]
   },
@@ -97,7 +121,7 @@
       "car": " ",
       "default": ["󰕿", "󰖀", "󰕾"],
     },
-    "on-click": "changevolume mute",
+    "on-click": "swaync-client -t -sw",
     "on-click-middle": "pavucontrol",
     "on-scroll-up": "pactl set-sink-volume @DEFAULT_SINK@ +5%",
     "on-scroll-down": "pactl set-sink-volume @DEFAULT_SINK@ -5%",
@@ -114,7 +138,8 @@
     "on-scroll-up": "pactl set-source-volume 0 +1%",
   },
   "pulseaudio#volume": {
-    "format": "{volume} %",
+    "format": "{volume}",
+    "on-click": "swaync-client -t -sw",
     "tooltip": false,
   },
   "group/connection": {
@@ -125,6 +150,7 @@
     "orientation": "inherit",
     "drawer": {
       "transition-duration": 300,
+      
       "transition-left-to-right": true,
     },
     "modules": ["network", "network#speed"],
@@ -150,7 +176,7 @@
     "format-disconnected": "󰲜",
     "format-linked": "󰈁",
     "tooltip": false,
-    "on-click": ".config/hypr/scripts/rofi-wifi",
+    "on-click": "swaync-client -t -sw",
   },
   "network#speed": {
     "format": " {bandwidthDownBits} ",
@@ -160,7 +186,7 @@
     "tooltip-format-ethernet": "{ifname} 󰈀 \n{ipaddr} | {frequency} MHz{icon} ",
     "tooltip-format-disconnected": "Not Connected to any type of Network",
     "tooltip": false,
-    "on-click": "pgrep -x rofi &>/dev/null && notify-send rofi || networkmanager_dmenu",
+    "on-click": "swaync-client -t -sw",
   },
   "bluetooth": {
     "format-on": "󰂯",
@@ -172,7 +198,7 @@
     "tooltip-format-connected": "{controller_alias}\t{controller_address}\n\n{num_connections} connected\n\n{device_enumerate}",
     "tooltip-format-enumerate-connected": "{device_alias}\t{device_address}",
     "tooltip-format-enumerate-connected-battery": "{device_alias}\t{device_address}\t{device_battery_percentage}%",
-    "on-click": "overskride",
+    "on-click": "swaync-client -t -sw",
   },
   "bluetooth#status": {
     "format-on": "",
@@ -184,7 +210,7 @@
     "tooltip-format-connected": "{controller_alias}\t{controller_address}\n\n{num_connections} connected\n\n{device_enumerate}",
     "tooltip-format-enumerate-connected": "{device_alias}\t{device_address}",
     "tooltip-format-enumerate-connected-battery": "{device_alias}\t{device_address}\t{device_battery_percentage}%",
-    "on-click": "rofi-bluetooth -config ~/.config/rofi/menu.d/network.rasi -i",
+    "on-click": "swaync-client -t -sw",
   },
   "group/hub": {
     "orientation": "inherit",
@@ -197,7 +223,7 @@
       "transition-left-to-right": true,
       "click-to-reveal": true,
     },
-    "modules": ["custom/arrow-left", "gamemode", "custom/weather", "tray", "custom/theme-switcher"],
+    "modules": ["custom/arrow-left", "tray", "idle_inhibitor","gamemode", "custom/weather", "custom/gpu-usage", "custom/screenrecorder", "custom/theme-switcher"],
   },
   "custom/arrow-left": {
     "format": "󰁍",
@@ -235,6 +261,23 @@
     "on-click-right": "swaync-client -d -sw",
     "escape": true
   },
+"custom/screenrecorder": {
+    "exec": "$HOME/.config/waybar/scripts/screenrecorder status",
+    "interval": "once",
+    "signal": 1,
+    "return-type": "json",
+    "tooltip": true,
+    "format": "{}",
+    "on-click": "$HOME/.config/waybar/scripts/screenrecorder toggle fullscreen",
+    "on-click-right": "$HOME/.config/waybar/scripts/screenrecorder toggle region"
+},
+"custom/gpu-usage": {
+  "exec": "cat /sys/class/hwmon/hwmon3/device/gpu_busy_percent",
+  "format": "󰢮 {}",
+  "tooltip-format": "Gpu usage",
+  "return-type": "",
+  "interval": 1
+},
   "custom/weather": {
     "format": "{}",
     "tooltip": false,
@@ -281,12 +324,14 @@
     "orientation": "inherit",
     "drawer": {
       "transition-duration": 300,
+      "on-click": "swaync-client -t -sw",
       "transition-left-to-right": true,
     },
     "modules": ["battery", "battery#capacity", "power-profiles-daemon"],
   },
 
   "battery": {
+    "on-click": "swaync-client -t -sw",
     "states": {
       "good": 60,
       "warning": 30,
@@ -315,6 +360,8 @@
       "critical": 15
     },
     "format": "{capacity} %",
+    "on-click": "swaync-client -t -sw",
+
     "tooltip-format": " 󱟞 {timeTo} | {power} W"
 
   },
@@ -355,6 +402,7 @@
 
 "backlight": {
   "device": "nvidia_wmi_ec_backlight",
+  "on-click": "swaync-client -t -sw",
   "rotate": 0,
   "tooltip": false,
   "format": "{icon}",
@@ -365,12 +413,20 @@
 
 "backlight#volume": {
   "device": "nvidia_wmi_ec_backlight",
+  "on-click": "swaync-client -t -sw",
   "rotate": 0,
   "tooltip": false,
   "format": "{percent}",
   "format-icons": ["󰃞", "󰃝", "󰃟", "󰃠"],
   "scroll-step": 1,
   "min-length": 2
+},
+"idle_inhibitor": {
+    "format": "{icon}",
+    "format-icons": {
+        "activated": "󰛐",
+        "deactivated": "󰛑"
+    }
 },
 
   

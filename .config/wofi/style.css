@@ -4,7 +4,7 @@
 window {
   margin: 0px;
   border: 1px solid @color6;
-  background: alpha(@background, .85);
+  background: alpha(@background, .75);
   border-radius: 12px;
 }
 

@@ -77,10 +77,10 @@ tooltip label {
   color: @background;
   border-radius: 40px;
   background: alpha(@color4, 0.85);
-  margin-left: 3px;
+  margin-left: 0px;
   padding-left: 10px;
   padding-right: 10px;
-  margin-right: 3px;
+  margin-right: 0px;
   animation: ws_active 20s ease-in-out 1;
   transition: all 0.4s cubic-bezier(.55,-0.68,.48,1.682);
 }
@@ -118,7 +118,6 @@ tooltip label {
 
 #custom-notifications{
   margin-right: 8px;
-  
 }
 
 #custom-notifications,
@@ -136,12 +135,15 @@ tooltip label {
   margin: 0px 4px;
 }
 
+#idle_inhibitor,
+#custom-gpu-usage,
+#custom-screenrecorder,
 #gamemode,
 #custom-waybar-mpris,
 #custom-weather,
 #tray,
 #custom-theme-switcher {
-  padding: 0px 6px;
+  padding: 0px 7px;
   margin: 8px 4px;
   color: @main-color;
   background: alpha(darker(@main-color), 0.3);
@@ -184,6 +186,7 @@ margin: 8px 4px;
   margin: 4px;
 }
 
+#privacy,
 #backlight,
 #battery {
   padding: 0px 6px;
@@ -210,8 +213,8 @@ margin: 8px 4px;
   padding-left: 8px;
   margin-left: 6px;
   margin-right: 4px;
-  background: linear-gradient(90deg, @color8 1%, transparent 31%); 
-  color: @backgorund;
+  background: linear-gradient(90deg, alpha(@color8, 0.50) 1%, transparent 31%); 
+  color: @color7;
 }
 
 
@@ -239,6 +242,18 @@ margin: 8px 4px;
   background-color: #2096C0;
 }
 
+
+#privacy:hover{
+  background-color: alpha(@color8, 0.30);
+  border-radius: 14px;
+  animation: ws_hover 20s ease-in-out 1;
+  transition: all 0.3s cubic-bezier(.55,-0.68,.48,1.682);
+}
+
+#privacy-item.audio-in{
+  color: @color6;
+}
+
 #audio:hover,
 #light:hover,
 #connection:hover,
@@ -258,6 +273,7 @@ margin: 8px 4px;
   transition: all 0.3s cubic-bezier(.55,-0.68,.48,1.682);
 }
 #custom-notifications:hover{
+  margin-right: 0px;
   background-color: alpha(@color4, .7);
   padding: 0px 10px 0px 10px;
   color: @background;
@@ -268,9 +284,9 @@ margin: 8px 4px;
 }
 
 
-
-
-
+#idle_inhibitor:hover,
+#custom-gpu-usage:hover,
+#custom-screenrecorder:hover,
 #temperature:hover,
 #cpu:hover,
 #memory:hover,
