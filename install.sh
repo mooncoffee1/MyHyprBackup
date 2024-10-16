@@ -45,7 +45,7 @@ fi
 
 # List of packages to install
 packages=(
-    hyprland-git waybar-git network-manager-applet blueman python rust kitty zsh wofi waypaper code
+    hyprland-git hyprshot hyprshade-git waybar-git network-manager-applet blueman python rust kitty zsh wofi waypaper code
     xdg-desktop-portal-hyprland hyprlock-git grim slurp swaync wl-clipboard cliphist nwg-look swww prismlauncher-qt5-git jre12-openjdk engrampa 
     swappy wofi-calc wofi-emoji ttf-material-design-icons-extended ttf-iosevka ttf-iosevka-nerd xdg-user-dirs fastfetch xdg-user-dirs-gtk
     noto-fonts-emoji polkit-gnome imagemagick hyprpicker-git tumbler hyprpaper-git hypridle-git gpick acpi acpi_call qview qt5ct qt5-wayland qt6-wayland

@@ -17,17 +17,50 @@ cleanup() {
 }
 trap cleanup EXIT
 
+# Handle options
+SWAPPY_MODE=false
+WINDOW_MODE=false
+case "$1" in
+    --no-swappy)
+        SWAPPY_MODE=false
+        ;;
+    --swappy)
+        SWAPPY_MODE=true
+        ;;
+    --window)
+        WINDOW_MODE=true
+        ;;
+    *)
+        echo "Usage: $0 --swappy | --no-swappy | --window"
+        exit 1
+        ;;
+esac
+
+# If window mode is selected, use hyprshot and skip the rest
+if [ "$WINDOW_MODE" = true ]; then
+    hyprshot -m window
+    cleanup
+    exit 0
+fi
+
+# Set the save directory and filename for slurp/grim
 SAVEDIR=~/Pictures/Screenshots
 mkdir -p -- "$SAVEDIR"
 FILENAME="$SAVEDIR/$(date +'%Y-%m-%d-%H%M%S_screenshot.png')"
 EXPENDED_FILENAME="${FILENAME/#\~/$HOME}"
 
+# Take the screenshot using grim and slurp
 grim -g "$(slurp)" "$EXPENDED_FILENAME"
-swappy -f "$EXPENDED_FILENAME" -o "$EXPENDED_FILENAME"
 
+# If swappy mode is enabled, open the screenshot in swappy
+if [ "$SWAPPY_MODE" = true ]; then
+    swappy -f "$EXPENDED_FILENAME" -o "$EXPENDED_FILENAME"
+fi
+
+# Copy the screenshot to the clipboard
 if wl-copy < "$EXPENDED_FILENAME"; then
     notify-send "Screenshot" "File saved as <i>'$FILENAME'</i> and copied to the clipboard." -i "$EXPENDED_FILENAME"
 fi
 
-# Remove the lock file before exiting (cleanup function will handle this)
+# Cleanup lock file before exiting (trap will handle this)
 cleanup

@@ -21,14 +21,15 @@ window#waybar {
 #window {
   padding: 2px 10px;
   margin: 8px 4px;
-    background: alpha(@background, 0.8);
+  background: alpha(@background, 0.85);
   border-radius: 14px;
   color: lighter(@main-color);
 }
 
 tooltip {
-  background: alpha(@background, 0.60);
-  border: 1px solid alpha(lighter(@main-color), 0.3);
+  padding-top: 30px;
+  background: alpha(@background, 0.80);
+  border: 1.5px solid alpha(lighter(@main-color), 0.3);
   border-radius: 14px;
 }
 
@@ -86,7 +87,7 @@ tooltip label {
 }
 
 #workspaces button.urgent {
-  background-color: @color6;  
+  background-color: lighter(@color5);  
   color: @background;
   border-radius: 12px;
   animation: ws_hover 20s ease-in-out 1;
@@ -101,6 +102,13 @@ tooltip label {
   transition: all 0.3s cubic-bezier(.55,-0.68,.48,1.682);
 }
 
+#workspaces button.active:hover {
+  color: lighter(@background);  
+  background: alpha(@color2, 0.70);
+  border-radius: 14px;
+  animation: ws_hover 20s ease-in-out 1;
+  transition: all 0.3s cubic-bezier(.55,-0.68,.48,1.682);
+}
 
 
 #control-center {
@@ -135,6 +143,7 @@ tooltip label {
   margin: 0px 4px;
 }
 
+#language,
 #idle_inhibitor,
 #custom-gpu-usage,
 #custom-screenrecorder,
@@ -210,10 +219,10 @@ margin: 8px 4px;
 
 #power-profiles-daemon  {
   border-radius: 15px;
-  padding-left: 8px;
-  margin-left: 6px;
-  margin-right: 4px;
-  background: linear-gradient(90deg, alpha(@color8, 0.50) 1%, transparent 31%); 
+  padding-right: 20px;
+  margin-left: 4px;
+  margin-right: 6px;
+  background: linear-gradient(90deg, transparent 20%, alpha(@color8, 0.50) 90%); 
   color: @color7;
 }
 
@@ -283,7 +292,7 @@ margin: 8px 4px;
 
 }
 
-
+#language:hover,
 #idle_inhibitor:hover,
 #custom-gpu-usage:hover,
 #custom-screenrecorder:hover,

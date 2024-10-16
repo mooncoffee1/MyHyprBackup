@@ -7,7 +7,8 @@
       "^.*( — Firefox|Firefox)$": "󰈹 Firefox",
       "^.*v( .*|$)": " Neovim",
       "^.*~$": "󰄛 Kitty",
-      "(.*) ": "󰍹 Desktop"
+      "(.*) ": "󰣇 Desktop",
+      "^.*( — Google Chrome|Google Chrome)$": "󰊯 Google Chrome",    
     },
   },
   "group/info": {
@@ -70,28 +71,27 @@
 		{
 			"type": "screenshare",
 			"tooltip": true,
-			"tooltip-icon-size": 10
+			"tooltip-icon-size": 24
 		},
 		{
 			"type": "audio-out",
 			"tooltip": true,
-			"tooltip-icon-size": 10
+			"tooltip-icon-size": 24
 		},
 		{
 			"type": "audio-in",
 			"tooltip": true,
-			"tooltip-icon-size": 10
+			"tooltip-icon-size": 24
 		}
 	]
 },
-  "hyprland/language": {
+"hyprland/language": {
     "format": "{}",
-    "format-en": "en",
+    "format-en": "us",
+    "format-ro": "ro",
     "format-ru": "ru",
-    "keyboard-name": "kingston-hyperx-alloy-fps-pro-mechanical-gaming-keyboard-1",
-    // "keyboard-name":"at-translated-set-2-keyboard",
-    "on-click": "hyprctl switchxkblayout kingston-hyperx-alloy-fps-pro-mechanical-gaming-keyboard-1 next",
-  },
+    "keyboard-name": "at-translated-set-2-keyboard"
+},
   "group/audio": {
     "orientation": "inherit",
     "on-click": "swaync-client -t -sw",
@@ -167,13 +167,13 @@
     "format": "{icon}",
     "tooltip": false,
     "format-icons": {
-      "wifi": ["󰤨"],
+      "wifi": ["󰤯", "󰤟", "󰤢", "󰤥", "󰤨"],
       "ethernet": ["󰈁"],
-      "disconnected": [""],
+      "disconnected": ["󱳑"],
     },
-    "format-wifi": "󰖩",
+    "format-wifi": ["󰤯", "󰤟", "󰤢", "󰤥", "󰤨"],
     "format-ethernet": "󰈀",
-    "format-disconnected": "󰲜",
+    "format-disconnected": "󰣼",
     "format-linked": "󰈁",
     "tooltip": false,
     "on-click": "swaync-client -t -sw",
@@ -223,7 +223,7 @@
       "transition-left-to-right": true,
       "click-to-reveal": true,
     },
-    "modules": ["custom/arrow-left", "tray", "custom/weather", "idle_inhibitor", "custom/screenrecorder", "gamemode", "custom/theme-switcher"],
+    "modules": ["custom/arrow-left", "tray", "custom/weather", "idle_inhibitor", "custom/screenrecorder", "gamemode", "custom/theme-switcher", "hyprland/language"],
   },
   "custom/arrow-left": {
     "format": "󰁍",
@@ -318,16 +318,16 @@
       "transition-duration": 300,
       "transition-left-to-right": false,
     },
-    "modules": ["batterys", "power-profiles-daemon"],
+    "modules": ["power-profiles-daemon", "batterys"],
   },
   "group/batterys": {
     "orientation": "inherit",
     "drawer": {
       "transition-duration": 300,
       "on-click": "swaync-client -t -sw",
-      "transition-left-to-right": true,
+      "transition-left-to-right": false,
     },
-    "modules": ["battery", "battery#capacity", "power-profiles-daemon"],
+    "modules": ["battery", "power-profiles-daemon", "battery#capacity"],
   },
 
   "battery": {
@@ -359,7 +359,7 @@
       "warning": 30,
       "critical": 15
     },
-    "format": "{capacity} %",
+    "format": "{capacity}",
     "on-click": "swaync-client -t -sw",
 
     "tooltip-format": " 󱟞 {timeTo} | {power} W"
@@ -423,9 +423,11 @@
 },
 "idle_inhibitor": {
     "format": "{icon}",
+    "tooltip-format-activated": "Idle Stopped",
+    "tooltip-format-deactivated": "Idling...",
     "format-icons": {
-        "activated": "󰛐",
-        "deactivated": "󰛑"
+        "activated": "󰈈",
+        "deactivated": "󰈉"
     }
 },
 
