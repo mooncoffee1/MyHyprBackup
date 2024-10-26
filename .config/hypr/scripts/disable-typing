@@ -1,0 +1,15 @@
+#!/usr/bin/env sh
+
+# Check the current state of disable_while_typing
+DISABLE_WHILE_TYPING=$(hyprctl getoption input:touchpad:disable_while_typing | awk 'NR==1{print $2}')
+
+# Toggle the setting based on its current value
+if [ "$DISABLE_WHILE_TYPING" = "1" ]; then
+    hyprctl --batch "keyword input:touchpad:disable_while_typing 0"
+    echo "Touchpad will NOT disable while typing"
+    notify-send "Touchpad" "Touchpad will NOT disable while typing" -u low
+else
+    hyprctl --batch "keyword input:touchpad:disable_while_typing 1"
+    echo "Touchpad will disable while typing"
+    notify-send "Touchpad" "Touchpad will disable while typing" -u low
+fi

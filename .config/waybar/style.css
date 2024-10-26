@@ -77,7 +77,7 @@ tooltip label {
 #workspaces button.active {
   color: @background;
   border-radius: 40px;
-  background: alpha(@color4, 0.85);
+  background: @color4;
   margin-left: 0px;
   padding-left: 10px;
   padding-right: 10px;
@@ -90,6 +90,7 @@ tooltip label {
   background-color: lighter(@color5);  
   color: @background;
   border-radius: 12px;
+  padding: 0px 5px;
   animation: ws_hover 20s ease-in-out 1;
   transition: all 0.3s cubic-bezier(.55,-0.68,.48,1.682);
 }
@@ -141,6 +142,13 @@ tooltip label {
 #custom-arrow-left {
   color: darker(@color4);
   margin: 0px 4px;
+}
+
+#cava{
+  border-radius: 40px;
+  color: @foreground;
+  padding: 0px 5px;
+  margin: 8px 0px;
 }
 
 #language,
@@ -205,7 +213,6 @@ margin: 8px 4px;
   color: @color4;
 }
 
-
 #battery.warning {
   color: @color7;
 }
@@ -216,6 +223,10 @@ margin: 8px 4px;
   animation: fadeColor 2s forwards;
 }
 
+#gamemode{
+  padding-left: 0px;
+padding-right: 16px;
+}
 
 #power-profiles-daemon  {
   border-radius: 15px;
@@ -267,16 +278,21 @@ margin: 8px 4px;
 #light:hover,
 #connection:hover,
 #batterys:hover {
-  padding: 0px 8px;
+  padding-left: 6px;
+  padding-right: 12px;
   margin: 0px 4px;
   background-color: alpha(@color8, 0.30);
   border-radius: 14px;
+  color: lighter(@foreground);
+
   animation: ws_hover 20s ease-in-out 1;
   transition: all 0.3s cubic-bezier(.55,-0.68,.48,1.682);
 }
 
+#cava:hover,
 #clock:hover{
   background-color: alpha(@color8, 0.30);
+  color: lighter(@foreground);
   border-radius: 14px;
   animation: ws_hover 20s ease-in-out 1;
   transition: all 0.3s cubic-bezier(.55,-0.68,.48,1.682);
@@ -302,7 +318,7 @@ margin: 8px 4px;
 #disk:hover,
 #custom-updates:hover,
 #custom-theme-switcher:hover,
-#gamemode.hover,
+#gamemode:hover,
 #custom-weather:hover,
 #tray:hover,
 #window:hover,

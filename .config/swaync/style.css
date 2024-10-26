@@ -217,8 +217,7 @@ progressbar,
 progress,
 trough {
 border-radius: 12px;
-
-
+color: transparent;
 }
 
 /* Notifications expanded-group */

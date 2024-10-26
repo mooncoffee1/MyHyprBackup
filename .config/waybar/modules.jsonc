@@ -17,7 +17,7 @@
       "transition-duration": 300,
       "transition-left-to-right": false,
     },
-    "modules": ["custom/arrow-right", "cpu",  "memory", "disk", "temperature", "custom/gpu-usage", "custom/updates"],
+    "modules": ["custom/arrow-right", "cpu",  "memory", "disk", "temperature", "custom/updates"],
   },
   "custom/arrow-right": {
     "format": "󰁔",
@@ -25,6 +25,7 @@
   },
   "cpu": {
     "format": "󰘚 {usage}󱉸",
+    "on-click": "$HOME/.config/hypr/scripts/disable-typing",
   },
   
   "temperature": {
@@ -91,6 +92,18 @@
     "format-ro": "ro",
     "format-ru": "ru",
     "keyboard-name": "at-translated-set-2-keyboard"
+},
+"keyboard-state": {
+    "numlock": true,
+    "capslock": true,
+    "format": {
+        "numlock": " N ",
+        "capslock": " C "                                                                                                                                                       
+    },
+    "format-icons": {
+        "locked": "",
+        "unlocked": ""
+    }
 },
   "group/audio": {
     "orientation": "inherit",
@@ -179,7 +192,7 @@
     "on-click": "swaync-client -t -sw",
   },
   "network#speed": {
-    "format": " {bandwidthDownBits} ",
+    "format": "{essid} 󱜠 {bandwidthDownBits}",
     "interval": 5,
     "tooltip-format": "{ipaddr}",
     "tooltip-format-wifi": "{essid} ({signalStrength}%)   \n{ipaddr} | {frequency} MHz{icon} ",
@@ -230,16 +243,18 @@
     "tooltip": false,
   },
   "gamemode": {
-  	"format": "{glyph}",
-  	"format-alt": "{glyph} {count}",
+  	"format": "󰸺",
+  	"format-alt": "󰸺",
   	"glyph": "Gaming mode  ",
   	"hide-not-running": true,
   	"use-icon": false,
   	"icon-name": "input-gaming-symbolic",
   	"icon-spacing": 0,
   	"icon-size": 16,
-  	"tooltip": false,
-  	"tooltip-format": "Games running: {count}"
+  	"tooltip": true,
+  	"tooltip-format": "Games running: {count}",
+    "on-click-right": "$HOME/.config/hypr/scripts/disable-typing",
+    
   },
   "custom/notifications": {
     "tooltip": false,
@@ -360,7 +375,7 @@
       "critical": 15
     },
     "format": "{capacity}",
-    "on-click": "swaync-client -t -sw",
+    "on-click": "resources",
 
     "tooltip-format": " 󱟞 {timeTo} | {power} W"
 
@@ -389,7 +404,28 @@
     "on-click-right": "sleep 0.1; playerctl next",
     "escape": true,
 },
-
+"cava": {
+//        "cava_config": "$XDG_CONFIG_HOME/cava/cava.conf",
+        "framerate": 144,
+        "autosens": 1,
+        "sensitivity": 3,
+        "bars": 20,
+        "lower_cutoff_freq": 10,
+        "higher_cutoff_freq": 1000,
+        "method": "pipewire",
+        "source": "auto",
+        "stereo": false,
+        "reverse": false,
+        "bar_delimiter": 0,
+        "monstercat": true,
+        "waves": true,
+        "noise_reduction": 0.15,
+        "input_delay": 0,
+        "format-icons" : ["▁", "▂", "▃", "▄", "▅", "▆", "▇", "█" ],
+        "actions": {
+                //   "on-click-right": "mode"
+                   }
+    },
 "group/light": {
   "orientation": "horizontal",
   "drawer": {
