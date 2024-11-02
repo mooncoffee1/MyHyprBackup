@@ -1,0 +1,15 @@
+#!/bin/bash
+
+# Unique notification ID
+ICON_PATH="$HOME/.config/hypr/scripts/icons/hh1lightbulb.png"
+
+# Check if hyprsunset is running
+if pgrep -f "hyprsunset -t 4000" > /dev/null; then
+    # If running, kill all hyprsunset instances
+    killall hyprsunset
+    notify-send -h string:x-canonical-private-synchronous:sys-notify -i "$ICON_PATH" "Hyprsunset" "Stopped"
+else
+    # If not running, start it
+    hyprsunset -t 4000 &
+    notify-send  -h string:x-canonical-private-synchronous:sys-notify -i "$ICON_PATH" "Hyprsunset" "Started now"
+fi

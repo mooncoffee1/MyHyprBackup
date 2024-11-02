@@ -1,6 +1,6 @@
 @import "../../.cache/wal/colors-waybar.css";
 
-@define-color main-color @color13;
+@define-color main-color @color11;
 
 * {
   font-family: MaterialDesignIcons, Iosevka;
@@ -151,15 +151,16 @@ tooltip label {
   margin: 8px 0px;
 }
 
+#gpu,
 #language,
-#idle_inhibitor,
+#idle,
 #custom-gpu-usage,
 #custom-screenrecorder,
 #gamemode,
 #custom-waybar-mpris,
 #custom-weather,
 #tray,
-#custom-theme-switcher {
+#theme-switcher {
   padding: 0px 7px;
   margin: 8px 4px;
   color: @main-color;
@@ -188,12 +189,12 @@ tray > .passive {
 
 
 #clock {
-font-weight: bolder;
-padding: 0px 10px;
-margin: 8px 4px;
+  font-weight: bolder;
+  padding: 0px 10px;
+  margin: 8px 4px;
   background: alpha(@background, 0.8);
   border-radius: 10px;
-  color: lighter(@color10);
+  color: lighter(@color9);
   
 }
 
@@ -230,13 +231,40 @@ padding-right: 16px;
 
 #power-profiles-daemon  {
   border-radius: 15px;
-  padding-right: 20px;
+  padding-right: 10px;
   margin-left: 4px;
   margin-right: 6px;
   background: linear-gradient(90deg, transparent 20%, alpha(@color8, 0.50) 90%); 
   color: @color7;
 }
 
+#custom-weather.severe {
+  color: #eb937d;
+}
+
+#custom-weather.sunnyDay {
+  color: #c2ca76;
+}
+
+#custom-weather.clearNight {
+  color: #2b2b2a;
+}
+
+#custom-weather.cloudyFoggyDay, #custom-weather.cloudyFoggyNight {
+  color: @main-color;
+}
+
+#custom-weather.rainyDay, #custom-weather.rainyNight {
+  color: #5aaca5;
+}
+
+#custom-weather.showyIcyDay, #custom-weather.snowyIcyNight {
+  color: #d6e7e5;
+}
+
+#custom-weather.default {
+  color: #dbd9d8;
+}
 
 #backlight-slider slider,
 #pulseaudio-slider slider {
@@ -262,7 +290,6 @@ padding-right: 16px;
   background-color: #2096C0;
 }
 
-
 #privacy:hover{
   background-color: alpha(@color8, 0.30);
   border-radius: 14px;
@@ -274,6 +301,7 @@ padding-right: 16px;
   color: @color6;
 }
 
+#notifis:hover,
 #audio:hover,
 #light:hover,
 #connection:hover,
@@ -297,19 +325,11 @@ padding-right: 16px;
   animation: ws_hover 20s ease-in-out 1;
   transition: all 0.3s cubic-bezier(.55,-0.68,.48,1.682);
 }
-#custom-notifications:hover{
-  margin-right: 0px;
-  background-color: alpha(@color4, .7);
-  padding: 0px 10px 0px 10px;
-  color: @background;
-  border-radius: 14px;
-  animation: ws_hover 20s ease-in-out 1;
-  transition: all 0.3s cubic-bezier(.55,-0.68,.48,1.682);
 
-}
 
+#gpu:hover,
 #language:hover,
-#idle_inhibitor:hover,
+#idle:hover,
 #custom-gpu-usage:hover,
 #custom-screenrecorder:hover,
 #temperature:hover,
@@ -317,7 +337,7 @@ padding-right: 16px;
 #memory:hover,
 #disk:hover,
 #custom-updates:hover,
-#custom-theme-switcher:hover,
+#theme-switcher:hover,
 #gamemode:hover,
 #custom-weather:hover,
 #tray:hover,

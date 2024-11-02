@@ -45,12 +45,12 @@ fi
 
 # List of packages to install
 packages=(
-    hyprland-git hyprshot hyprshade-git waybar-cava-git network-manager-applet blueman python rust kitty zsh wofi waypaper code
+    hyprland-git hyprshot hyprshade-git hyprpolkitagent hyprsysteminfo-git waybar-cava-git network-manager-applet blueman python rust kitty zsh wofi waypaper code
     xdg-desktop-portal-hyprland hyprlock-git grim slurp swaync wl-clipboard cliphist nwg-look swww prismlauncher-qt5-git jre12-openjdk engrampa 
     swappy wofi-calc wofi-emoji ttf-material-design-icons-extended ttf-iosevka ttf-iosevka-nerd xdg-user-dirs fastfetch xdg-user-dirs-gtk
     noto-fonts-emoji polkit-gnome imagemagick hyprpicker-git tumbler hyprpaper-git hypridle-git gpick acpi acpi_call qview qt5ct qt5-wayland qt6-wayland
     kvantum-qt5 colloid-cursors-git gdm spotify waybar-mpris-git papirus-folders walogram pywal-discord lightdm-elephant-greeter-git github-desktop
-    brightnessctl xorg-xhost pamixer papirus-icon-theme ttf-jetbrains-mono-nerd pipewire pipewire-jack gst-plugin-pipewire gst-plugins-good python-webcolors python-scipy steam steam-native-runtime gamemode lib32-amdvlk lib32-gamemode hyprswitch
+    brightnessctl xorg-xhost pamixer papirus-icon-theme ttf-jetbrains-mono-nerd pipewire pipewire-jack gst-plugin-pipewire gst-plugins-good python-webcolors python-pyquery python-scipy steam steam-native-runtime gamemode lib32-amdvlk lib32-gamemode hyprswitch
     pipewire-alsa pipewire-pulse thunar wlsunset wttrbar wf-recorder thunar-archive-plugin cava-git spicetify-cli atuin wlogout python-pywal gradience zsh-autosuggestions zsh-sudo zsh-syntax-highlighting adw-gtk3 resources emblem junction cartridges
 )
 

@@ -14,7 +14,7 @@
   "group/info": {
     "orientation": "inherit",
     "drawer": {
-      "transition-duration": 300,
+      "transition-duration": 600,
       "transition-left-to-right": false,
     },
     "modules": ["custom/arrow-right", "cpu",  "memory", "disk", "temperature", "custom/updates"],
@@ -62,7 +62,7 @@
   "group/control-center": {
     "orientation": "inherit",
     "on-click": "swaync-client -t -sw",
-    "modules": [ "privacy","group/audio", "group/connection", "group/batterys", "group/light","custom/notifications"],
+    "modules": [ "privacy","group/audio", "group/connection", "group/batterys", "group/light","group/notifis"],
   },
   "privacy": {
 	"icon-spacing": 14,
@@ -109,7 +109,7 @@
     "orientation": "inherit",
     "on-click": "swaync-client -t -sw",
     "drawer": {
-      "transition-duration": 300,
+      "transition-duration": 600,
       "transition-left-to-right": true,
     },
     "modules": [
@@ -162,7 +162,7 @@
   "group/network": {
     "orientation": "inherit",
     "drawer": {
-      "transition-duration": 300,
+      "transition-duration": 600,
       
       "transition-left-to-right": true,
     },
@@ -171,7 +171,7 @@
   "group/bluetooth": {
     "orientation": "inherit",
     "drawer": {
-      "transition-duration": 300,
+      "transition-duration": 600,
       "transition-left-to-right": true,
     },
     "modules": ["bluetooth", "bluetooth#status"],
@@ -192,7 +192,7 @@
     "on-click": "swaync-client -t -sw",
   },
   "network#speed": {
-    "format": "{essid} 󱜠 {bandwidthDownBits}",
+    "format": "{essid} | 󱜠 {bandwidthDownBits}",
     "interval": 5,
     "tooltip-format": "{ipaddr}",
     "tooltip-format-wifi": "{essid} ({signalStrength}%)   \n{ipaddr} | {frequency} MHz{icon} ",
@@ -232,16 +232,43 @@
   "group/utils": {
     "orientation": "inherit",
     "drawer": {
-      "transition-duration": 300,
+      "transition-duration": 600,
       "transition-left-to-right": true,
-      "click-to-reveal": true,
+      "click-to-reveal": false,
     },
-    "modules": ["custom/arrow-left", "tray", "custom/weather", "idle_inhibitor", "custom/screenrecorder", "gamemode", "custom/theme-switcher", "hyprland/language"],
+    "modules": ["custom/arrow-left", "tray", "custom/weather", "group/idle", "gamemode", "group/gpu", "group/theme-switcher", "hyprland/language"],
   },
   "custom/arrow-left": {
     "format": "󰁍",
     "tooltip": false,
   },
+
+  "group/gpu": {
+    "orientation": "inherit",
+    "drawer": {
+      "transition-duration": 600,
+      "transition-left-to-right": true,
+    },
+    "modules": ["custom/gpu-icon", "custom/gpu-text"],
+  },
+
+"custom/gpu-icon": {
+    "exec": "~/nvidia 1",
+    "icon-size": 16,
+    "interval": 10,
+    "tooltip": true,
+    "format": "{text}",
+    "on-click-right": "$HOME/.config/hypr/scripts/hyprsunset",
+},
+
+"custom/gpu-text": {
+    "exec": "~/nvidia 2",
+    "interval": 10,
+    "tooltip": true,
+    "format": " {text}",
+    "on-click-right": "$HOME/.config/hypr/scripts/hyprsunset",
+},
+
   "gamemode": {
   	"format": "󰸺",
   	"format-alt": "󰸺",
@@ -255,6 +282,15 @@
   	"tooltip-format": "Games running: {count}",
     "on-click-right": "$HOME/.config/hypr/scripts/disable-typing",
     
+  },
+  "group/notifis": {
+    "orientation": "inherit",
+    "drawer": {
+      "transition-duration": 600,
+      "on-click": "swaync-client -t -sw",
+      "transition-left-to-right": true,
+    },
+    "modules": ["custom/notifications", "custom/notifi-name"],
   },
   "custom/notifications": {
     "tooltip": false,
@@ -276,6 +312,14 @@
     "on-click-right": "swaync-client -d -sw",
     "escape": true
   },
+
+  "custom/notifi-name": {
+    "format": "Notifications",
+    "tooltip": true,
+    "tooltip-format": "Click to reveal notification center",
+    "on-click": "swaync-client -t -sw",
+  },
+
 "custom/screenrecorder": {
     "exec": "$HOME/.config/waybar/scripts/screenrecorder status",
     "interval": "once",
@@ -293,15 +337,32 @@
   "return-type": "",
   "interval": 1
 },
-  "custom/weather": {
-    "format": "{}",
-    "tooltip": false,
-    "interval": 3600,
-    "exec": "wttrbar --custom-indicator '{ICON}{temp_C}'",
+"custom/weather": {
+    "exec": "python ~/.config/waybar/scripts/weather.py",
+    "restart-interval": 300,
     "return-type": "json",
+    "on-click": "xdg-open https://weather.com/en-IN/weather/today/l/$(location_id)",
+   "format-alt": "{alt}"
+},
+
+"group/theme-switcher": {
+  "orientation": "horizontal",
+  "drawer": {
+      "transition-duration": 600,
+      "children-class": "not-power", 
+    "transition-to-left": true,
   },
-  "custom/theme-switcher": {
+  "modules": ["custom/theme-switcher-icon", "custom/theme-switcher-text"]
+},
+  "custom/theme-switcher-icon": {
     "format": "󰊠",
+    "tooltip": true,
+    "tooltip-format": "Click to refresh the pywal/theme!",
+    "on-click": "~/.config/hypr/scripts/wallpaper",
+  },
+
+  "custom/theme-switcher-text": {
+    "format": " Theme switcher",
     "tooltip": true,
     "tooltip-format": "Click to refresh the pywal/theme!",
     "on-click": "~/.config/hypr/scripts/wallpaper",
@@ -330,7 +391,7 @@
   "group/power": {
     "orientation": "inherit",
     "drawer": {
-      "transition-duration": 300,
+      "transition-duration": 600,
       "transition-left-to-right": false,
     },
     "modules": ["power-profiles-daemon", "batterys"],
@@ -338,7 +399,7 @@
   "group/batterys": {
     "orientation": "inherit",
     "drawer": {
-      "transition-duration": 300,
+      "transition-duration": 600,
       "on-click": "swaync-client -t -sw",
       "transition-left-to-right": false,
     },
@@ -457,13 +518,31 @@
   "scroll-step": 1,
   "min-length": 2
 },
-"idle_inhibitor": {
+
+"group/idle": {
+  "orientation": "horizontal",
+  "drawer": {
+      "transition-duration": 600,
+      "children-class": "not-power", 
+    "transition-to-left": true,
+  },
+  "modules": ["idle_inhibitor#icon", "idle_inhibitor#text"]
+},
+"idle_inhibitor#icon": {
     "format": "{icon}",
     "tooltip-format-activated": "Idle Stopped",
     "tooltip-format-deactivated": "Idling...",
     "format-icons": {
         "activated": "󰈈",
         "deactivated": "󰈉"
+    }
+},
+"idle_inhibitor#text": {
+    "format": "{icon}",
+    "tooltip": false,
+    "format-icons": {
+        "activated": " Idle Stopped",
+        "deactivated": " Idling..."
     }
 },
 

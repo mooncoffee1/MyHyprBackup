@@ -56,7 +56,7 @@
         },
         {
             "label": "󰌵  Night Light",
-            "command":"home/ananas/.config/hypr/scripts/wlsunset-bluelight"
+            "command":"home/ananas/.config/hypr/scripts/hyprsunset"
 
             
         }

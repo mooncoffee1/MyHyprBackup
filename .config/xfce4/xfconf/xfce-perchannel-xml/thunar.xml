@@ -20,8 +20,8 @@
   <property name="last-sort-column" type="string" value="THUNAR_COLUMN_DATE_MODIFIED"/>
   <property name="last-sort-order" type="string" value="GTK_SORT_DESCENDING"/>
   <property name="last-menubar-visible" type="bool" value="true"/>
-  <property name="last-window-width" type="int" value="1229"/>
-  <property name="last-window-height" type="int" value="463"/>
+  <property name="last-window-width" type="int" value="944"/>
+  <property name="last-window-height" type="int" value="1020"/>
   <property name="misc-exec-shell-scripts-by-default" type="bool" value="true"/>
   <property name="last-details-view-zoom-level" type="string" value="THUNAR_ZOOM_LEVEL_38_PERCENT"/>
   <property name="last-details-view-visible-columns" type="string" value="THUNAR_COLUMN_DATE_MODIFIED,THUNAR_COLUMN_NAME,THUNAR_COLUMN_SIZE,THUNAR_COLUMN_TYPE"/>
