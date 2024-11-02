@@ -1,0 +1,28 @@
+#!/bin/bash
+
+# Icons for GPU modes
+ICON_DEDICATED="󰈸"
+ICON_INTEGRATED="󰌢"
+
+# Text for GPU modes
+TEXT_DEDICATED="Dedicated GPU"
+TEXT_INTEGRATED="Integrated GPU"
+
+# Check for Nvidia GPU presence
+if lspci | grep -i nvidia >/dev/null 2>&1; then
+    if [[ $1 -eq 1 ]]; then
+        echo "$ICON_DEDICATED"
+    elif [[ $1 -eq 2 ]]; then
+        echo "$TEXT_DEDICATED"
+    else
+        echo "Invalid option. Use 1 for icon or 2 for text."
+    fi
+else
+    if [[ $1 -eq 1 ]]; then
+        echo "$ICON_INTEGRATED"
+    elif [[ $1 -eq 2 ]]; then
+        echo "$TEXT_INTEGRATED"
+    else
+        echo "Invalid option. Use 1 for icon or 2 for text."
+    fi
+fi

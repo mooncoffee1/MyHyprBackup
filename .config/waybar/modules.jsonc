@@ -253,20 +253,18 @@
   },
 
 "custom/gpu-icon": {
-    "exec": "~/nvidia 1",
+    "exec": "~/.config/waybar/scripts/nvidia 1",
     "icon-size": 16,
     "interval": 10,
     "tooltip": true,
     "format": "{text}",
-    "on-click-right": "$HOME/.config/hypr/scripts/hyprsunset",
 },
 
 "custom/gpu-text": {
-    "exec": "~/nvidia 2",
+    "exec": "~/.config/waybar/scripts/nvidia 2",
     "interval": 10,
     "tooltip": true,
     "format": " {text}",
-    "on-click-right": "$HOME/.config/hypr/scripts/hyprsunset",
 },
 
   "gamemode": {
