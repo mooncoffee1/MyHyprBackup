@@ -412,7 +412,7 @@
       "critical": 15
     },
     "format": "{icon}",
-    "format-charging": "󰉁",
+    "format-charging": "󱐋",
     "format-full": "<span color='#82A55F'><b>{icon}</b></span>",
     "format-icons": [
       "󰁺",
@@ -497,7 +497,7 @@
 
 "backlight": {
   "device": "nvidia_wmi_ec_backlight",
-  "on-click": "swaync-client -t -sw",
+  "on-click": "com.sidevesh.Luminance",
   "rotate": 0,
   "tooltip": false,
   "format": "{icon}",
@@ -508,7 +508,7 @@
 
 "backlight#volume": {
   "device": "nvidia_wmi_ec_backlight",
-  "on-click": "swaync-client -t -sw",
+  "on-click": "com.sidevesh.Luminance",
   "rotate": 0,
   "tooltip": false,
   "format": "{percent}",
